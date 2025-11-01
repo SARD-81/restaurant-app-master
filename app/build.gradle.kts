@@ -1,9 +1,7 @@
-plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt")
-    id("kotlin-parcelize")
-}
+apply(plugin = "com.android.application")
+apply(plugin = "org.jetbrains.kotlin.android")
+apply(plugin = "kotlin-kapt")
+apply(plugin = "kotlin-parcelize")
 
 android {
     namespace = "com.amirreza.restaurantapp"
