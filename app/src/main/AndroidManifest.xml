@@ -8,7 +8,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
-        android:name=".RestaurantApplication"
+        android:name="com.ramin.restaurantapp.RestaurantApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -24,7 +24,7 @@
             android:value="YOUR_GOOGLE_MAPS_API_KEY" />
 
         <activity
-            android:name=".ui.MainActivity"
+            android:name="com.ramin.restaurantapp.ui.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.RestaurantApp">
             <intent-filter>

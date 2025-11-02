@@ -1,7 +1,9 @@
-apply(plugin = "com.android.application")
-apply(plugin = "org.jetbrains.kotlin.android")
-apply(plugin = "kotlin-kapt")
-apply(plugin = "kotlin-parcelize")
+plugins {
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.kapt")
+    id("org.jetbrains.kotlin.plugin.parcelize")
+}
 
 android {
     namespace = "com.ramin.restaurantapp"
@@ -35,7 +37,21 @@ android {
     }
     buildFeatures {
         viewBinding = true
-        dataBinding = true
+        
+    }
+}
+
+configurations.all {
+    resolutionStrategy.eachDependency {
+        if (requested.group == "org.jetbrains.kotlin") {
+            when (requested.name) {
+                "kotlin-stdlib",
+                "kotlin-stdlib-common",
+                "kotlin-stdlib-jdk7",
+                "kotlin-stdlib-jdk8",
+                "kotlin-reflect" -> useVersion("2.0.21")
+            }
+        }
     }
 }
 
