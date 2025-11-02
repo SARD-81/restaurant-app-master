@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tehran Taste</string>
+    <string name="menu_about">درباره رستوران</string>
+    <string name="menu_address">آدرس رستوران</string>
+    <string name="home_title">دسته بندی غذاها</string>
+    <string name="search_hint">جستجوی غذا</string>
+    <string name="food_details_title">جزئیات غذا</string>
+    <string name="map_title">آدرس روی نقشه</string>
+    <string name="about_title">درباره رستوران</string>
+    <string name="loading">در حال بارگذاری...</string>
+    <string name="no_items_available">موردی برای نمایش وجود ندارد</string>
+    <string name="map_description">رستوران در مرکز تهران واقع شده است</string>
+    <string name="address_text">تهران، خیابان ولیعصر، کوچه بهار</string>
+</resources>

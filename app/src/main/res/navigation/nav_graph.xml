@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ramin.restaurantapp.ui.home.HomeFragment"
+        android:label="@string/home_title">
+        <action
+            android:id="@+id/action_home_to_category"
+            app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_home_to_food_list"
+            app:destination="@id/foodListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.ramin.restaurantapp.ui.category.CategoryFragment"
+        android:label="@string/home_title">
+        <argument
+            android:name="category"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_category_to_food_list"
+            app:destination="@id/foodListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/foodListFragment"
+        android:name="com.ramin.restaurantapp.ui.food.FoodListFragment"
+        android:label="@string/food_details_title">
+        <argument
+            android:name="category"
+            app:argType="string" />
+        <argument
+            android:name="subcategory"
+            app:argType="string"
+            android:nullable="true" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_food_list_to_food_detail"
+            app:destination="@id/foodDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/foodDetailFragment"
+        android:name="com.ramin.restaurantapp.ui.detail.FoodDetailFragment"
+        android:label="@string/food_details_title">
+        <argument
+            android:name="foodId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.ramin.restaurantapp.ui.about.AboutFragment"
+        android:label="@string/about_title" />
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.ramin.restaurantapp.ui.map.MapFragment"
+        android:label="@string/map_title" />
+
+</navigation>
