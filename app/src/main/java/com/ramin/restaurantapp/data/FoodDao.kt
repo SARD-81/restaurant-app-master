@@ -27,8 +27,8 @@ interface FoodDao {
     fun getFoodById(id: Int): Flow<FoodEntity>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertAll(items: List<FoodEntity>)
+    fun insertAll(items: List<FoodEntity>)
 
     @Query("DELETE FROM food")
-    suspend fun clear()
+    fun clear()
 }

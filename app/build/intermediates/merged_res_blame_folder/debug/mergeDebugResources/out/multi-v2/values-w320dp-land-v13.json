@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.ramin.restaurantapp-mergeDebugResources-56:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\SarayeTel\\.gradle\\caches\\8.13\\transforms\\3a1e55c3f0ad01dbf71c5d762800b176\\transformed\\material-1.9.0\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,110",
+                        "endColumns": "54,61",
+                        "endOffsets": "105,167"
+                    }
+                }
+            ]
+        }
+    ]
+}

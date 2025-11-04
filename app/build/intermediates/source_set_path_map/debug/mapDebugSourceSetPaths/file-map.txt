@@ -1,0 +1,62 @@
+com.ramin.restaurantapp-sqlite-framework-2.3.1-0 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\001336df84ee964da77dd8c9be881686\transformed\sqlite-framework-2.3.1\res
+com.ramin.restaurantapp-navigation-fragment-2.6.0-1 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\01014d8fe34ab635d95a8c9d0b44b6bf\transformed\navigation-fragment-2.6.0\res
+com.ramin.restaurantapp-core-runtime-2.2.0-2 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\07e327999b28c9544d5e7363f80b68ae\transformed\core-runtime-2.2.0\res
+com.ramin.restaurantapp-lifecycle-runtime-2.6.2-3 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\0d739d798fe1396bd2d95ea68df29153\transformed\lifecycle-runtime-2.6.2\res
+com.ramin.restaurantapp-play-services-maps-18.1.0-4 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\113bd85f3cc88c315cdbf481856327f8\transformed\play-services-maps-18.1.0\res
+com.ramin.restaurantapp-webkit-1.7.0-5 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\1fef089ec716c68ab6dd3b94fedef70c\transformed\webkit-1.7.0\res
+com.ramin.restaurantapp-activity-ktx-1.7.2-6 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\21582787314ebd7a9e36330d636a4df8\transformed\activity-ktx-1.7.2\res
+com.ramin.restaurantapp-lifecycle-viewmodel-2.6.2-7 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\2aca51289dba4d0f82fc77b9d0da4b0c\transformed\lifecycle-viewmodel-2.6.2\res
+com.ramin.restaurantapp-emoji2-views-helper-1.2.0-8 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\2ceafe5d73f01203daa93ffcbaf9a556\transformed\emoji2-views-helper-1.2.0\res
+com.ramin.restaurantapp-navigation-runtime-2.6.0-9 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\2f0af7b1f27a98caaa67e59f126257b5\transformed\navigation-runtime-2.6.0\res
+com.ramin.restaurantapp-material-1.9.0-10 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\3a1e55c3f0ad01dbf71c5d762800b176\transformed\material-1.9.0\res
+com.ramin.restaurantapp-recyclerview-1.3.1-11 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\3e14febd7b1f718bc35892c806a8195b\transformed\recyclerview-1.3.1\res
+com.ramin.restaurantapp-savedstate-ktx-1.2.1-12 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\46a688d626dd20be3aa1a49f681b339f\transformed\savedstate-ktx-1.2.1\res
+com.ramin.restaurantapp-sqlite-2.3.1-13 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\4a50cb178b96ab8475b1c2158080d5cc\transformed\sqlite-2.3.1\res
+com.ramin.restaurantapp-drawerlayout-1.1.1-14 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\573862f10b62f249d53690258a5083a2\transformed\drawerlayout-1.1.1\res
+com.ramin.restaurantapp-lifecycle-livedata-core-2.6.2-15 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\595ff7363890f55bb8ba92d6e94dd06e\transformed\lifecycle-livedata-core-2.6.2\res
+com.ramin.restaurantapp-fragment-ktx-1.6.1-16 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\606206bbb2cd96ebaa58a305cc15ec00\transformed\fragment-ktx-1.6.1\res
+com.ramin.restaurantapp-appcompat-resources-1.6.1-17 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\66a483e8b83745492b85d81320a9faad\transformed\appcompat-resources-1.6.1\res
+com.ramin.restaurantapp-cardview-1.0.0-18 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\68f4a424d752a85621b396db4288a484\transformed\cardview-1.0.0\res
+com.ramin.restaurantapp-lifecycle-livedata-2.6.2-19 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\6b62457e149778836c743b4470387127\transformed\lifecycle-livedata-2.6.2\res
+com.ramin.restaurantapp-glide-4.15.1-20 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\6d492bc791e9e5b48f12f94fe14206b0\transformed\glide-4.15.1\res
+com.ramin.restaurantapp-lifecycle-livedata-ktx-2.6.2-21 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\6fa865b618e274b1a92189449548856c\transformed\lifecycle-livedata-ktx-2.6.2\res
+com.ramin.restaurantapp-play-services-basement-18.1.0-22 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\72f6575332dfc7bb9a5d11bd7d1aa4cd\transformed\play-services-basement-18.1.0\res
+com.ramin.restaurantapp-lifecycle-viewmodel-ktx-2.6.2-23 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\742ed54b7546c28e4f846f777eccc861\transformed\lifecycle-viewmodel-ktx-2.6.2\res
+com.ramin.restaurantapp-fragment-1.6.1-24 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\744442b80126a5b88cf22676283b73dc\transformed\fragment-1.6.1\res
+com.ramin.restaurantapp-lifecycle-livedata-core-ktx-2.6.2-25 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\76959e60aa7423a1a3b126a57592cdec\transformed\lifecycle-livedata-core-ktx-2.6.2\res
+com.ramin.restaurantapp-coordinatorlayout-1.1.0-26 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\76fcd4df6eb2bb4455ce0098b3ba488a\transformed\coordinatorlayout-1.1.0\res
+com.ramin.restaurantapp-slidingpanelayout-1.2.0-27 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\78e1d993acd4025a33874acfebff6a8c\transformed\slidingpanelayout-1.2.0\res
+com.ramin.restaurantapp-navigation-fragment-ktx-2.6.0-28 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\7972790f99b816733adb866c6592ac03\transformed\navigation-fragment-ktx-2.6.0\res
+com.ramin.restaurantapp-startup-runtime-1.1.1-29 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\79c032f4690f2337fb88eba749cbdb7d\transformed\startup-runtime-1.1.1\res
+com.ramin.restaurantapp-savedstate-1.2.1-30 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\9591ea507ad3f3a8762fa66e2d52c95c\transformed\savedstate-1.2.1\res
+com.ramin.restaurantapp-navigation-common-ktx-2.6.0-31 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\9721300f1d1197bc55d89f5baaab0106\transformed\navigation-common-ktx-2.6.0\res
+com.ramin.restaurantapp-window-1.0.0-32 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\a050a9f132bbb54ac367c3c5023e45cc\transformed\window-1.0.0\res
+com.ramin.restaurantapp-profileinstaller-1.3.0-33 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\a35999c564a4564a8b45fbdb9e85df51\transformed\profileinstaller-1.3.0\res
+com.ramin.restaurantapp-navigation-ui-2.6.0-34 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\b8fbfbf6e5e02e564b232b1ea444f910\transformed\navigation-ui-2.6.0\res
+com.ramin.restaurantapp-lifecycle-process-2.6.2-35 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\bdc4a7b14ffe809d41747113d1b55c4b\transformed\lifecycle-process-2.6.2\res
+com.ramin.restaurantapp-viewpager2-1.1.0-beta02-36 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\bef1548a816ce3ad0dfad12216001c01\transformed\viewpager2-1.1.0-beta02\res
+com.ramin.restaurantapp-core-ktx-1.10.1-37 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\c45741f9d32d47ddc8d3cad7c0475a6f\transformed\core-ktx-1.10.1\res
+com.ramin.restaurantapp-navigation-runtime-ktx-2.6.0-38 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\c6e638b732a3c6663100ef62a793d879\transformed\navigation-runtime-ktx-2.6.0\res
+com.ramin.restaurantapp-play-services-base-18.1.0-39 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\d0524609b82378344c1eb1d0232a824f\transformed\play-services-base-18.1.0\res
+com.ramin.restaurantapp-transition-1.4.1-40 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\d434d5910fa3c38ab81cc30a6a76f43e\transformed\transition-1.4.1\res
+com.ramin.restaurantapp-navigation-ui-ktx-2.6.0-41 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\d5179c8766897822b6bfeef8533779ad\transformed\navigation-ui-ktx-2.6.0\res
+com.ramin.restaurantapp-activity-1.7.2-42 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\d5393555b0abf75f09fb493c1ae44d38\transformed\activity-1.7.2\res
+com.ramin.restaurantapp-customview-poolingcontainer-1.0.0-43 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\d5f633ce14e41b8de2f4556bb54302c2\transformed\customview-poolingcontainer-1.0.0\res
+com.ramin.restaurantapp-appcompat-1.6.1-44 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\d992d65c425cb2956c6e76bbf313eff5\transformed\appcompat-1.6.1\res
+com.ramin.restaurantapp-constraintlayout-2.1.4-45 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\dd3a1149d68028b37d55d80d5dc12ec4\transformed\constraintlayout-2.1.4\res
+com.ramin.restaurantapp-navigation-common-2.6.0-46 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\e8be65dee527eb1d1b5916a3c241cdb2\transformed\navigation-common-2.6.0\res
+com.ramin.restaurantapp-emoji2-1.2.0-47 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\e90f7331e063af28794d48954c843475\transformed\emoji2-1.2.0\res
+com.ramin.restaurantapp-core-1.10.1-48 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\e9403a76f3e8e8eadbe9ae88c8cba02b\transformed\core-1.10.1\res
+com.ramin.restaurantapp-lifecycle-runtime-ktx-2.6.2-49 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\ec7370355f6694eb806c2e2a1610c232\transformed\lifecycle-runtime-ktx-2.6.2\res
+com.ramin.restaurantapp-room-runtime-2.5.2-50 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\ecd64f67fbc245bcdd54fbbf8ac5031b\transformed\room-runtime-2.5.2\res
+com.ramin.restaurantapp-room-ktx-2.5.2-51 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\f12426bd99c78f816a4c6c45a3678507\transformed\room-ktx-2.5.2\res
+com.ramin.restaurantapp-lifecycle-viewmodel-savedstate-2.6.2-52 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\f2e87df9a64d862072dd8612f3a10c1a\transformed\lifecycle-viewmodel-savedstate-2.6.2\res
+com.ramin.restaurantapp-annotation-experimental-1.3.0-53 C:\Users\SarayeTel\.gradle\caches\8.13\transforms\fb5235f6db694d060277c2a58a7c0239\transformed\annotation-experimental-1.3.0\res
+com.ramin.restaurantapp-pngs-54 C:\Users\SarayeTel\Desktop\My Files\Daneshgah\TA\Ramin\restaurant-app-master\app\build\generated\res\pngs\debug
+com.ramin.restaurantapp-resValues-55 C:\Users\SarayeTel\Desktop\My Files\Daneshgah\TA\Ramin\restaurant-app-master\app\build\generated\res\resValues\debug
+com.ramin.restaurantapp-updated_navigation_xml-56 C:\Users\SarayeTel\Desktop\My Files\Daneshgah\TA\Ramin\restaurant-app-master\app\build\generated\updated_navigation_xml\debug
+com.ramin.restaurantapp-packageDebugResources-57 C:\Users\SarayeTel\Desktop\My Files\Daneshgah\TA\Ramin\restaurant-app-master\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.ramin.restaurantapp-packageDebugResources-58 C:\Users\SarayeTel\Desktop\My Files\Daneshgah\TA\Ramin\restaurant-app-master\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.ramin.restaurantapp-debug-59 C:\Users\SarayeTel\Desktop\My Files\Daneshgah\TA\Ramin\restaurant-app-master\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.ramin.restaurantapp-debug-60 C:\Users\SarayeTel\Desktop\My Files\Daneshgah\TA\Ramin\restaurant-app-master\app\src\debug\res
+com.ramin.restaurantapp-main-61 C:\Users\SarayeTel\Desktop\My Files\Daneshgah\TA\Ramin\restaurant-app-master\app\src\main\res

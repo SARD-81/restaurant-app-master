@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <string name="about_title">درباره رستوران طعم تهران</string>
+    <string name="address_text">تهران، خیابان ولیعصر، کوچه ۱۲، پلاک ۷</string>
+    <string name="app_name">رستوران طعم تهران</string>
+    <string name="food_details_title">جزئیات کامل غذا</string>
+    <string name="home_title">چه میل دارید؟</string>
+    <string name="loading">در حال بارگذاری… لطفاً صبر کنید</string>
+    <string name="map_description">تمام شعبه‌های ما را روی نقشه پیدا کنید و مسیر دقیق را ببینید.</string>
+    <string name="map_title">نقشه و مسیر شعبه‌ها</string>
+    <string name="menu_about">درباره ما</string>
+    <string name="menu_address">آدرس شعبه‌ها</string>
+    <string name="no_items_available">آیتمی برای نمایش وجود ندارد.</string>
+    <string name="search_hint">نام غذا یا دسته‌بندی را وارد کنید</string>
+    <style name="Theme.RestaurantApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+</resources>

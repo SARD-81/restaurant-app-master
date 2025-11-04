@@ -1,0 +1,110 @@
+[
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.ramin.restaurantapp-main-60:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/xml_data_extraction_rules.xml.flat",
+        "source": "com.ramin.restaurantapp-main-60:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/layout_fragment_favorites.xml.flat",
+        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_favorites.xml"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.ramin.restaurantapp-main-60:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/menu_main_menu.xml.flat",
+        "source": "com.ramin.restaurantapp-main-60:/menu/main_menu.xml"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/layout_fragment_home.xml.flat",
+        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.ramin.restaurantapp-main-60:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/menu_menu_main.xml.flat",
+        "source": "com.ramin.restaurantapp-main-60:/menu/menu_main.xml"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.ramin.restaurantapp-main-60:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/layout_activity_main.xml.flat",
+        "source": "com.ramin.restaurantapp-main-60:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/layout_item_category.xml.flat",
+        "source": "com.ramin.restaurantapp-main-60:/layout/item_category.xml"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.ramin.restaurantapp-main-60:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/layout_fragment_search.xml.flat",
+        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_search.xml"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/layout_fragment_main.xml.flat",
+        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_main.xml"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/layout_item_food.xml.flat",
+        "source": "com.ramin.restaurantapp-main-60:/layout/item_food.xml"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.ramin.restaurantapp-main-60:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/layout_fragment_food_list.xml.flat",
+        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_food_list.xml"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/xml_backup_rules.xml.flat",
+        "source": "com.ramin.restaurantapp-main-60:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/layout_fragment_about.xml.flat",
+        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_about.xml"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.ramin.restaurantapp-main-60:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.ramin.restaurantapp-main-60:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.ramin.restaurantapp-main-60:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/layout_fragment_map.xml.flat",
+        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_map.xml"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/layout_fragment_food_detail.xml.flat",
+        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_food_detail.xml"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/layout_item_media_page.xml.flat",
+        "source": "com.ramin.restaurantapp-main-60:/layout/item_media_page.xml"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/layout_fragment_category.xml.flat",
+        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_category.xml"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-debug-58:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.ramin.restaurantapp-main-60:/mipmap-hdpi/ic_launcher_round.png"
+    }
+]
