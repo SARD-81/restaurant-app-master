@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.ramin.restaurantapp.ui.MainFragment"
+        android:label="Main"
+        tools:layout="@layout/fragment_main" />
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.ramin.restaurantapp.ui.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.ramin.restaurantapp.ui.MapFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.ramin.restaurantapp.ui.FavoritesFragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_favorites" />
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.ramin.restaurantapp.ui.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
+</navigation>
