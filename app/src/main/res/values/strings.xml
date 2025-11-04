@@ -1,3 +1,14 @@
-<resources>
-    <string name="app_name">RestaurantApp</string>
+﻿<resources>
+    <string name="app_name">Tehran Taste</string>
+    <string name="menu_about">O_O�O"OO�U� O�O3O�U^O�OU+</string>
+    <string name="menu_address">O�O_O�O3 O�O3O�U^O�OU+</string>
+    <string name="home_title">O_O3O�U� O"U+O_UO O�O�OU�O</string>
+    <string name="search_hint">O�O3O�O�U^UO O�O�O</string>
+    <string name="food_details_title">O�O�O�UOOO� O�O�O</string>
+    <string name="map_title">O�O_O�O3 O�U^UO U+U,O'U�</string>
+    <string name="about_title">O_O�O"OO�U� O�O3O�U^O�OU+</string>
+    <string name="loading">O_O� O-OU, O"OO�U_O�OO�UO...</string>
+    <string name="no_items_available">U.U^O�O_UO O"O�OUO U+U.OUOO' U^O�U^O_ U+O_OO�O_</string>
+    <string name="map_description">O�O3O�U^O�OU+ O_O� U.O�UcO� O�U�O�OU+ U^OU,O1 O'O_U� OO3O�</string>
+    <string name="address_text">O�U�O�OU+OO OrUOOO"OU+ U^U,UOO1O�O�OO UcU^U+U� O"U�OO�</string>
 </resources>
