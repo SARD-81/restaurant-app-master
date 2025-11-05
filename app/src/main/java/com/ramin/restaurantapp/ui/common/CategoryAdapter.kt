@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.ramin.restaurantapp.R
 import com.ramin.restaurantapp.databinding.ItemCategoryBinding
 import com.ramin.restaurantapp.model.CategorySummary
 
@@ -28,6 +29,12 @@ class CategoryAdapter(
 
         fun bind(item: CategorySummary) {
             binding.categoryTitle.text = item.name
+            val subtitleRes = if (item.hasSubcategories) {
+                R.string.category_subtitle_has_children
+            } else {
+                R.string.category_subtitle_no_children
+            }
+            binding.categorySubtitle.text = binding.root.context.getString(subtitleRes)
             if (item.imageUrl.isNotBlank()) {
                 Glide.with(binding.categoryImage.context)
                     .load(item.imageUrl)

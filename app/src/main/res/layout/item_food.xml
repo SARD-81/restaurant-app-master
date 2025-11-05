@@ -1,44 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    app:cardCornerRadius="16dp"
-    app:cardUseCompatPadding="true">
+    android:layout_margin="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:layoutDirection="rtl"
+    app:cardElevation="12dp"
+    app:shapeAppearance="@style/ShapeAppearance.Restaurant.Large">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/foodImage"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp"
-            android:scaleType="centerCrop"
-            android:contentDescription="@string/food_details_title" />
+            android:layout_height="220dp">
 
-        <TextView
-            android:id="@+id/foodTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="12dp"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-            android:textColor="@color/black" />
+            <ImageView
+                android:id="@+id/foodImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/food_details_title"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_overlay" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/foodTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.Restaurant.Toolbar"
+                    android:textColor="@color/text_primary_on_dark"
+                    android:textStyle="bold"
+                    tools:text="نام غذا" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/foodCategoryChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="پیشنهاد سرآشپز"
+                    app:chipIconVisible="false" />
+            </LinearLayout>
+        </FrameLayout>
 
         <TextView
             android:id="@+id/foodDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingStart="12dp"
-            android:paddingEnd="12dp"
-            android:paddingBottom="12dp"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-            android:textColor="@color/black"
-            android:maxLines="2"
-            android:ellipsize="end" />
-
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="12dp"
+            android:maxLines="3"
+            android:textAppearance="@style/TextAppearance.Restaurant.Body"
+            android:textColor="@color/text_secondary_on_dark"
+            android:ellipsize="end"
+            tools:text="توضیح کوتاه در مورد غذا" />
     </LinearLayout>
-
 </com.google.android.material.card.MaterialCardView>

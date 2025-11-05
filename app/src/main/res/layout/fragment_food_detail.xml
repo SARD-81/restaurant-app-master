@@ -1,35 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:layoutDirection="rtl"
+    android:padding="20dp"
     tools:context=".ui.detail.FoodDetailFragment">
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/mediaPager"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        tools:listitem="@layout/item_media_page" />
-
-    <TextView
-        android:id="@+id/foodTitle"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="16dp"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-        android:textColor="@color/black"
-        tools:text="Ù†Ø§Ù… ØºØ°Ø§" />
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/foodDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="8dp"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-        android:textColor="@color/black"
-        tools:text="ØªÙˆØ¶ÛŒØ­Ø§Øª ØºØ°Ø§" />
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mediaCard"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_marginBottom="20dp"
+            app:cardElevation="12dp"
+            app:shapeAppearance="@style/ShapeAppearance.Restaurant.Large">
 
-</LinearLayout>
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/mediaPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="12dp"
+                tools:listitem="@layout/item_media_page" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/foodTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.Restaurant.Toolbar"
+                    android:textColor="@color/text_primary_on_dark"
+                    tools:text="نام غذا" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/detailChipGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:singleLine="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/detailCategoryChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="دسته"
+                        app:chipIconVisible="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/detailSubcategoryChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="زیر دسته"
+                        android:visibility="gone"
+                        app:chipIconVisible="false" />
+                </com.google.android.material.chip.ChipGroup>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/foodDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4dp"
+                    android:textAppearance="@style/TextAppearance.Restaurant.Body"
+                    tools:text="توضیحات غذا" />
+
+                <TextView
+                    android:id="@+id/foodDetailFooter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/food_detail_footer"
+                    android:textAppearance="@style/TextAppearance.Restaurant.Subtitle" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/reserveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/reserve_button"
+                    app:icon="@android:drawable/ic_menu_my_calendar"
+                    app:iconGravity="textStart"
+                    app:iconTint="@color/brand_chip_text" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

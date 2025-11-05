@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:clipToOutline="true">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/mediaImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop"
         android:contentDescription="@string/food_details_title"
-        android:visibility="gone" />
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Restaurant.Large" />
 
     <VideoView
         android:id="@+id/mediaVideo"

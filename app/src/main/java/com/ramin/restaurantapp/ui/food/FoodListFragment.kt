@@ -42,6 +42,15 @@ class FoodListFragment : Fragment() {
         val subcategory = requireArguments().getString("subcategory")
         val title = requireArguments().getString("title").orEmpty()
         binding.foodListTitle.text = title
+        binding.categoryChip.text = category
+        if (subcategory.isNullOrBlank()) {
+            binding.foodListSubtitle.text = getString(R.string.food_list_subtitle_category, category)
+            binding.subcategoryChip.visibility = View.GONE
+        } else {
+            binding.foodListSubtitle.text = getString(R.string.food_list_subtitle_subcategory, subcategory)
+            binding.subcategoryChip.visibility = View.VISIBLE
+            binding.subcategoryChip.text = subcategory
+        }
         setupRecycler()
         observeFoods(category, subcategory)
     }

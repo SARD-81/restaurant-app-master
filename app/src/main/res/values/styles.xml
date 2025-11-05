@@ -2,11 +2,93 @@
 <resources>
     <style name="Theme.RestaurantApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">true</item>
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@android:color/white</item>
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/brand_surface</item>
+        <item name="android:windowBackground">@drawable/app_background</item>
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorPrimaryVariant">@color/brand_primary_dark</item>
+        <item name="colorSecondary">@color/brand_secondary</item>
+        <item name="android:fontFamily">@font/vazirmatn_regular</item>
+        <item name="fontFamily">@font/vazirmatn_regular</item>
+        <item name="android:textColor">@color/text_primary_on_dark</item>
+        <item name="toolbarStyle">@style/Widget.Restaurant.Toolbar</item>
+        <item name="materialButtonStyle">@style/Widget.Restaurant.Button</item>
+        <item name="materialCardViewStyle">@style/Widget.Restaurant.Card</item>
+        <item name="chipStyle">@style/Widget.Restaurant.Chip</item>
+        <item name="textInputStyle">@style/Widget.Restaurant.TextInputLayout</item>
+    </style>
+
+    <style name="Widget.Restaurant.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">@drawable/toolbar_gradient</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Restaurant.Toolbar</item>
+        <item name="android:titleTextColor">@color/text_primary_on_dark</item>
+        <item name="android:subtitleTextColor">@color/text_secondary_on_dark</item>
+    </style>
+
+    <style name="Widget.Restaurant.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/brand_secondary</item>
+        <item name="android:textColor">@color/brand_chip_text</item>
+        <item name="android:fontFamily">@font/vazirmatn_medium</item>
+        <item name="cornerRadius">28dp</item>
+        <item name="android:insetTop">12dp</item>
+        <item name="android:insetBottom">12dp</item>
+    </style>
+
+    <style name="Widget.Restaurant.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/brand_card</item>
+        <item name="cardElevation">8dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Restaurant.Large</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <style name="Widget.Restaurant.Chip" parent="Widget.MaterialComponents.Chip.Assist">
+        <item name="chipBackgroundColor">@color/brand_chip</item>
+        <item name="chipStrokeColor">@color/divider_on_dark</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/brand_chip_text</item>
+        <item name="android:fontFamily">@font/vazirmatn_medium</item>
+        <item name="chipIconVisible">false</item>
+    </style>
+
+    <style name="Widget.Restaurant.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxStrokeColor">@color/brand_secondary</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxCornerRadiusTopStart">24dp</item>
+        <item name="boxCornerRadiusTopEnd">24dp</item>
+        <item name="boxCornerRadiusBottomStart">24dp</item>
+        <item name="boxCornerRadiusBottomEnd">24dp</item>
+        <item name="hintTextColor">@color/text_muted_on_dark</item>
+    </style>
+
+    <style name="TextAppearance.Restaurant.Toolbar" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/text_primary_on_dark</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">@font/vazirmatn_semibold</item>
+    </style>
+
+    <style name="TextAppearance.Restaurant.Title" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textColor">@color/text_primary_on_dark</item>
+        <item name="android:fontFamily">@font/vazirmatn_semibold</item>
+    </style>
+
+    <style name="TextAppearance.Restaurant.Subtitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/text_secondary_on_dark</item>
+        <item name="android:fontFamily">@font/vazirmatn_medium</item>
+    </style>
+
+    <style name="TextAppearance.Restaurant.Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/text_secondary_on_dark</item>
+        <item name="android:fontFamily">@font/vazirmatn_regular</item>
+    </style>
+
+    <style name="ShapeAppearance.Restaurant.Large" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">26dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Restaurant.Medium" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">18dp</item>
     </style>
 </resources>
