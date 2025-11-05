@@ -4,16 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:fitsSystemWindows="true"
+    android:layoutDirection="rtl"
     tools:context=".ui.MainActivity">
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbar"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/purple_500"
-        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
-        app:title="@string/app_name"
-        app:titleCentered="true" />
+        android:fitsSystemWindows="true"
+        android:background="@android:color/transparent"
+        android:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layoutDirection="rtl"
+            app:title="@string/app_name"
+            app:titleCentered="true"
+            app:titleTextColor="@color/text_primary_on_dark"
+            app:subtitleTextColor="@color/text_secondary_on_dark" />
+    </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment"

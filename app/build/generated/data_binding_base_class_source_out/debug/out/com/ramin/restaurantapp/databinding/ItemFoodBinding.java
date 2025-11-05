@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.google.android.material.card.MaterialCardView;
+import com.google.android.material.chip.Chip;
 import com.ramin.restaurantapp.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -21,6 +22,9 @@ public final class ItemFoodBinding implements ViewBinding {
   private final MaterialCardView rootView;
 
   @NonNull
+  public final Chip foodCategoryChip;
+
+  @NonNull
   public final TextView foodDescription;
 
   @NonNull
@@ -29,9 +33,11 @@ public final class ItemFoodBinding implements ViewBinding {
   @NonNull
   public final TextView foodTitle;
 
-  private ItemFoodBinding(@NonNull MaterialCardView rootView, @NonNull TextView foodDescription,
-      @NonNull ImageView foodImage, @NonNull TextView foodTitle) {
+  private ItemFoodBinding(@NonNull MaterialCardView rootView, @NonNull Chip foodCategoryChip,
+      @NonNull TextView foodDescription, @NonNull ImageView foodImage,
+      @NonNull TextView foodTitle) {
     this.rootView = rootView;
+    this.foodCategoryChip = foodCategoryChip;
     this.foodDescription = foodDescription;
     this.foodImage = foodImage;
     this.foodTitle = foodTitle;
@@ -64,6 +70,12 @@ public final class ItemFoodBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.foodCategoryChip;
+      Chip foodCategoryChip = ViewBindings.findChildViewById(rootView, id);
+      if (foodCategoryChip == null) {
+        break missingId;
+      }
+
       id = R.id.foodDescription;
       TextView foodDescription = ViewBindings.findChildViewById(rootView, id);
       if (foodDescription == null) {
@@ -82,8 +94,8 @@ public final class ItemFoodBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemFoodBinding((MaterialCardView) rootView, foodDescription, foodImage,
-          foodTitle);
+      return new ItemFoodBinding((MaterialCardView) rootView, foodCategoryChip, foodDescription,
+          foodImage, foodTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

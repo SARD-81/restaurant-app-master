@@ -34,12 +34,12 @@ public final class RestaurantDatabase_Impl extends RestaurantDatabase {
 
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(2) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `food` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `category_1` TEXT NOT NULL, `category_2` TEXT, `description` TEXT NOT NULL, `image_urls` TEXT NOT NULL, `video_urls` TEXT NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `food` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `category_1` TEXT NOT NULL, `category_2` TEXT, `description` TEXT NOT NULL, `photo` TEXT NOT NULL, `video` TEXT NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '4f80ad1ee6ecb0fc49adb207132479af')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '5341e1673ebc86701c5728097355c3c2')");
       }
 
       @Override
@@ -89,8 +89,8 @@ public final class RestaurantDatabase_Impl extends RestaurantDatabase {
         _columnsFood.put("category_1", new TableInfo.Column("category_1", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsFood.put("category_2", new TableInfo.Column("category_2", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsFood.put("description", new TableInfo.Column("description", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsFood.put("image_urls", new TableInfo.Column("image_urls", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsFood.put("video_urls", new TableInfo.Column("video_urls", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsFood.put("photo", new TableInfo.Column("photo", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsFood.put("video", new TableInfo.Column("video", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysFood = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesFood = new HashSet<TableInfo.Index>(0);
         final TableInfo _infoFood = new TableInfo("food", _columnsFood, _foreignKeysFood, _indicesFood);
@@ -102,7 +102,7 @@ public final class RestaurantDatabase_Impl extends RestaurantDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "4f80ad1ee6ecb0fc49adb207132479af", "79ded0f30b7702887717bb2196b90bd6");
+    }, "5341e1673ebc86701c5728097355c3c2", "62a652abcdc5a9104822e3ee289f826a");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

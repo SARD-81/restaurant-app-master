@@ -41,7 +41,7 @@
         <item name="strokeWidth">0dp</item>
     </style>
 
-    <style name="Widget.Restaurant.Chip" parent="Widget.MaterialComponents.Chip.Assist">
+    <style name="Widget.Restaurant.Chip" parent="Widget.MaterialComponents.Chip.Action">
         <item name="chipBackgroundColor">@color/brand_chip</item>
         <item name="chipStrokeColor">@color/divider_on_dark</item>
         <item name="chipStrokeWidth">1dp</item>

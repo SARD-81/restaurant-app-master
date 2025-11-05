@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -8,15 +9,40 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <TextView
-        android:id="@+id/addressLabel"
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="#AAFFFFFF"
-        android:padding="16dp"
-        android:text="@string/address_text"
-        android:textColor="@color/black"
-        android:textSize="16sp" />
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/glass_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/addressLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="@string/address_text"
+                android:textAppearance="@style/TextAppearance.Restaurant.Body"
+                android:textColor="@color/text_primary_on_dark" />
+
+            <TextView
+                android:id="@+id/mapDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp"
+                android:text="@string/map_description"
+                android:textAppearance="@style/TextAppearance.Restaurant.Body"
+                android:textColor="@color/text_secondary_on_dark" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
 </FrameLayout>

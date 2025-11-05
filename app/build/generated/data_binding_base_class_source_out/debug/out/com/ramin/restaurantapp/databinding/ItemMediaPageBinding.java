@@ -5,12 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
-import android.widget.ImageView;
 import android.widget.VideoView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.imageview.ShapeableImageView;
 import com.ramin.restaurantapp.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -21,13 +21,13 @@ public final class ItemMediaPageBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
-  public final ImageView mediaImage;
+  public final ShapeableImageView mediaImage;
 
   @NonNull
   public final VideoView mediaVideo;
 
-  private ItemMediaPageBinding(@NonNull FrameLayout rootView, @NonNull ImageView mediaImage,
-      @NonNull VideoView mediaVideo) {
+  private ItemMediaPageBinding(@NonNull FrameLayout rootView,
+      @NonNull ShapeableImageView mediaImage, @NonNull VideoView mediaVideo) {
     this.rootView = rootView;
     this.mediaImage = mediaImage;
     this.mediaVideo = mediaVideo;
@@ -61,7 +61,7 @@ public final class ItemMediaPageBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.mediaImage;
-      ImageView mediaImage = ViewBindings.findChildViewById(rootView, id);
+      ShapeableImageView mediaImage = ViewBindings.findChildViewById(rootView, id);
       if (mediaImage == null) {
         break missingId;
       }

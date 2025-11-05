@@ -24,12 +24,16 @@ public final class FragmentMapBinding implements ViewBinding {
   public final TextView addressLabel;
 
   @NonNull
+  public final TextView mapDescription;
+
+  @NonNull
   public final MapView mapView;
 
   private FragmentMapBinding(@NonNull FrameLayout rootView, @NonNull TextView addressLabel,
-      @NonNull MapView mapView) {
+      @NonNull TextView mapDescription, @NonNull MapView mapView) {
     this.rootView = rootView;
     this.addressLabel = addressLabel;
+    this.mapDescription = mapDescription;
     this.mapView = mapView;
   }
 
@@ -66,13 +70,19 @@ public final class FragmentMapBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.mapDescription;
+      TextView mapDescription = ViewBindings.findChildViewById(rootView, id);
+      if (mapDescription == null) {
+        break missingId;
+      }
+
       id = R.id.mapView;
       MapView mapView = ViewBindings.findChildViewById(rootView, id);
       if (mapView == null) {
         break missingId;
       }
 
-      return new FragmentMapBinding((FrameLayout) rootView, addressLabel, mapView);
+      return new FragmentMapBinding((FrameLayout) rootView, addressLabel, mapDescription, mapView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

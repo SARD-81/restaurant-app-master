@@ -4,13 +4,17 @@ package com.ramin.restaurantapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.card.MaterialCardView;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import com.ramin.restaurantapp.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -18,24 +22,51 @@ import java.lang.String;
 
 public final class FragmentHomeBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
+
+  @NonNull
+  public final TextView categoryHeader;
 
   @NonNull
   public final RecyclerView categoryRecyclerView;
 
   @NonNull
+  public final MaterialButton fullMenuButton;
+
+  @NonNull
+  public final MaterialCardView heroCard;
+
+  @NonNull
+  public final TextView homeSubtitle;
+
+  @NonNull
+  public final TextInputEditText searchEditText;
+
+  @NonNull
+  public final TextInputLayout searchInputLayout;
+
+  @NonNull
   public final TextView titleText;
 
-  private FragmentHomeBinding(@NonNull LinearLayout rootView,
-      @NonNull RecyclerView categoryRecyclerView, @NonNull TextView titleText) {
+  private FragmentHomeBinding(@NonNull ConstraintLayout rootView, @NonNull TextView categoryHeader,
+      @NonNull RecyclerView categoryRecyclerView, @NonNull MaterialButton fullMenuButton,
+      @NonNull MaterialCardView heroCard, @NonNull TextView homeSubtitle,
+      @NonNull TextInputEditText searchEditText, @NonNull TextInputLayout searchInputLayout,
+      @NonNull TextView titleText) {
     this.rootView = rootView;
+    this.categoryHeader = categoryHeader;
     this.categoryRecyclerView = categoryRecyclerView;
+    this.fullMenuButton = fullMenuButton;
+    this.heroCard = heroCard;
+    this.homeSubtitle = homeSubtitle;
+    this.searchEditText = searchEditText;
+    this.searchInputLayout = searchInputLayout;
     this.titleText = titleText;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -60,9 +91,45 @@ public final class FragmentHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.categoryHeader;
+      TextView categoryHeader = ViewBindings.findChildViewById(rootView, id);
+      if (categoryHeader == null) {
+        break missingId;
+      }
+
       id = R.id.categoryRecyclerView;
       RecyclerView categoryRecyclerView = ViewBindings.findChildViewById(rootView, id);
       if (categoryRecyclerView == null) {
+        break missingId;
+      }
+
+      id = R.id.fullMenuButton;
+      MaterialButton fullMenuButton = ViewBindings.findChildViewById(rootView, id);
+      if (fullMenuButton == null) {
+        break missingId;
+      }
+
+      id = R.id.heroCard;
+      MaterialCardView heroCard = ViewBindings.findChildViewById(rootView, id);
+      if (heroCard == null) {
+        break missingId;
+      }
+
+      id = R.id.homeSubtitle;
+      TextView homeSubtitle = ViewBindings.findChildViewById(rootView, id);
+      if (homeSubtitle == null) {
+        break missingId;
+      }
+
+      id = R.id.searchEditText;
+      TextInputEditText searchEditText = ViewBindings.findChildViewById(rootView, id);
+      if (searchEditText == null) {
+        break missingId;
+      }
+
+      id = R.id.searchInputLayout;
+      TextInputLayout searchInputLayout = ViewBindings.findChildViewById(rootView, id);
+      if (searchInputLayout == null) {
         break missingId;
       }
 
@@ -72,7 +139,9 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentHomeBinding((LinearLayout) rootView, categoryRecyclerView, titleText);
+      return new FragmentHomeBinding((ConstraintLayout) rootView, categoryHeader,
+          categoryRecyclerView, fullMenuButton, heroCard, homeSubtitle, searchEditText,
+          searchInputLayout, titleText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

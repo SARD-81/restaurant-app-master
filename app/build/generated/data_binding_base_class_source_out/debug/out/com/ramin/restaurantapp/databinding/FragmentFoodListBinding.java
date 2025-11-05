@@ -4,13 +4,16 @@ package com.ramin.restaurantapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.card.MaterialCardView;
+import com.google.android.material.chip.Chip;
+import com.google.android.material.chip.ChipGroup;
 import com.ramin.restaurantapp.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -18,10 +21,22 @@ import java.lang.String;
 
 public final class FragmentFoodListBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
+
+  @NonNull
+  public final Chip categoryChip;
 
   @NonNull
   public final TextView emptyView;
+
+  @NonNull
+  public final ChipGroup foodChipGroup;
+
+  @NonNull
+  public final MaterialCardView foodHeaderCard;
+
+  @NonNull
+  public final TextView foodListSubtitle;
 
   @NonNull
   public final TextView foodListTitle;
@@ -29,17 +44,28 @@ public final class FragmentFoodListBinding implements ViewBinding {
   @NonNull
   public final RecyclerView foodRecyclerView;
 
-  private FragmentFoodListBinding(@NonNull LinearLayout rootView, @NonNull TextView emptyView,
-      @NonNull TextView foodListTitle, @NonNull RecyclerView foodRecyclerView) {
+  @NonNull
+  public final Chip subcategoryChip;
+
+  private FragmentFoodListBinding(@NonNull ConstraintLayout rootView, @NonNull Chip categoryChip,
+      @NonNull TextView emptyView, @NonNull ChipGroup foodChipGroup,
+      @NonNull MaterialCardView foodHeaderCard, @NonNull TextView foodListSubtitle,
+      @NonNull TextView foodListTitle, @NonNull RecyclerView foodRecyclerView,
+      @NonNull Chip subcategoryChip) {
     this.rootView = rootView;
+    this.categoryChip = categoryChip;
     this.emptyView = emptyView;
+    this.foodChipGroup = foodChipGroup;
+    this.foodHeaderCard = foodHeaderCard;
+    this.foodListSubtitle = foodListSubtitle;
     this.foodListTitle = foodListTitle;
     this.foodRecyclerView = foodRecyclerView;
+    this.subcategoryChip = subcategoryChip;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -64,9 +90,33 @@ public final class FragmentFoodListBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.categoryChip;
+      Chip categoryChip = ViewBindings.findChildViewById(rootView, id);
+      if (categoryChip == null) {
+        break missingId;
+      }
+
       id = R.id.emptyView;
       TextView emptyView = ViewBindings.findChildViewById(rootView, id);
       if (emptyView == null) {
+        break missingId;
+      }
+
+      id = R.id.foodChipGroup;
+      ChipGroup foodChipGroup = ViewBindings.findChildViewById(rootView, id);
+      if (foodChipGroup == null) {
+        break missingId;
+      }
+
+      id = R.id.foodHeaderCard;
+      MaterialCardView foodHeaderCard = ViewBindings.findChildViewById(rootView, id);
+      if (foodHeaderCard == null) {
+        break missingId;
+      }
+
+      id = R.id.foodListSubtitle;
+      TextView foodListSubtitle = ViewBindings.findChildViewById(rootView, id);
+      if (foodListSubtitle == null) {
         break missingId;
       }
 
@@ -82,8 +132,15 @@ public final class FragmentFoodListBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentFoodListBinding((LinearLayout) rootView, emptyView, foodListTitle,
-          foodRecyclerView);
+      id = R.id.subcategoryChip;
+      Chip subcategoryChip = ViewBindings.findChildViewById(rootView, id);
+      if (subcategoryChip == null) {
+        break missingId;
+      }
+
+      return new FragmentFoodListBinding((ConstraintLayout) rootView, categoryChip, emptyView,
+          foodChipGroup, foodHeaderCard, foodListSubtitle, foodListTitle, foodRecyclerView,
+          subcategoryChip);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

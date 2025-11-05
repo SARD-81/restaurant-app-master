@@ -1,6 +1,6 @@
 package com.ramin.restaurantapp.data;
 
-@kotlin.Metadata(mv = {1, 9, 0}, k = 1, xi = 48, d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0018\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\b\u0003\b\u0087\b\u0018\u00002\u00020\u0001BA\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\b\u001a\u00020\u0005\u0012\u0006\u0010\t\u001a\u00020\u0005\u0012\u0006\u0010\n\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u000bJ\t\u0010\u0015\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0016\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\u0017\u001a\u00020\u0005H\u00c6\u0003J\u000b\u0010\u0018\u001a\u0004\u0018\u00010\u0005H\u00c6\u0003J\t\u0010\u0019\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\u001a\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\u001b\u001a\u00020\u0005H\u00c6\u0003JQ\u0010\u001c\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\b\u001a\u00020\u00052\b\b\u0002\u0010\t\u001a\u00020\u00052\b\b\u0002\u0010\n\u001a\u00020\u0005H\u00c6\u0001J\u0013\u0010\u001d\u001a\u00020\u001e2\b\u0010\u001f\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010 \u001a\u00020\u0003H\u00d6\u0001J\f\u0010!\u001a\b\u0012\u0004\u0012\u00020\u00050\"J\t\u0010#\u001a\u00020\u0005H\u00d6\u0001J\f\u0010$\u001a\b\u0012\u0004\u0012\u00020\u00050\"R\u0016\u0010\u0006\u001a\u00020\u00058\u0006X\u0087\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0018\u0010\u0007\u001a\u0004\u0018\u00010\u00058\u0006X\u0087\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\rR\u0011\u0010\b\u001a\u00020\u0005\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\rR\u0016\u0010\u0002\u001a\u00020\u00038\u0006X\u0087\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u0016\u0010\t\u001a\u00020\u00058\u0006X\u0087\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\rR\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\rR\u0016\u0010\n\u001a\u00020\u00058\u0006X\u0087\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\r\u00a8\u0006%"}, d2 = {"Lcom/ramin/restaurantapp/data/FoodEntity;", "", "id", "", "name", "", "categoryLevel1", "categoryLevel2", "description", "imageUrls", "videoUrls", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "getCategoryLevel1", "()Ljava/lang/String;", "getCategoryLevel2", "getDescription", "getId", "()I", "getImageUrls", "getName", "getVideoUrls", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "copy", "equals", "", "other", "hashCode", "imageList", "", "toString", "videoList", "app_debug"})
+@kotlin.Metadata(mv = {1, 9, 0}, k = 1, xi = 48, d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0018\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\b\u0003\b\u0087\b\u0018\u00002\u00020\u0001BA\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\b\u001a\u00020\u0005\u0012\u0006\u0010\t\u001a\u00020\u0005\u0012\u0006\u0010\n\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u000bJ\t\u0010\u0015\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0016\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\u0017\u001a\u00020\u0005H\u00c6\u0003J\u000b\u0010\u0018\u001a\u0004\u0018\u00010\u0005H\u00c6\u0003J\t\u0010\u0019\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\u001a\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\u001b\u001a\u00020\u0005H\u00c6\u0003JQ\u0010\u001c\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\b\u001a\u00020\u00052\b\b\u0002\u0010\t\u001a\u00020\u00052\b\b\u0002\u0010\n\u001a\u00020\u0005H\u00c6\u0001J\u0013\u0010\u001d\u001a\u00020\u001e2\b\u0010\u001f\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010 \u001a\u00020\u0003H\u00d6\u0001J\f\u0010!\u001a\b\u0012\u0004\u0012\u00020\u00050\"J\t\u0010#\u001a\u00020\u0005H\u00d6\u0001J\f\u0010$\u001a\b\u0012\u0004\u0012\u00020\u00050\"R\u0016\u0010\u0006\u001a\u00020\u00058\u0006X\u0087\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0018\u0010\u0007\u001a\u0004\u0018\u00010\u00058\u0006X\u0087\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\rR\u0011\u0010\b\u001a\u00020\u0005\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\rR\u0016\u0010\u0002\u001a\u00020\u00038\u0006X\u0087\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\rR\u0016\u0010\t\u001a\u00020\u00058\u0006X\u0087\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\rR\u0016\u0010\n\u001a\u00020\u00058\u0006X\u0087\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\r\u00a8\u0006%"}, d2 = {"Lcom/ramin/restaurantapp/data/FoodEntity;", "", "id", "", "name", "", "categoryLevel1", "categoryLevel2", "description", "photo", "video", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "getCategoryLevel1", "()Ljava/lang/String;", "getCategoryLevel2", "getDescription", "getId", "()I", "getName", "getPhoto", "getVideo", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "copy", "equals", "", "other", "hashCode", "imageList", "", "toString", "videoList", "app_debug"})
 @androidx.room.Entity(tableName = "food")
 public final class FoodEntity {
     @androidx.room.PrimaryKey(autoGenerate = true)
@@ -15,20 +15,20 @@ public final class FoodEntity {
     private final java.lang.String categoryLevel2 = null;
     @org.jetbrains.annotations.NotNull()
     private final java.lang.String description = null;
-    @androidx.room.ColumnInfo(name = "image_urls")
+    @androidx.room.ColumnInfo(name = "photo")
     @org.jetbrains.annotations.NotNull()
-    private final java.lang.String imageUrls = null;
-    @androidx.room.ColumnInfo(name = "video_urls")
+    private final java.lang.String photo = null;
+    @androidx.room.ColumnInfo(name = "video")
     @org.jetbrains.annotations.NotNull()
-    private final java.lang.String videoUrls = null;
+    private final java.lang.String video = null;
     
     public FoodEntity(int id, @org.jetbrains.annotations.NotNull()
     java.lang.String name, @org.jetbrains.annotations.NotNull()
     java.lang.String categoryLevel1, @org.jetbrains.annotations.Nullable()
     java.lang.String categoryLevel2, @org.jetbrains.annotations.NotNull()
     java.lang.String description, @org.jetbrains.annotations.NotNull()
-    java.lang.String imageUrls, @org.jetbrains.annotations.NotNull()
-    java.lang.String videoUrls) {
+    java.lang.String photo, @org.jetbrains.annotations.NotNull()
+    java.lang.String video) {
         super();
     }
     
@@ -57,12 +57,12 @@ public final class FoodEntity {
     }
     
     @org.jetbrains.annotations.NotNull()
-    public final java.lang.String getImageUrls() {
+    public final java.lang.String getPhoto() {
         return null;
     }
     
     @org.jetbrains.annotations.NotNull()
-    public final java.lang.String getVideoUrls() {
+    public final java.lang.String getVideo() {
         return null;
     }
     
@@ -116,8 +116,8 @@ public final class FoodEntity {
     java.lang.String categoryLevel1, @org.jetbrains.annotations.Nullable()
     java.lang.String categoryLevel2, @org.jetbrains.annotations.NotNull()
     java.lang.String description, @org.jetbrains.annotations.NotNull()
-    java.lang.String imageUrls, @org.jetbrains.annotations.NotNull()
-    java.lang.String videoUrls) {
+    java.lang.String photo, @org.jetbrains.annotations.NotNull()
+    java.lang.String video) {
         return null;
     }
     

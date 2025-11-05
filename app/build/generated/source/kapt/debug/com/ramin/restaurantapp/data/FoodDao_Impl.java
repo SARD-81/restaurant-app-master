@@ -33,7 +33,7 @@ public final class FoodDao_Impl implements FoodDao {
     this.__insertionAdapterOfFoodEntity = new EntityInsertionAdapter<FoodEntity>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR REPLACE INTO `food` (`id`,`name`,`category_1`,`category_2`,`description`,`image_urls`,`video_urls`) VALUES (nullif(?, 0),?,?,?,?,?,?)";
+        return "INSERT OR REPLACE INTO `food` (`id`,`name`,`category_1`,`category_2`,`description`,`photo`,`video`) VALUES (nullif(?, 0),?,?,?,?,?,?)";
       }
 
       @Override
@@ -59,15 +59,15 @@ public final class FoodDao_Impl implements FoodDao {
         } else {
           stmt.bindString(5, value.getDescription());
         }
-        if (value.getImageUrls() == null) {
+        if (value.getPhoto() == null) {
           stmt.bindNull(6);
         } else {
-          stmt.bindString(6, value.getImageUrls());
+          stmt.bindString(6, value.getPhoto());
         }
-        if (value.getVideoUrls() == null) {
+        if (value.getVideo() == null) {
           stmt.bindNull(7);
         } else {
-          stmt.bindString(7, value.getVideoUrls());
+          stmt.bindString(7, value.getVideo());
         }
       }
     };
@@ -120,8 +120,8 @@ public final class FoodDao_Impl implements FoodDao {
           final int _cursorIndexOfCategoryLevel1 = CursorUtil.getColumnIndexOrThrow(_cursor, "category_1");
           final int _cursorIndexOfCategoryLevel2 = CursorUtil.getColumnIndexOrThrow(_cursor, "category_2");
           final int _cursorIndexOfDescription = CursorUtil.getColumnIndexOrThrow(_cursor, "description");
-          final int _cursorIndexOfImageUrls = CursorUtil.getColumnIndexOrThrow(_cursor, "image_urls");
-          final int _cursorIndexOfVideoUrls = CursorUtil.getColumnIndexOrThrow(_cursor, "video_urls");
+          final int _cursorIndexOfPhoto = CursorUtil.getColumnIndexOrThrow(_cursor, "photo");
+          final int _cursorIndexOfVideo = CursorUtil.getColumnIndexOrThrow(_cursor, "video");
           final List<FoodEntity> _result = new ArrayList<FoodEntity>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final FoodEntity _item;
@@ -151,19 +151,19 @@ public final class FoodDao_Impl implements FoodDao {
             } else {
               _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
             }
-            final String _tmpImageUrls;
-            if (_cursor.isNull(_cursorIndexOfImageUrls)) {
-              _tmpImageUrls = null;
+            final String _tmpPhoto;
+            if (_cursor.isNull(_cursorIndexOfPhoto)) {
+              _tmpPhoto = null;
             } else {
-              _tmpImageUrls = _cursor.getString(_cursorIndexOfImageUrls);
+              _tmpPhoto = _cursor.getString(_cursorIndexOfPhoto);
             }
-            final String _tmpVideoUrls;
-            if (_cursor.isNull(_cursorIndexOfVideoUrls)) {
-              _tmpVideoUrls = null;
+            final String _tmpVideo;
+            if (_cursor.isNull(_cursorIndexOfVideo)) {
+              _tmpVideo = null;
             } else {
-              _tmpVideoUrls = _cursor.getString(_cursorIndexOfVideoUrls);
+              _tmpVideo = _cursor.getString(_cursorIndexOfVideo);
             }
-            _item = new FoodEntity(_tmpId,_tmpName,_tmpCategoryLevel1,_tmpCategoryLevel2,_tmpDescription,_tmpImageUrls,_tmpVideoUrls);
+            _item = new FoodEntity(_tmpId,_tmpName,_tmpCategoryLevel1,_tmpCategoryLevel2,_tmpDescription,_tmpPhoto,_tmpVideo);
             _result.add(_item);
           }
           return _result;
@@ -269,8 +269,8 @@ public final class FoodDao_Impl implements FoodDao {
           final int _cursorIndexOfCategoryLevel1 = CursorUtil.getColumnIndexOrThrow(_cursor, "category_1");
           final int _cursorIndexOfCategoryLevel2 = CursorUtil.getColumnIndexOrThrow(_cursor, "category_2");
           final int _cursorIndexOfDescription = CursorUtil.getColumnIndexOrThrow(_cursor, "description");
-          final int _cursorIndexOfImageUrls = CursorUtil.getColumnIndexOrThrow(_cursor, "image_urls");
-          final int _cursorIndexOfVideoUrls = CursorUtil.getColumnIndexOrThrow(_cursor, "video_urls");
+          final int _cursorIndexOfPhoto = CursorUtil.getColumnIndexOrThrow(_cursor, "photo");
+          final int _cursorIndexOfVideo = CursorUtil.getColumnIndexOrThrow(_cursor, "video");
           final List<FoodEntity> _result = new ArrayList<FoodEntity>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final FoodEntity _item;
@@ -300,19 +300,19 @@ public final class FoodDao_Impl implements FoodDao {
             } else {
               _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
             }
-            final String _tmpImageUrls;
-            if (_cursor.isNull(_cursorIndexOfImageUrls)) {
-              _tmpImageUrls = null;
+            final String _tmpPhoto;
+            if (_cursor.isNull(_cursorIndexOfPhoto)) {
+              _tmpPhoto = null;
             } else {
-              _tmpImageUrls = _cursor.getString(_cursorIndexOfImageUrls);
+              _tmpPhoto = _cursor.getString(_cursorIndexOfPhoto);
             }
-            final String _tmpVideoUrls;
-            if (_cursor.isNull(_cursorIndexOfVideoUrls)) {
-              _tmpVideoUrls = null;
+            final String _tmpVideo;
+            if (_cursor.isNull(_cursorIndexOfVideo)) {
+              _tmpVideo = null;
             } else {
-              _tmpVideoUrls = _cursor.getString(_cursorIndexOfVideoUrls);
+              _tmpVideo = _cursor.getString(_cursorIndexOfVideo);
             }
-            _item = new FoodEntity(_tmpId,_tmpName,_tmpCategoryLevel1,_tmpCategoryLevel2,_tmpDescription,_tmpImageUrls,_tmpVideoUrls);
+            _item = new FoodEntity(_tmpId,_tmpName,_tmpCategoryLevel1,_tmpCategoryLevel2,_tmpDescription,_tmpPhoto,_tmpVideo);
             _result.add(_item);
           }
           return _result;
@@ -355,8 +355,8 @@ public final class FoodDao_Impl implements FoodDao {
           final int _cursorIndexOfCategoryLevel1 = CursorUtil.getColumnIndexOrThrow(_cursor, "category_1");
           final int _cursorIndexOfCategoryLevel2 = CursorUtil.getColumnIndexOrThrow(_cursor, "category_2");
           final int _cursorIndexOfDescription = CursorUtil.getColumnIndexOrThrow(_cursor, "description");
-          final int _cursorIndexOfImageUrls = CursorUtil.getColumnIndexOrThrow(_cursor, "image_urls");
-          final int _cursorIndexOfVideoUrls = CursorUtil.getColumnIndexOrThrow(_cursor, "video_urls");
+          final int _cursorIndexOfPhoto = CursorUtil.getColumnIndexOrThrow(_cursor, "photo");
+          final int _cursorIndexOfVideo = CursorUtil.getColumnIndexOrThrow(_cursor, "video");
           final List<FoodEntity> _result = new ArrayList<FoodEntity>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final FoodEntity _item;
@@ -386,19 +386,19 @@ public final class FoodDao_Impl implements FoodDao {
             } else {
               _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
             }
-            final String _tmpImageUrls;
-            if (_cursor.isNull(_cursorIndexOfImageUrls)) {
-              _tmpImageUrls = null;
+            final String _tmpPhoto;
+            if (_cursor.isNull(_cursorIndexOfPhoto)) {
+              _tmpPhoto = null;
             } else {
-              _tmpImageUrls = _cursor.getString(_cursorIndexOfImageUrls);
+              _tmpPhoto = _cursor.getString(_cursorIndexOfPhoto);
             }
-            final String _tmpVideoUrls;
-            if (_cursor.isNull(_cursorIndexOfVideoUrls)) {
-              _tmpVideoUrls = null;
+            final String _tmpVideo;
+            if (_cursor.isNull(_cursorIndexOfVideo)) {
+              _tmpVideo = null;
             } else {
-              _tmpVideoUrls = _cursor.getString(_cursorIndexOfVideoUrls);
+              _tmpVideo = _cursor.getString(_cursorIndexOfVideo);
             }
-            _item = new FoodEntity(_tmpId,_tmpName,_tmpCategoryLevel1,_tmpCategoryLevel2,_tmpDescription,_tmpImageUrls,_tmpVideoUrls);
+            _item = new FoodEntity(_tmpId,_tmpName,_tmpCategoryLevel1,_tmpCategoryLevel2,_tmpDescription,_tmpPhoto,_tmpVideo);
             _result.add(_item);
           }
           return _result;
@@ -430,8 +430,8 @@ public final class FoodDao_Impl implements FoodDao {
           final int _cursorIndexOfCategoryLevel1 = CursorUtil.getColumnIndexOrThrow(_cursor, "category_1");
           final int _cursorIndexOfCategoryLevel2 = CursorUtil.getColumnIndexOrThrow(_cursor, "category_2");
           final int _cursorIndexOfDescription = CursorUtil.getColumnIndexOrThrow(_cursor, "description");
-          final int _cursorIndexOfImageUrls = CursorUtil.getColumnIndexOrThrow(_cursor, "image_urls");
-          final int _cursorIndexOfVideoUrls = CursorUtil.getColumnIndexOrThrow(_cursor, "video_urls");
+          final int _cursorIndexOfPhoto = CursorUtil.getColumnIndexOrThrow(_cursor, "photo");
+          final int _cursorIndexOfVideo = CursorUtil.getColumnIndexOrThrow(_cursor, "video");
           final FoodEntity _result;
           if(_cursor.moveToFirst()) {
             final int _tmpId;
@@ -460,19 +460,19 @@ public final class FoodDao_Impl implements FoodDao {
             } else {
               _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
             }
-            final String _tmpImageUrls;
-            if (_cursor.isNull(_cursorIndexOfImageUrls)) {
-              _tmpImageUrls = null;
+            final String _tmpPhoto;
+            if (_cursor.isNull(_cursorIndexOfPhoto)) {
+              _tmpPhoto = null;
             } else {
-              _tmpImageUrls = _cursor.getString(_cursorIndexOfImageUrls);
+              _tmpPhoto = _cursor.getString(_cursorIndexOfPhoto);
             }
-            final String _tmpVideoUrls;
-            if (_cursor.isNull(_cursorIndexOfVideoUrls)) {
-              _tmpVideoUrls = null;
+            final String _tmpVideo;
+            if (_cursor.isNull(_cursorIndexOfVideo)) {
+              _tmpVideo = null;
             } else {
-              _tmpVideoUrls = _cursor.getString(_cursorIndexOfVideoUrls);
+              _tmpVideo = _cursor.getString(_cursorIndexOfVideo);
             }
-            _result = new FoodEntity(_tmpId,_tmpName,_tmpCategoryLevel1,_tmpCategoryLevel2,_tmpDescription,_tmpImageUrls,_tmpVideoUrls);
+            _result = new FoodEntity(_tmpId,_tmpName,_tmpCategoryLevel1,_tmpCategoryLevel2,_tmpDescription,_tmpPhoto,_tmpVideo);
           } else {
             _result = null;
           }
