@@ -1,33 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="220dp"
     android:layout_margin="8dp"
-    app:cardCornerRadius="16dp"
-    app:cardUseCompatPadding="true">
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:layoutDirection="rtl"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="false"
+    app:shapeAppearance="@style/ShapeAppearance.Restaurant.Large">
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/categoryImage"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
-            android:scaleType="centerCrop"
-            android:contentDescription="@string/home_title" />
+            android:layout_height="match_parent"
+            android:contentDescription="@string/home_categories_title"
+            android:scaleType="centerCrop" />
 
-        <TextView
-            android:id="@+id/categoryTitle"
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_overlay" />
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="12dp"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-            android:textColor="@color/black" />
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/categoryTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.Restaurant.Toolbar"
+                android:textColor="@color/text_primary_on_dark"
+                android:textStyle="bold"
+                tools:text="دسته‌بندی" />
 
+            <TextView
+                android:id="@+id/categorySubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/category_subtitle"
+                android:textAppearance="@style/TextAppearance.Restaurant.Body"
+                android:textColor="@color/text_secondary_on_dark" />
+        </LinearLayout>
+    </FrameLayout>
 </com.google.android.material.card.MaterialCardView>

@@ -1,14 +1,30 @@
-﻿<resources>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
     <string name="app_name">رستوران طعم تهران</string>
     <string name="menu_about">درباره ما</string>
-    <string name="menu_address">آدرس شعبه‌ها</string>
-    <string name="home_title">چه میل دارید؟</string>
-    <string name="search_hint">نام غذا یا دسته‌بندی را وارد کنید</string>
+    <string name="menu_address">نقشه و مسیر</string>
+    <string name="menu_call">رزرو تلفنی</string>
+    <string name="home_title">به دنیای طعم‌های خاص خوش آمدید</string>
+    <string name="home_subtitle">سرآشپز ما هر روز با ترکیبی از مواد تازه و ذوق ایرانی، منویی متفاوت خلق می‌کند.</string>
+    <string name="home_cta">مشاهده منوی کامل</string>
+    <string name="home_categories_title">دسته‌بندی‌های محبوب</string>
+    <string name="search_hint">نام غذا یا دسته‌بندی مورد نظر را جستجو کنید</string>
+    <string name="category_subtitle">گزینه‌های دست‌چین‌شده با الهام از فصل</string>
+    <string name="category_subtitle_detail">زیرمجموعه مورد نظر را انتخاب کنید تا پیشنهادات جذاب را ببینید.</string>
+    <string name="category_subtitle_has_children">زیر دسته‌های متنوع برای هر سلیقه</string>
+    <string name="category_subtitle_no_children">مستقیماً سراغ خوشمزه‌ترین انتخاب‌ها بروید</string>
+    <string name="subcategory_subtitle">با انتخاب این زیر دسته، پیشنهادات تازه را کشف کنید</string>
+    <string name="food_list_subtitle_default">گزیده‌ای از محبوب‌ترین غذاهای ما</string>
+    <string name="food_list_subtitle_category">انتخاب‌های ویژه برای دسته %1$s</string>
+    <string name="food_list_subtitle_subcategory">غذاهای منتخب زیر دسته %1$s</string>
     <string name="food_details_title">جزئیات کامل غذا</string>
+    <string name="food_detail_footer">برای تجربه‌ای خاطره‌انگیز، می‌توانید این غذا را با نوشیدنی‌های ویژه ما همراه کنید.</string>
+    <string name="reserve_button">رزرو میز برای همین غذا</string>
+    <string name="reserve_snackbar_message">درخواست رزرو برای %1$s ثبت شد. همکاران ما با شما تماس می‌گیرند.</string>
     <string name="map_title">نقشه و مسیر شعبه‌ها</string>
+    <string name="map_description">تمام شعبه‌های ما را روی نقشه پیدا کنید و مسیر دقیق را ببینید.</string>
     <string name="about_title">درباره رستوران طعم تهران</string>
     <string name="loading">در حال بارگذاری… لطفاً صبر کنید</string>
     <string name="no_items_available">آیتمی برای نمایش وجود ندارد.</string>
-    <string name="map_description">تمام شعبه‌های ما را روی نقشه پیدا کنید و مسیر دقیق را ببینید.</string>
     <string name="address_text">تهران، خیابان ولیعصر، کوچه ۱۲، پلاک ۷</string>
 </resources>

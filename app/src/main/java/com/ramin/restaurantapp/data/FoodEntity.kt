@@ -11,10 +11,10 @@ data class FoodEntity(
     @ColumnInfo(name = "category_1") val categoryLevel1: String,
     @ColumnInfo(name = "category_2") val categoryLevel2: String?,
     val description: String,
-    @ColumnInfo(name = "image_urls") val imageUrls: String,
-    @ColumnInfo(name = "video_urls") val videoUrls: String
+    @ColumnInfo(name = "photo") val photo: String,
+    @ColumnInfo(name = "video") val video: String
 ) {
-    fun imageList(): List<String> = imageUrls.split("|").filter { it.isNotBlank() }
+    fun imageList(): List<String> = photo.split("|").map { it.trim() }.filter { it.isNotEmpty() }
 
-    fun videoList(): List<String> = videoUrls.split("|").filter { it.isNotBlank() }
+    fun videoList(): List<String> = video.split("|").map { it.trim() }.filter { it.isNotEmpty() }
 }

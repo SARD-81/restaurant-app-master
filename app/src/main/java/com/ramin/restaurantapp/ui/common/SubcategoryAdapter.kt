@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.ramin.restaurantapp.R
 import com.ramin.restaurantapp.databinding.ItemCategoryBinding
 import com.ramin.restaurantapp.model.SubcategorySummary
 
@@ -26,6 +27,7 @@ class SubcategoryAdapter(
         RecyclerView.ViewHolder(binding.root) {
         fun bind(item: SubcategorySummary) {
             binding.categoryTitle.text = item.name
+            binding.categorySubtitle.text = binding.root.context.getString(R.string.subcategory_subtitle)
             if (item.imageUrl.isNotBlank()) {
                 Glide.with(binding.categoryImage.context)
                     .load(item.imageUrl)

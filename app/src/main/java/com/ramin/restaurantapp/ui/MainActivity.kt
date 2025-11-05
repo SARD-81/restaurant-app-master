@@ -1,5 +1,7 @@
 package com.ramin.restaurantapp.ui
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -39,8 +41,13 @@ class MainActivity : AppCompatActivity() {
                 navController.navigate(R.id.aboutFragment)
                 true
             }
-            R.id.action_address -> {
+            R.id.action_map -> {
                 navController.navigate(R.id.mapFragment)
+                true
+            }
+            R.id.action_call -> {
+                val intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:02191009100"))
+                startActivity(intent)
                 true
             }
             else -> super.onOptionsItemSelected(item)

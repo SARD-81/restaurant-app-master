@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import com.google.android.material.snackbar.Snackbar
+import com.ramin.restaurantapp.R
 import com.ramin.restaurantapp.RestaurantApplication
 import com.ramin.restaurantapp.databinding.FragmentFoodDetailBinding
 import com.ramin.restaurantapp.model.FoodItem
@@ -46,6 +48,20 @@ class FoodDetailFragment : Fragment() {
         binding.foodTitle.text = foodItem.name
         binding.foodDescription.text = foodItem.description
         binding.mediaPager.adapter = MediaPagerAdapter(foodItem.media)
+        binding.detailCategoryChip.text = foodItem.category
+        if (foodItem.subcategory.isNullOrBlank()) {
+            binding.detailSubcategoryChip.visibility = View.GONE
+        } else {
+            binding.detailSubcategoryChip.visibility = View.VISIBLE
+            binding.detailSubcategoryChip.text = foodItem.subcategory
+        }
+        binding.reserveButton.setOnClickListener {
+            Snackbar.make(
+                binding.root,
+                getString(R.string.reserve_snackbar_message, foodItem.name),
+                Snackbar.LENGTH_SHORT
+            ).show()
+        }
         (requireActivity() as? MainActivity)?.supportActionBar?.title = foodItem.name
     }
 

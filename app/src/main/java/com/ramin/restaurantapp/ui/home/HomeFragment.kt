@@ -49,6 +49,9 @@ class HomeFragment : Fragment() {
             adapter = categoryAdapter
             layoutManager = GridLayoutManager(requireContext(), 2)
         }
+        binding.fullMenuButton.setOnClickListener {
+            binding.categoryRecyclerView.smoothScrollToPosition(0)
+        }
     }
 
     private fun observeCategories() {

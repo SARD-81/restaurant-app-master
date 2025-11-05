@@ -10,7 +10,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-@Database(entities = [FoodEntity::class], version = 1, exportSchema = false)
+@Database(entities = [FoodEntity::class], version = 2, exportSchema = false)
 abstract class RestaurantDatabase : RoomDatabase() {
     abstract fun foodDao(): FoodDao
 
