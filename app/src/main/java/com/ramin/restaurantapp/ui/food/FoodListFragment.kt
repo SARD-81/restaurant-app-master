@@ -22,7 +22,8 @@ class FoodListFragment : Fragment() {
     private val binding get() = _binding!!
 
     private val viewModel: RestaurantViewModel by activityViewModels {
-        RestaurantViewModel.Factory((requireActivity().application as RestaurantApplication).repository)
+        val application = requireActivity().application as RestaurantApplication
+        RestaurantViewModel.Factory(application.repository, application.preferences)
     }
 
     private lateinit var adapter: FoodAdapter

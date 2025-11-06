@@ -31,7 +31,8 @@ class HomeFragment : Fragment() {
     private val binding get() = _binding!!
 
     private val viewModel: RestaurantViewModel by activityViewModels {
-        RestaurantViewModel.Factory((requireActivity().application as RestaurantApplication).repository)
+        val application = requireActivity().application as RestaurantApplication
+        RestaurantViewModel.Factory(application.repository, application.preferences)
     }
 
     private lateinit var categoryAdapter: CategoryAdapter
@@ -50,9 +51,11 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupCategoryGrid()
+        setupCollections()
         setupQuickCategories()
         setupSearchSection()
         observeCategories()
+        observeCollections()
         observeSearchResults()
     }
 
@@ -65,6 +68,15 @@ class HomeFragment : Fragment() {
         }
         binding.fullMenuButton.setOnClickListener {
             findNavController().navigate(R.id.action_home_to_full_menu)
+        }
+    }
+
+    private fun setupCollections() {
+        binding.likedCollectionCard.setOnClickListener {
+            findNavController().navigate(R.id.action_home_to_liked_collection)
+        }
+        binding.savedCollectionCard.setOnClickListener {
+            findNavController().navigate(R.id.action_home_to_saved_collection)
         }
     }
 
@@ -111,6 +123,35 @@ class HomeFragment : Fragment() {
         viewModel.categoriesLiveData().observe(viewLifecycleOwner) { categories ->
             categoryAdapter.submitList(categories)
             categoryChipAdapter.submitList(categories.sortedByDescending { it.itemCount })
+        }
+    }
+
+    private fun observeCollections() {
+        viewModel.likedFoodsLiveData().observe(viewLifecycleOwner) { likedItems ->
+            if (likedItems.isEmpty()) {
+                binding.likedCollectionCount.text = getString(R.string.home_liked_empty)
+                binding.likedCollectionCard.alpha = 0.8f
+            } else {
+                binding.likedCollectionCount.text = resources.getQuantityString(
+                    R.plurals.collection_result_count,
+                    likedItems.size,
+                    likedItems.size
+                )
+                binding.likedCollectionCard.alpha = 1f
+            }
+        }
+        viewModel.savedFoodsLiveData().observe(viewLifecycleOwner) { savedItems ->
+            if (savedItems.isEmpty()) {
+                binding.savedCollectionCount.text = getString(R.string.home_saved_empty)
+                binding.savedCollectionCard.alpha = 0.8f
+            } else {
+                binding.savedCollectionCount.text = resources.getQuantityString(
+                    R.plurals.collection_result_count,
+                    savedItems.size,
+                    savedItems.size
+                )
+                binding.savedCollectionCard.alpha = 1f
+            }
         }
     }
 

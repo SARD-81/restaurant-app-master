@@ -4,6 +4,8 @@
     <string name="menu_about">درباره ما</string>
     <string name="menu_address">نقشه و مسیر</string>
     <string name="menu_call">رزرو تلفنی</string>
+    <string name="menu_liked">علاقه‌مندی‌های من</string>
+    <string name="menu_saved">دفترچه طعم‌ها</string>
     <string name="menu_theme">حالت شب</string>
     <string name="theme_toggle_dark">فعال‌سازی حالت تیره</string>
     <string name="theme_toggle_light">فعال‌سازی حالت روشن</string>
@@ -12,6 +14,13 @@
     <string name="home_cta">مشاهده منوی کامل</string>
     <string name="home_quick_categories_title">دسته‌های پرطرفدار</string>
     <string name="home_categories_title">دسته‌بندی‌های محبوب</string>
+    <string name="home_collections_caption">به راحتی به لیست‌های شخصی‌تان دسترسی پیدا کنید</string>
+    <string name="home_liked_title">علاقه‌مندی‌ها</string>
+    <string name="home_liked_subtitle">غذاهایی که بیشترین امتیاز را گرفتند</string>
+    <string name="home_liked_empty">برای شروع یکی از غذاها را پسند کنید.</string>
+    <string name="home_saved_title">ذخیره‌شده‌ها</string>
+    <string name="home_saved_subtitle">برای زمانی که فرصت بیشتری دارید</string>
+    <string name="home_saved_empty">غذاهای دلخواهتان را ذخیره کنید تا بعداً برگردید.</string>
     <string name="search_hint">نام غذا یا دسته‌بندی مورد نظر را جستجو کنید</string>
     <string name="search_results_title">نتایج جستجو</string>
     <string name="search_results_empty">موردی مطابق با جستجوی شما پیدا نشد. دسته‌های پیشنهادی را امتحان کنید.</string>
@@ -33,7 +42,9 @@
     <string name="food_detail_media_play">پخش ویدئو</string>
     <string name="food_detail_subtitle_format">%1$s • %2$s</string>
     <string name="food_detail_like_feedback">%1$s به علاقه‌مندی‌های شما اضافه شد.</string>
+    <string name="food_detail_like_removed_feedback">%1$s از علاقه‌مندی‌های شما حذف شد.</string>
     <string name="food_detail_save_feedback">%1$s در دفترچه طعم‌ها ذخیره شد.</string>
+    <string name="food_detail_save_removed_feedback">%1$s از دفترچه طعم‌ها حذف شد.</string>
     <string name="food_detail_share_text">طعم بی‌نظیر %1$s را در رستوران طعم تهران امتحان کنید!</string>
     <string name="map_title">نقشه و مسیر شعبه‌ها</string>
     <string name="map_description">تمام شعبه‌های ما را روی نقشه پیدا کنید و مسیر دقیق را ببینید.</string>
@@ -45,6 +56,14 @@
     <string name="full_menu_subtitle">همه غذاهای ما در یک نگاه؛ از پیش‌غذا تا دسر</string>
     <string name="full_menu_empty">برای این دسته فعلاً غذایی ثبت نشده است.</string>
     <string name="full_menu_filter_all">همه دسته‌ها</string>
+    <string name="collection_liked_title">گنجینه طعم‌های محبوب شما</string>
+    <string name="collection_liked_subtitle">هرچه دوست داشتید اینجاست؛ آماده برای تجربه‌ای دوباره.</string>
+    <string name="collection_saved_title">دفترچه طعم‌های ذخیره‌شده</string>
+    <string name="collection_saved_subtitle">هر زمان آماده بودید، از اینجا شروع کنید.</string>
+    <string name="collection_empty_liked">هنوز غذایی به علاقه‌مندی‌های خود اضافه نکرده‌اید.</string>
+    <string name="collection_empty_saved">غذاهای مورد علاقه‌تان را ذخیره کنید تا بعداً سریع به آن‌ها برسید.</string>
+    <string name="favorite_badge_content_description">افزوده شده به علاقه‌مندی‌ها</string>
+    <string name="saved_badge_content_description">ذخیره شده برای بعد</string>
     <plurals name="category_item_count">
         <item quantity="one">%d پیشنهاد منتخب</item>
         <item quantity="other">%d پیشنهاد منتخب</item>
@@ -56,5 +75,9 @@
     <plurals name="full_menu_result_count">
         <item quantity="one">%d آیتم در این دسته موجود است</item>
         <item quantity="other">%d آیتم در این دسته موجود است</item>
+    </plurals>
+    <plurals name="collection_result_count">
+        <item quantity="one">%d انتخاب در این مجموعه موجود است</item>
+        <item quantity="other">%d انتخاب در این مجموعه موجود است</item>
     </plurals>
 </resources>
