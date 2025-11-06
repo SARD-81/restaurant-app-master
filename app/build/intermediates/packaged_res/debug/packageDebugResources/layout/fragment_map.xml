@@ -30,7 +30,7 @@
                 android:padding="12dp"
                 android:text="@string/address_text"
                 android:textAppearance="@style/TextAppearance.Restaurant.Body"
-                android:textColor="@color/text_primary_on_dark" />
+                android:textColor="?attr/colorOnSurface" />
 
             <TextView
                 android:id="@+id/mapDescription"
@@ -41,7 +41,7 @@
                 android:paddingStart="12dp"
                 android:text="@string/map_description"
                 android:textAppearance="@style/TextAppearance.Restaurant.Body"
-                android:textColor="@color/text_secondary_on_dark" />
+                android:textColor="?attr/colorOnSurfaceVariant" />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 

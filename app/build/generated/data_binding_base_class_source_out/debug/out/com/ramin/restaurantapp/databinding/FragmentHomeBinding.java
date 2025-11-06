@@ -41,13 +41,43 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final MaterialCardView heroCard;
 
   @NonNull
+  public final TextView homeCollectionsCaption;
+
+  @NonNull
+  public final LinearLayout homeCollectionsRow;
+
+  @NonNull
   public final TextView homeSubtitle;
+
+  @NonNull
+  public final MaterialCardView likedCollectionCard;
+
+  @NonNull
+  public final TextView likedCollectionCount;
+
+  @NonNull
+  public final TextView likedCollectionSubtitle;
+
+  @NonNull
+  public final TextView likedCollectionTitle;
 
   @NonNull
   public final TextView quickCategoryHeader;
 
   @NonNull
   public final RecyclerView quickCategoryRecyclerView;
+
+  @NonNull
+  public final MaterialCardView savedCollectionCard;
+
+  @NonNull
+  public final TextView savedCollectionCount;
+
+  @NonNull
+  public final TextView savedCollectionSubtitle;
+
+  @NonNull
+  public final TextView savedCollectionTitle;
 
   @NonNull
   public final TextInputEditText searchEditText;
@@ -76,8 +106,13 @@ public final class FragmentHomeBinding implements ViewBinding {
   private FragmentHomeBinding(@NonNull NestedScrollView rootView,
       @NonNull LinearLayout categoriesContainer, @NonNull TextView categoryHeader,
       @NonNull RecyclerView categoryRecyclerView, @NonNull MaterialButton fullMenuButton,
-      @NonNull MaterialCardView heroCard, @NonNull TextView homeSubtitle,
+      @NonNull MaterialCardView heroCard, @NonNull TextView homeCollectionsCaption,
+      @NonNull LinearLayout homeCollectionsRow, @NonNull TextView homeSubtitle,
+      @NonNull MaterialCardView likedCollectionCard, @NonNull TextView likedCollectionCount,
+      @NonNull TextView likedCollectionSubtitle, @NonNull TextView likedCollectionTitle,
       @NonNull TextView quickCategoryHeader, @NonNull RecyclerView quickCategoryRecyclerView,
+      @NonNull MaterialCardView savedCollectionCard, @NonNull TextView savedCollectionCount,
+      @NonNull TextView savedCollectionSubtitle, @NonNull TextView savedCollectionTitle,
       @NonNull TextInputEditText searchEditText, @NonNull TextInputLayout searchInputLayout,
       @NonNull LinearLayout searchResultsContainer, @NonNull TextView searchResultsCount,
       @NonNull TextView searchResultsEmpty, @NonNull RecyclerView searchResultsRecyclerView,
@@ -88,9 +123,19 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.categoryRecyclerView = categoryRecyclerView;
     this.fullMenuButton = fullMenuButton;
     this.heroCard = heroCard;
+    this.homeCollectionsCaption = homeCollectionsCaption;
+    this.homeCollectionsRow = homeCollectionsRow;
     this.homeSubtitle = homeSubtitle;
+    this.likedCollectionCard = likedCollectionCard;
+    this.likedCollectionCount = likedCollectionCount;
+    this.likedCollectionSubtitle = likedCollectionSubtitle;
+    this.likedCollectionTitle = likedCollectionTitle;
     this.quickCategoryHeader = quickCategoryHeader;
     this.quickCategoryRecyclerView = quickCategoryRecyclerView;
+    this.savedCollectionCard = savedCollectionCard;
+    this.savedCollectionCount = savedCollectionCount;
+    this.savedCollectionSubtitle = savedCollectionSubtitle;
+    this.savedCollectionTitle = savedCollectionTitle;
     this.searchEditText = searchEditText;
     this.searchInputLayout = searchInputLayout;
     this.searchResultsContainer = searchResultsContainer;
@@ -158,9 +203,45 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.homeCollectionsCaption;
+      TextView homeCollectionsCaption = ViewBindings.findChildViewById(rootView, id);
+      if (homeCollectionsCaption == null) {
+        break missingId;
+      }
+
+      id = R.id.homeCollectionsRow;
+      LinearLayout homeCollectionsRow = ViewBindings.findChildViewById(rootView, id);
+      if (homeCollectionsRow == null) {
+        break missingId;
+      }
+
       id = R.id.homeSubtitle;
       TextView homeSubtitle = ViewBindings.findChildViewById(rootView, id);
       if (homeSubtitle == null) {
+        break missingId;
+      }
+
+      id = R.id.likedCollectionCard;
+      MaterialCardView likedCollectionCard = ViewBindings.findChildViewById(rootView, id);
+      if (likedCollectionCard == null) {
+        break missingId;
+      }
+
+      id = R.id.likedCollectionCount;
+      TextView likedCollectionCount = ViewBindings.findChildViewById(rootView, id);
+      if (likedCollectionCount == null) {
+        break missingId;
+      }
+
+      id = R.id.likedCollectionSubtitle;
+      TextView likedCollectionSubtitle = ViewBindings.findChildViewById(rootView, id);
+      if (likedCollectionSubtitle == null) {
+        break missingId;
+      }
+
+      id = R.id.likedCollectionTitle;
+      TextView likedCollectionTitle = ViewBindings.findChildViewById(rootView, id);
+      if (likedCollectionTitle == null) {
         break missingId;
       }
 
@@ -173,6 +254,30 @@ public final class FragmentHomeBinding implements ViewBinding {
       id = R.id.quickCategoryRecyclerView;
       RecyclerView quickCategoryRecyclerView = ViewBindings.findChildViewById(rootView, id);
       if (quickCategoryRecyclerView == null) {
+        break missingId;
+      }
+
+      id = R.id.savedCollectionCard;
+      MaterialCardView savedCollectionCard = ViewBindings.findChildViewById(rootView, id);
+      if (savedCollectionCard == null) {
+        break missingId;
+      }
+
+      id = R.id.savedCollectionCount;
+      TextView savedCollectionCount = ViewBindings.findChildViewById(rootView, id);
+      if (savedCollectionCount == null) {
+        break missingId;
+      }
+
+      id = R.id.savedCollectionSubtitle;
+      TextView savedCollectionSubtitle = ViewBindings.findChildViewById(rootView, id);
+      if (savedCollectionSubtitle == null) {
+        break missingId;
+      }
+
+      id = R.id.savedCollectionTitle;
+      TextView savedCollectionTitle = ViewBindings.findChildViewById(rootView, id);
+      if (savedCollectionTitle == null) {
         break missingId;
       }
 
@@ -225,8 +330,11 @@ public final class FragmentHomeBinding implements ViewBinding {
       }
 
       return new FragmentHomeBinding((NestedScrollView) rootView, categoriesContainer,
-          categoryHeader, categoryRecyclerView, fullMenuButton, heroCard, homeSubtitle,
-          quickCategoryHeader, quickCategoryRecyclerView, searchEditText, searchInputLayout,
+          categoryHeader, categoryRecyclerView, fullMenuButton, heroCard, homeCollectionsCaption,
+          homeCollectionsRow, homeSubtitle, likedCollectionCard, likedCollectionCount,
+          likedCollectionSubtitle, likedCollectionTitle, quickCategoryHeader,
+          quickCategoryRecyclerView, savedCollectionCard, savedCollectionCount,
+          savedCollectionSubtitle, savedCollectionTitle, searchEditText, searchInputLayout,
           searchResultsContainer, searchResultsCount, searchResultsEmpty, searchResultsRecyclerView,
           searchResultsTitle, titleText);
     }

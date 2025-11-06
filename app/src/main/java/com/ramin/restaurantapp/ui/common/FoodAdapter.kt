@@ -14,7 +14,7 @@ import com.ramin.restaurantapp.model.FoodItem
 
 class FoodAdapter(
     private val onItemSelected: (FoodItem) -> Unit,
-    private val badgeProvider: ((FoodItem) -> FoodBadge)? = null,
+    private val badgeProvider: ((FoodItem) -> FoodBadge?)? = null,
 ) : ListAdapter<FoodItem, FoodAdapter.FoodViewHolder>(DiffCallback) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FoodViewHolder {

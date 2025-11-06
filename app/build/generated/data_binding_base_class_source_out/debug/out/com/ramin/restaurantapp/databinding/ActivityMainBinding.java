@@ -10,7 +10,6 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.google.android.material.appbar.MaterialToolbar;
 import com.ramin.restaurantapp.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -24,10 +23,10 @@ public final class ActivityMainBinding implements ViewBinding {
   public final FragmentContainerView navHostFragment;
 
   @NonNull
-  public final MaterialToolbar toolbar;
+  public final CustomToolbarBinding toolbar;
 
   private ActivityMainBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull FragmentContainerView navHostFragment, @NonNull MaterialToolbar toolbar) {
+      @NonNull FragmentContainerView navHostFragment, @NonNull CustomToolbarBinding toolbar) {
     this.rootView = rootView;
     this.navHostFragment = navHostFragment;
     this.toolbar = toolbar;
@@ -67,12 +66,14 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       id = R.id.toolbar;
-      MaterialToolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      View toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
         break missingId;
       }
+      CustomToolbarBinding binding_toolbar = CustomToolbarBinding.bind(toolbar);
 
-      return new ActivityMainBinding((CoordinatorLayout) rootView, navHostFragment, toolbar);
+      return new ActivityMainBinding((CoordinatorLayout) rootView, navHostFragment,
+          binding_toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

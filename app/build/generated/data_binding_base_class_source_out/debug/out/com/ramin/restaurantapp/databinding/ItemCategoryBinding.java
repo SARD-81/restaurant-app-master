@@ -28,18 +28,13 @@ public final class ItemCategoryBinding implements ViewBinding {
   public final ImageView categoryImage;
 
   @NonNull
-  public final TextView categorySubtitle;
-
-  @NonNull
   public final TextView categoryTitle;
 
   private ItemCategoryBinding(@NonNull MaterialCardView rootView, @NonNull Chip categoryCountChip,
-      @NonNull ImageView categoryImage, @NonNull TextView categorySubtitle,
-      @NonNull TextView categoryTitle) {
+      @NonNull ImageView categoryImage, @NonNull TextView categoryTitle) {
     this.rootView = rootView;
     this.categoryCountChip = categoryCountChip;
     this.categoryImage = categoryImage;
-    this.categorySubtitle = categorySubtitle;
     this.categoryTitle = categoryTitle;
   }
 
@@ -82,12 +77,6 @@ public final class ItemCategoryBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.categorySubtitle;
-      TextView categorySubtitle = ViewBindings.findChildViewById(rootView, id);
-      if (categorySubtitle == null) {
-        break missingId;
-      }
-
       id = R.id.categoryTitle;
       TextView categoryTitle = ViewBindings.findChildViewById(rootView, id);
       if (categoryTitle == null) {
@@ -95,7 +84,7 @@ public final class ItemCategoryBinding implements ViewBinding {
       }
 
       return new ItemCategoryBinding((MaterialCardView) rootView, categoryCountChip, categoryImage,
-          categorySubtitle, categoryTitle);
+          categoryTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

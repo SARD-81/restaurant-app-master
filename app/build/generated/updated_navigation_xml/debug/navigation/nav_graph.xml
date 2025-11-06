@@ -20,6 +20,12 @@ app:startDestination="@id/homeFragment" >
     <action
         android:id="@+id/action_home_to_food_detail"
         app:destination="@id/foodDetailFragment" />
+    <action
+        android:id="@+id/action_home_to_liked_collection"
+        app:destination="@id/likedFoodsFragment" />
+    <action
+        android:id="@+id/action_home_to_saved_collection"
+        app:destination="@id/savedFoodsFragment" />
 
 </fragment>
 <fragment
@@ -78,6 +84,28 @@ app:startDestination="@id/homeFragment" >
     <action
         android:id="@+id/action_full_menu_to_food_detail"
         app:destination="@id/foodDetailFragment" />
+
+</fragment>
+<fragment
+    android:id="@+id/likedFoodsFragment"
+    android:name="com.ramin.restaurantapp.ui.food.FoodCollectionFragment"
+    android:label="@string/menu_liked" >
+
+    <argument
+        android:name="collectionType"
+        android:defaultValue="LIKED"
+        app:argType="string" />
+
+</fragment>
+<fragment
+    android:id="@+id/savedFoodsFragment"
+    android:name="com.ramin.restaurantapp.ui.food.FoodCollectionFragment"
+    android:label="@string/menu_saved" >
+
+    <argument
+        android:name="collectionType"
+        android:defaultValue="SAVED"
+        app:argType="string" />
 
 </fragment>
 <fragment

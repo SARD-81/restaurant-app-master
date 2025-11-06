@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">رستوران طعم تهران</string>
+    <string name="back_button">Back</string>
     <string name="menu_about">درباره ما</string>
     <string name="menu_address">نقشه و مسیر</string>
     <string name="menu_call">رزرو تلفنی</string>
@@ -65,8 +66,8 @@
     <string name="favorite_badge_content_description">افزوده شده به علاقه‌مندی‌ها</string>
     <string name="saved_badge_content_description">ذخیره شده برای بعد</string>
     <plurals name="category_item_count">
-        <item quantity="one">%d پیشنهاد منتخب</item>
-        <item quantity="other">%d پیشنهاد منتخب</item>
+        <item quantity="one">%d پیشنهاد</item>
+        <item quantity="other">%d پیشنهاد</item>
     </plurals>
     <plurals name="search_result_count">
         <item quantity="one">%d نتیجه یافت شد</item>

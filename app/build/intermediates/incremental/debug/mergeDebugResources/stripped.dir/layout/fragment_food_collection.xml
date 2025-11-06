@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:padding="20dp"
+    tools:context=".ui.food.FoodCollectionFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/collectionHero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/ShapeAppearance.Restaurant.Large">
+
+        <LinearLayout
+            android:id="@+id/collectionHeroContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/collectionHeroIcon"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:contentDescription="@string/app_name"
+                android:tint="@android:color/white"
+                tools:src="@drawable/ic_favorite_filled" />
+
+            <TextView
+                android:id="@+id/collectionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textAppearance="@style/TextAppearance.Restaurant.Toolbar"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                tools:text="لیست علاقه‌مندی‌ها" />
+
+            <TextView
+                android:id="@+id/collectionSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textAppearance="@style/TextAppearance.Restaurant.Body"
+                android:textColor="@android:color/white"
+                tools:text="گزینه‌های محبوب شما آماده سرو هستند." />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/collectionCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:textAppearance="@style/TextAppearance.Restaurant.Body"
+        app:layout_constraintBottom_toTopOf="@+id/collectionRecyclerView"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="۳ انتخاب در این مجموعه موجود است" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/collectionRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/collectionHero"
+        tools:listitem="@layout/item_food" />
+
+    <LinearLayout
+        android:id="@+id/collectionEmptyState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/collectionEmptyIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:alpha="0.85"
+            android:contentDescription="@string/no_items_available"
+            android:src="@drawable/ic_bookmark_border"
+            android:tint="@color/brand_secondary" />
+
+        <TextView
+            android:id="@+id/collectionEmptyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.Restaurant.Body"
+            tools:text="هنوز غذایی به علاقه‌مندی‌ها اضافه نکرده‌اید." />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -132,21 +132,21 @@ class FoodDetailFragment : Fragment() {
         binding.likeButton.imageTintList = ColorStateList.valueOf(
             ContextCompat.getColor(
                 context,
-                if (liked) R.color.brand_secondary else R.color.text_primary_on_dark
+                if (liked) R.color.secondary else R.color.on_surface
             )
         )
         binding.saveButton.setImageResource(if (saved) R.drawable.ic_bookmark_filled else R.drawable.ic_bookmark_border)
         binding.saveButton.imageTintList = ColorStateList.valueOf(
             ContextCompat.getColor(
                 context,
-                if (saved) R.color.brand_secondary else R.color.text_primary_on_dark
+                if (saved) R.color.secondary else R.color.on_surface
             )
         )
         binding.postBadge.setImageResource(if (saved) R.drawable.ic_bookmark_filled else R.drawable.ic_bookmark_border)
         binding.postBadge.imageTintList = ColorStateList.valueOf(
             ContextCompat.getColor(
                 context,
-                if (saved) R.color.brand_secondary else R.color.text_secondary_on_dark
+                if (saved) R.color.secondary else R.color.on_surface_variant
             )
         )
     }

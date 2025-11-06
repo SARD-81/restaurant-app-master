@@ -28,6 +28,18 @@
                 android:contentDescription="@string/food_details_title"
                 android:scaleType="centerCrop" />
 
+            <ImageView
+                android:id="@+id/foodBadge"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="top|end"
+                android:layout_margin="12dp"
+                android:background="@drawable/food_badge_background"
+                android:contentDescription="@string/app_name"
+                android:padding="8dp"
+                android:tint="@android:color/white"
+                android:visibility="gone" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -45,7 +57,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="@style/TextAppearance.Restaurant.Toolbar"
-                    android:textColor="@color/text_primary_on_dark"
+                    android:textColor="?attr/colorOnSurface"
                     android:textStyle="bold"
                     tools:text="نام غذا" />
 
@@ -69,7 +81,7 @@
             android:layout_marginTop="12dp"
             android:maxLines="3"
             android:textAppearance="@style/TextAppearance.Restaurant.Body"
-            android:textColor="@color/text_secondary_on_dark"
+            android:textColor="?attr/colorOnSurfaceVariant"
             android:ellipsize="end"
             tools:text="توضیح کوتاه در مورد غذا" />
     </LinearLayout>

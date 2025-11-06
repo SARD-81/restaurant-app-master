@@ -16,17 +16,9 @@
         android:background="@android:color/transparent"
         android:elevation="0dp">
 
-        <com.google.android.material.appbar.MaterialToolbar
+        <include
             android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:layoutDirection="rtl"
-            app:title="@string/app_name"
-            app:titleCentered="true"
-            app:titleTextColor="?attr/colorOnPrimary"
-            app:subtitleTextColor="?attr/colorOnPrimary" />
+            layout="@layout/custom_toolbar" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.fragment.app.FragmentContainerView

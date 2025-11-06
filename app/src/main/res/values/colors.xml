@@ -1,25 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="brand_primary">#5A2CE6</color>
-    <color name="brand_primary_dark">#3D127F</color>
-    <color name="brand_secondary">#FF9E6D</color>
-    <color name="brand_surface">#FFF8F3</color>
-    <color name="brand_surface_variant">#FFEFE2</color>
-    <color name="brand_surface_deep">#E5DBFF</color>
-    <color name="brand_card">#FFFFFFFF</color>
-    <color name="brand_toolbar">#F0E7FF</color>
-    <color name="brand_chip">#FFF2E5</color>
-    <color name="brand_chip_text">#4B1DB4</color>
-    <color name="brand_glass">#CCFFFFFF</color>
-    <color name="text_primary_on_dark">#1E1B2A</color>
-    <color name="text_secondary_on_dark">#4F4A63</color>
-    <color name="text_muted_on_dark">#807890</color>
-    <color name="divider_on_dark">#14000000</color>
-    <color name="accent_success">#4CAF50</color>
-    <color name="shadow_color">#33000000</color>
-    <color name="purple_500">#6C2CF7</color>
-    <color name="purple_700">#3D127F</color>
-    <color name="teal_200">#F6B93B</color>
-    <color name="black">#000000</color>
-    <color name="white">#FFFFFF</color>
+    <!-- Primary Palette -->
+    <color name="primary0">#000000</color>
+    <color name="primary5">#0F0028</color>
+    <color name="primary10">#1D0C3A</color>
+    <color name="primary20">#341F5A</color>
+    <color name="primary30">#4A3271</color>
+    <color name="primary40">#614888</color>
+    <color name="primary50">#7960A2</color>
+    <color name="primary60">#9379BD</color>
+    <color name="primary70">#AE93D9</color>
+    <color name="primary80">#CBB0F5</color>
+    <color name="primary90">#E4CBFF</color>
+    <color name="primary95">#F1E3FF</color>
+    <color name="primary98">#FBF7FF</color>
+    <color name="primary99">#FFFBFF</color>
+    <color name="primary100">#FFFFFF</color>
+
+    <!-- Secondary Palette -->
+    <color name="secondary0">#000000</color>
+    <color name="secondary5">#271500</color>
+    <color name="secondary10">#3C2100</color>
+    <color name="secondary20">#583200</color>
+    <color name="secondary30">#744600</color>
+    <color name="secondary40">#915B00</color>
+    <color name="secondary50">#AE7211</color>
+    <color name="secondary60">#CA8A2B</color>
+    <color name="secondary70">#E7A347</color>
+    <color name="secondary80">#FFBC62</color>
+    <color name="secondary90">#FFD9A3</color>
+    <color name="secondary95">#FFEED9</color>
+    <color name="secondary98">#FFF8F3</color>
+    <color name="secondary99">#FFFBFF</color>
+    <color name="secondary100">#FFFFFF</color>
+
+    <!-- Tertiary Palette -->
+    <color name="tertiary0">#000000</color>
+    <color name="tertiary5">#001D1F</color>
+    <color name="tertiary10">#003336</color>
+    <color name="tertiary20">#004B50</color>
+    <color name="tertiary30">#00656A</color>
+    <color name="tertiary40">#007F84</color>
+    <color name="tertiary50">#009AA0</color>
+    <color name="tertiary60">#00B6BD</color>
+    <color name="tertiary70">#33D3DA</color>
+    <color name="tertiary80">#57E8FF</color>
+    <color name="tertiary90">#A6F7FF</color>
+    <color name="tertiary95">#D6FAFF</color>
+    <color name="tertiary98">#ECFDFF</color>
+    <color name="tertiary99">#F7FCFF</color>
+    <color name="tertiary100">#FFFFFF</color>
+
+    <!-- Neutral Palette -->
+    <color name="neutral0">#000000</color>
+    <color name="neutral5">#121212</color>
+    <color name="neutral10">#1C1B1F</color>
+    <color name="neutral20">#313033</color>
+    <color name="neutral30">#484649</color>
+    <color name="neutral40">#605D62</color>
+    <color name="neutral50">#787579</color>
+    <color name="neutral60">#928F94</color>
+    <color name="neutral70">#ADAAAF</color>
+    <color name="neutral80">#C8C5CA</color>
+    <color name="neutral90">#E5E1E6</color>
+    <color name="neutral95">#F3EEF4</color>
+    <color name="neutral98">#FCECF7</color>
+    <color name="neutral99">#FFFBFE</color>
+    <color name="neutral100">#FFFFFF</color>
+
+    <!-- Neutral Variant Palette -->
+    <color name="neutral_variant0">#000000</color>
+    <color name="neutral_variant5">#1B1122</color>
+    <color name="neutral_variant10">#261B2E</color>
+    <color name="neutral_variant20">#3C2F43</color>
+    <color name="neutral_variant30">#534559</color>
+    <color name="neutral_variant40">#6B5C71</color>
+    <color name="neutral_variant50">#84748A</color>
+    <color name="neutral_variant60">#9E8D98</color>
+    <color name="neutral_variant70">#B9A7B3</color>
+    <color name="neutral_variant80">#D5C2CE</color>
+    <color name="neutral_variant90">#F2DDEA</color>
+    <color name="neutral_variant95">#FFECFF</color>
+    <color name="neutral_variant98">#FFF7FD</color>
+    <color name="neutral_variant99">#FFFBFF</color>
+    <color name="neutral_variant100">#FFFFFF</color>
+
+    <!-- Error Palette -->
+    <color name="error0">#000000</color>
+    <color name="error5">#2D0001</color>
+    <color name="error10">#410002</color>
+    <color name="error20">#690005</color>
+    <color name="error30">#93000A</color>
+    <color name="error40">#BA1B1B</color>
+    <color name="error50">#DE3730</color>
+    <color name="error60">#FF5449</color>
+    <color name="error70">#FF897D</color>
+    <color name="error80">#FFB4AB</color>
+    <color name="error90">#FFDAD6</color>
+    <color name="error95">#FFEDEA</color>
+    <color name="error98">#FFF8F7</color>
+    <color name="error99">#FFFBFF</color>
+    <color name="error100">#FFFFFF</color>
+
+    <!-- Core Color Definitions -->
+    <color name="primary">#614888</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#E4CBFF</color>
+    <color name="on_primary_container">#1D0C3A</color>
+
+    <color name="secondary">#CA8A2B</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="secondary_container">#FFD9A3</color>
+    <color name="on_secondary_container">#3C2100</color>
+
+    <color name="tertiary">#007F84</color>
+    <color name="on_tertiary">#FFFFFF</color>
+    <color name="tertiary_container">#A6F7FF</color>
+    <color name="on_tertiary_container">#001D1F</color>
+
+    <color name="surface">#FFFBFE</color>
+    <color name="on_surface">#1C1B1F</color>
+    <color name="surface_variant">#F2DDEA</color>
+    <color name="on_surface_variant">#534559</color>
+
+    <color name="outline">#787579</color>
+    <color name="outline_variant">#C8C5CA</color>
+
+    <color name="shadow">#000000</color>
+    <color name="scrim">#000000</color>
+
+    <color name="inverse_surface">#313033</color>
+    <color name="inverse_on_surface">#F3EEF4</color>
+    <color name="inverse_primary">#CBB0F5</color>
+
+    <color name="surface_dim">#D7D4DA</color>
+    <color name="surface_bright">#F7F3FA</color>
+    <color name="surface_container_lowest">#FFFFFF</color>
+    <color name="surface_container_low">#F1EDF3</color>
+    <color name="surface_container">#EBE8EE</color>
+    <color name="surface_container_high">#E5E2E8</color>
+    <color name="surface_container_highest">#E0DDE3</color>
+
+    <color name="error">#BA1B1B</color>
+    <color name="on_error">#FFFFFF</color>
+    <color name="error_container">#FFDAD6</color>
+    <color name="on_error_container">#410002</color>
+
+    <!-- Semantic Colors -->
+    <color name="text_primary">#1C1B1F</color>
+    <color name="text_secondary">#484649</color>
+    <color name="text_muted">#605D62</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_on_secondary">#FFFFFF</color>
+    <color name="text_on_tertiary">#FFFFFF</color>
+    <color name="text_on_surface_variant">#534559</color>
+    
+    <!-- Background Colors -->
+    <color name="background">#FFFBFE</color>
+    <color name="background_variant">#F2DDEA</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="chip_background">#F2DDEA</color>
+    <color name="toolbar_background">#E4CBFF</color>
+    
+    <!-- Divider Colors -->
+    <color name="divider">#14000000</color>
+    <color name="divider_variant">#E5E1E6</color>
+
+    <!-- Brand Specific Colors -->
+    <color name="brand_primary">#614888</color>
+    <color name="brand_secondary">#CA8A2B</color>
+    <color name="brand_tertiary">#007F84</color>
+    
+    <!-- Status Bar Colors -->
+    <color name="status_bar_color">#E4CBFF</color>
+    <color name="navigation_bar_color">#FFFBFE</color>
 </resources>

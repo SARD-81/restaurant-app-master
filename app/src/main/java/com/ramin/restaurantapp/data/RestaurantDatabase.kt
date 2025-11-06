@@ -7,10 +7,11 @@ import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-@Database(entities = [FoodEntity::class], version = 2, exportSchema = false)
+@Database(entities = [FoodEntity::class], version = 5, exportSchema = false)
 abstract class RestaurantDatabase : RoomDatabase() {
     abstract fun foodDao(): FoodDao
 
@@ -64,9 +65,9 @@ abstract class RestaurantDatabase : RoomDatabase() {
 
         private suspend fun ensureSeedData(foodDao: FoodDao) {
             withContext(Dispatchers.IO) {
-                if (foodDao.countFoods() == 0) {
-                    foodDao.insertAll(SampleDataProvider.foodItems())
-                }
+                // Just add the sample data directly - Room will handle duplicates automatically
+                // Inserting duplicates with the same IDs will be handled by the conflict strategy
+                foodDao.insertAll(SampleDataProvider.foodItems())
             }
         }
     }

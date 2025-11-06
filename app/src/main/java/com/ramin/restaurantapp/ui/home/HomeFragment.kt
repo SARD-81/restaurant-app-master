@@ -90,10 +90,13 @@ class HomeFragment : Fragment() {
     }
 
     private fun setupSearchSection() {
-        searchAdapter = FoodAdapter { foodItem ->
-            val args = bundleOf("foodId" to foodItem.id)
-            findNavController().navigate(R.id.action_home_to_food_detail, args)
-        }
+        searchAdapter = FoodAdapter(
+            onItemSelected = { foodItem ->
+                val args = bundleOf("foodId" to foodItem.id)
+                findNavController().navigate(R.id.action_home_to_food_detail, args)
+            },
+            badgeProvider = null
+        )
         binding.searchResultsRecyclerView.apply {
             adapter = searchAdapter
             layoutManager = LinearLayoutManager(requireContext())

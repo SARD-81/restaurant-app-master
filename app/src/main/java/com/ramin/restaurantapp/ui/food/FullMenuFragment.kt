@@ -51,10 +51,13 @@ class FullMenuFragment : Fragment() {
     }
 
     private fun setupRecycler() {
-        adapter = FoodAdapter(onItemSelected = { foodItem ->
-            val args = bundleOf("foodId" to foodItem.id)
-            findNavController().navigate(R.id.action_full_menu_to_food_detail, args)
-        }, badgeProvider = { badgeForFood(it) })
+        adapter = FoodAdapter(
+            onItemSelected = { foodItem ->
+                val args = bundleOf("foodId" to foodItem.id)
+                findNavController().navigate(R.id.action_full_menu_to_food_detail, args)
+            },
+            badgeProvider = { foodItem -> badgeForFood(foodItem) }
+        )
         binding.fullMenuRecyclerView.apply {
             adapter = this@FullMenuFragment.adapter
             layoutManager = LinearLayoutManager(requireContext())
@@ -133,15 +136,15 @@ class FullMenuFragment : Fragment() {
         return when {
             viewModel.isLiked(item.id) -> FoodAdapter.FoodBadge(
                 iconRes = R.drawable.ic_favorite_filled,
-                backgroundTint = R.color.brand_secondary,
-                iconTint = R.color.white,
+                backgroundTint = R.color.secondary,
+                iconTint = R.color.on_secondary,
                 contentDescription = getString(R.string.favorite_badge_content_description)
             )
 
             viewModel.isSaved(item.id) -> FoodAdapter.FoodBadge(
                 iconRes = R.drawable.ic_bookmark_filled,
-                backgroundTint = R.color.brand_primary,
-                iconTint = R.color.white,
+                backgroundTint = R.color.primary,
+                iconTint = R.color.on_primary,
                 contentDescription = getString(R.string.saved_badge_content_description)
             )
 

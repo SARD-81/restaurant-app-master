@@ -7,9 +7,9 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.google.android.material.switchmaterial.SwitchMaterial;
 import com.ramin.restaurantapp.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -20,12 +20,12 @@ public final class ItemThemeToggleBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final SwitchMaterial themeSwitch;
+  public final AppCompatImageButton themeToggleButton;
 
   private ItemThemeToggleBinding(@NonNull LinearLayout rootView,
-      @NonNull SwitchMaterial themeSwitch) {
+      @NonNull AppCompatImageButton themeToggleButton) {
     this.rootView = rootView;
-    this.themeSwitch = themeSwitch;
+    this.themeToggleButton = themeToggleButton;
   }
 
   @Override
@@ -55,13 +55,13 @@ public final class ItemThemeToggleBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.themeSwitch;
-      SwitchMaterial themeSwitch = ViewBindings.findChildViewById(rootView, id);
-      if (themeSwitch == null) {
+      id = R.id.themeToggleButton;
+      AppCompatImageButton themeToggleButton = ViewBindings.findChildViewById(rootView, id);
+      if (themeToggleButton == null) {
         break missingId;
       }
 
-      return new ItemThemeToggleBinding((LinearLayout) rootView, themeSwitch);
+      return new ItemThemeToggleBinding((LinearLayout) rootView, themeToggleButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

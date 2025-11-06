@@ -65,12 +65,12 @@ class FoodCollectionFragment : Fragment() {
                 iconRes = R.drawable.ic_favorite_filled,
                 backgroundRes = R.drawable.collection_like_background,
                 emptyIconRes = R.drawable.ic_favorite_border,
-                emptyIconTint = R.color.brand_secondary,
+                emptyIconTint = R.color.secondary,
                 badgeBuilder = { foodItem ->
                     FoodAdapter.FoodBadge(
                         iconRes = R.drawable.ic_favorite_filled,
-                        backgroundTint = R.color.brand_secondary,
-                        iconTint = R.color.white,
+                        backgroundTint = R.color.secondary,
+                        iconTint = R.color.on_secondary,
                         contentDescription = getString(R.string.favorite_badge_content_description)
                     )
                 }
@@ -83,12 +83,12 @@ class FoodCollectionFragment : Fragment() {
                 iconRes = R.drawable.ic_bookmark_filled,
                 backgroundRes = R.drawable.collection_saved_background,
                 emptyIconRes = R.drawable.ic_bookmark_border,
-                emptyIconTint = R.color.brand_primary,
+                emptyIconTint = R.color.primary,
                 badgeBuilder = { _ ->
                     FoodAdapter.FoodBadge(
                         iconRes = R.drawable.ic_bookmark_filled,
-                        backgroundTint = R.color.brand_primary,
-                        iconTint = R.color.white,
+                        backgroundTint = R.color.primary,
+                        iconTint = R.color.on_primary,
                         contentDescription = getString(R.string.saved_badge_content_description)
                     )
                 }

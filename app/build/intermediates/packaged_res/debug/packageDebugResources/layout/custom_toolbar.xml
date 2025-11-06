@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/toolbar_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layoutDirection="rtl">
+
+        <!-- Navigation icon (back/hamburger) -->
+        <FrameLayout
+            android:id="@+id/navigationButtonContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="-70dp">
+            
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/toolbarNavigationButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/back_button"
+                android:scaleType="centerInside"
+                android:visibility="gone"
+                app:tint="?attr/colorOnPrimaryContainer" />
+        </FrameLayout>
+
+        <!-- Title in the center -->
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="259dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/vazirmatn_semibold"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="?attr/colorOnPrimaryContainer"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Theme toggle button on the right -->
+        <FrameLayout
+            android:id="@+id/themeButtonContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp">
+            
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/themeToggleButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/theme_toggle_dark"
+                android:padding="6dp"
+                android:scaleType="centerInside"
+                app:tint="?attr/colorOnPrimaryContainer" />
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>

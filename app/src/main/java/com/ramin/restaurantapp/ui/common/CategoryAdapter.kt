@@ -35,7 +35,7 @@ class CategoryAdapter(
             } else {
                 R.string.category_subtitle_no_children
             }
-            binding.categorySubtitle.text = context.getString(subtitleRes)
+//            binding.categorySubtitle.text = context.getString(subtitleRes)
             binding.categoryCountChip.text = context.resources.getQuantityString(
                 R.plurals.category_item_count,
                 item.itemCount,

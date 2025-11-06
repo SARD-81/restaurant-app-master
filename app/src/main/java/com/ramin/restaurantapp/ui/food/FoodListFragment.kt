@@ -57,10 +57,13 @@ class FoodListFragment : Fragment() {
     }
 
     private fun setupRecycler() {
-        adapter = FoodAdapter { foodItem ->
-            val args = bundleOf("foodId" to foodItem.id)
-            findNavController().navigate(R.id.action_food_list_to_food_detail, args)
-        }
+        adapter = FoodAdapter(
+            onItemSelected = { foodItem ->
+                val args = bundleOf("foodId" to foodItem.id)
+                findNavController().navigate(R.id.action_food_list_to_food_detail, args)
+            },
+            badgeProvider = null
+        )
         binding.foodRecyclerView.apply {
             adapter = this@FoodListFragment.adapter
             layoutManager = LinearLayoutManager(requireContext())

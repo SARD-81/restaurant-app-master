@@ -27,7 +27,11 @@ class SubcategoryAdapter(
         RecyclerView.ViewHolder(binding.root) {
         fun bind(item: SubcategorySummary) {
             binding.categoryTitle.text = item.name
-            binding.categorySubtitle.text = binding.root.context.getString(R.string.subcategory_subtitle)
+//            binding.categorySubtitle.text = binding.root.context.resources.getQuantityString(
+//                R.plurals.category_item_count,
+//                item.itemCount,
+//                item.itemCount
+//            )
             if (item.imageUrl.isNotBlank()) {
                 Glide.with(binding.categoryImage.context)
                     .load(item.imageUrl)

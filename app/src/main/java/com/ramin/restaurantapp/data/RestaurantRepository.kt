@@ -37,7 +37,8 @@ class RestaurantRepository(private val foodDao: FoodDao) {
                 .map { (subcategory, items) ->
                     SubcategorySummary(
                         name = subcategory,
-                        imageUrl = items.firstOrNull()?.imageList()?.firstOrNull() ?: ""
+                        imageUrl = items.firstOrNull()?.imageList()?.firstOrNull() ?: "",
+                        itemCount = items.size
                     )
                 }
                 .sortedBy { it.name }

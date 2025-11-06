@@ -52,18 +52,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.Restaurant.Toolbar"
-                android:textColor="@color/text_primary_on_dark"
+                android:textColor="#fff"
                 android:textStyle="bold"
                 tools:text="دسته‌بندی" />
 
-            <TextView
-                android:id="@+id/categorySubtitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="@string/category_subtitle"
-                android:textAppearance="@style/TextAppearance.Restaurant.Body"
-                android:textColor="@color/text_secondary_on_dark" />
+<!--            <TextView-->
+<!--                android:id="@+id/categorySubtitle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="4dp"-->
+<!--                android:text="@string/category_subtitle"-->
+<!--                android:textAppearance="@style/TextAppearance.Restaurant.Body"-->
+<!--                android:textColor="?attr/colorOnSurfaceVariant" />-->
         </LinearLayout>
     </FrameLayout>
 </com.google.android.material.card.MaterialCardView>
