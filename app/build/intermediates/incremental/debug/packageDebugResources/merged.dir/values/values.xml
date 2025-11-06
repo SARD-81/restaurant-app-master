@@ -1,26 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="accent_success">#68D391</color>
+    <color name="accent_success">#4CAF50</color>
     <color name="black">#000000</color>
-    <color name="brand_card">#2B1C45</color>
-    <color name="brand_chip">#FF9E6D</color>
-    <color name="brand_chip_text">#3D0C28</color>
-    <color name="brand_glass">#B3FFFFFF</color>
-    <color name="brand_primary">#6C2CF7</color>
+    <color name="brand_card">#FFFFFFFF</color>
+    <color name="brand_chip">#FFF2E5</color>
+    <color name="brand_chip_text">#4B1DB4</color>
+    <color name="brand_glass">#CCFFFFFF</color>
+    <color name="brand_primary">#5A2CE6</color>
     <color name="brand_primary_dark">#3D127F</color>
-    <color name="brand_secondary">#F6B93B</color>
-    <color name="brand_surface">#150F24</color>
-    <color name="brand_surface_variant">#221638</color>
-    <color name="brand_toolbar">#4B1DB4</color>
-    <color name="divider_on_dark">#33FFFFFF</color>
+    <color name="brand_secondary">#FF9E6D</color>
+    <color name="brand_surface">#FFF8F3</color>
+    <color name="brand_surface_variant">#FFEFE2</color>
+    <color name="brand_toolbar">#F0E7FF</color>
+    <color name="divider_on_dark">#14000000</color>
     <color name="purple_500">#6C2CF7</color>
     <color name="purple_700">#3D127F</color>
-    <color name="shadow_color">#66150F24</color>
+    <color name="shadow_color">#33000000</color>
     <color name="teal_200">#F6B93B</color>
-    <color name="text_muted_on_dark">#C1B3E8</color>
-    <color name="text_primary_on_dark">#FFFFFFFF</color>
-    <color name="text_secondary_on_dark">#E2D7FF</color>
+    <color name="text_muted_on_dark">#807890</color>
+    <color name="text_primary_on_dark">#1E1B2A</color>
+    <color name="text_secondary_on_dark">#4F4A63</color>
     <color name="white">#FFFFFF</color>
+    <plurals name="category_item_count">
+        <item quantity="one">%d پیشنهاد منتخب</item>
+        <item quantity="other">%d پیشنهاد منتخب</item>
+    </plurals>
+    <plurals name="full_menu_result_count">
+        <item quantity="one">%d آیتم در این دسته موجود است</item>
+        <item quantity="other">%d آیتم در این دسته موجود است</item>
+    </plurals>
+    <plurals name="search_result_count">
+        <item quantity="one">%d نتیجه یافت شد</item>
+        <item quantity="other">%d نتیجه یافت شد</item>
+    </plurals>
     <string name="about_title">درباره رستوران طعم تهران</string>
     <string name="address_text">تهران، خیابان ولیعصر، کوچه ۱۲، پلاک ۷</string>
     <string name="app_name">رستوران طعم تهران</string>
@@ -28,13 +40,26 @@
     <string name="category_subtitle_detail">زیرمجموعه مورد نظر را انتخاب کنید تا پیشنهادات جذاب را ببینید.</string>
     <string name="category_subtitle_has_children">زیر دسته‌های متنوع برای هر سلیقه</string>
     <string name="category_subtitle_no_children">مستقیماً سراغ خوشمزه‌ترین انتخاب‌ها بروید</string>
+    <string name="food_detail_actions_like">افزودن به علاقه‌مندی‌ها</string>
+    <string name="food_detail_actions_save">ذخیره در دفترچه طعم‌ها</string>
+    <string name="food_detail_actions_share">اشتراک‌گذاری</string>
     <string name="food_detail_footer">برای تجربه‌ای خاطره‌انگیز، می‌توانید این غذا را با نوشیدنی‌های ویژه ما همراه کنید.</string>
+    <string name="food_detail_like_feedback">%1$s به علاقه‌مندی‌های شما اضافه شد.</string>
+    <string name="food_detail_media_play">پخش ویدئو</string>
+    <string name="food_detail_save_feedback">%1$s در دفترچه طعم‌ها ذخیره شد.</string>
+    <string name="food_detail_share_text">طعم بی‌نظیر %1$s را در رستوران طعم تهران امتحان کنید!</string>
+    <string name="food_detail_subtitle_format">%1$s • %2$s</string>
     <string name="food_details_title">جزئیات کامل غذا</string>
     <string name="food_list_subtitle_category">انتخاب‌های ویژه برای دسته %1$s</string>
     <string name="food_list_subtitle_default">گزیده‌ای از محبوب‌ترین غذاهای ما</string>
     <string name="food_list_subtitle_subcategory">غذاهای منتخب زیر دسته %1$s</string>
+    <string name="full_menu_empty">برای این دسته فعلاً غذایی ثبت نشده است.</string>
+    <string name="full_menu_filter_all">همه دسته‌ها</string>
+    <string name="full_menu_subtitle">همه غذاهای ما در یک نگاه؛ از پیش‌غذا تا دسر</string>
+    <string name="full_menu_title">منوی کامل رستوران</string>
     <string name="home_categories_title">دسته‌بندی‌های محبوب</string>
     <string name="home_cta">مشاهده منوی کامل</string>
+    <string name="home_quick_categories_title">دسته‌های پرطرفدار</string>
     <string name="home_subtitle">سرآشپز ما هر روز با ترکیبی از مواد تازه و ذوق ایرانی، منویی متفاوت خلق می‌کند.</string>
     <string name="home_title">به دنیای طعم‌های خاص خوش آمدید</string>
     <string name="loading">در حال بارگذاری… لطفاً صبر کنید</string>
@@ -43,11 +68,16 @@
     <string name="menu_about">درباره ما</string>
     <string name="menu_address">نقشه و مسیر</string>
     <string name="menu_call">رزرو تلفنی</string>
+    <string name="menu_theme">حالت شب</string>
     <string name="no_items_available">آیتمی برای نمایش وجود ندارد.</string>
     <string name="reserve_button">رزرو میز برای همین غذا</string>
     <string name="reserve_snackbar_message">درخواست رزرو برای %1$s ثبت شد. همکاران ما با شما تماس می‌گیرند.</string>
     <string name="search_hint">نام غذا یا دسته‌بندی مورد نظر را جستجو کنید</string>
+    <string name="search_results_empty">موردی مطابق با جستجوی شما پیدا نشد. دسته‌های پیشنهادی را امتحان کنید.</string>
+    <string name="search_results_title">نتایج جستجو</string>
     <string name="subcategory_subtitle">با انتخاب این زیر دسته، پیشنهادات تازه را کشف کنید</string>
+    <string name="theme_toggle_dark">فعال‌سازی حالت تیره</string>
+    <string name="theme_toggle_light">فعال‌سازی حالت روشن</string>
     <style name="ShapeAppearance.Restaurant.Large" parent="ShapeAppearance.MaterialComponents.MediumComponent">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">26dp</item>
@@ -75,7 +105,7 @@
     </style>
     <style name="Theme.RestaurantApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightStatusBar">true</item>
         <item name="android:navigationBarColor">@color/brand_surface</item>
         <item name="android:windowBackground">@drawable/app_background</item>
         <item name="colorPrimary">@color/brand_primary</item>

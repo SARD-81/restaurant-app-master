@@ -4,10 +4,11 @@ package com.ramin.restaurantapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -22,7 +23,10 @@ import java.lang.String;
 
 public final class FragmentHomeBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final NestedScrollView rootView;
+
+  @NonNull
+  public final LinearLayout categoriesContainer;
 
   @NonNull
   public final TextView categoryHeader;
@@ -40,33 +44,66 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final TextView homeSubtitle;
 
   @NonNull
+  public final TextView quickCategoryHeader;
+
+  @NonNull
+  public final RecyclerView quickCategoryRecyclerView;
+
+  @NonNull
   public final TextInputEditText searchEditText;
 
   @NonNull
   public final TextInputLayout searchInputLayout;
 
   @NonNull
+  public final LinearLayout searchResultsContainer;
+
+  @NonNull
+  public final TextView searchResultsCount;
+
+  @NonNull
+  public final TextView searchResultsEmpty;
+
+  @NonNull
+  public final RecyclerView searchResultsRecyclerView;
+
+  @NonNull
+  public final TextView searchResultsTitle;
+
+  @NonNull
   public final TextView titleText;
 
-  private FragmentHomeBinding(@NonNull ConstraintLayout rootView, @NonNull TextView categoryHeader,
+  private FragmentHomeBinding(@NonNull NestedScrollView rootView,
+      @NonNull LinearLayout categoriesContainer, @NonNull TextView categoryHeader,
       @NonNull RecyclerView categoryRecyclerView, @NonNull MaterialButton fullMenuButton,
       @NonNull MaterialCardView heroCard, @NonNull TextView homeSubtitle,
+      @NonNull TextView quickCategoryHeader, @NonNull RecyclerView quickCategoryRecyclerView,
       @NonNull TextInputEditText searchEditText, @NonNull TextInputLayout searchInputLayout,
-      @NonNull TextView titleText) {
+      @NonNull LinearLayout searchResultsContainer, @NonNull TextView searchResultsCount,
+      @NonNull TextView searchResultsEmpty, @NonNull RecyclerView searchResultsRecyclerView,
+      @NonNull TextView searchResultsTitle, @NonNull TextView titleText) {
     this.rootView = rootView;
+    this.categoriesContainer = categoriesContainer;
     this.categoryHeader = categoryHeader;
     this.categoryRecyclerView = categoryRecyclerView;
     this.fullMenuButton = fullMenuButton;
     this.heroCard = heroCard;
     this.homeSubtitle = homeSubtitle;
+    this.quickCategoryHeader = quickCategoryHeader;
+    this.quickCategoryRecyclerView = quickCategoryRecyclerView;
     this.searchEditText = searchEditText;
     this.searchInputLayout = searchInputLayout;
+    this.searchResultsContainer = searchResultsContainer;
+    this.searchResultsCount = searchResultsCount;
+    this.searchResultsEmpty = searchResultsEmpty;
+    this.searchResultsRecyclerView = searchResultsRecyclerView;
+    this.searchResultsTitle = searchResultsTitle;
     this.titleText = titleText;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public NestedScrollView getRoot() {
     return rootView;
   }
 
@@ -91,6 +128,12 @@ public final class FragmentHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.categoriesContainer;
+      LinearLayout categoriesContainer = ViewBindings.findChildViewById(rootView, id);
+      if (categoriesContainer == null) {
+        break missingId;
+      }
+
       id = R.id.categoryHeader;
       TextView categoryHeader = ViewBindings.findChildViewById(rootView, id);
       if (categoryHeader == null) {
@@ -121,6 +164,18 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.quickCategoryHeader;
+      TextView quickCategoryHeader = ViewBindings.findChildViewById(rootView, id);
+      if (quickCategoryHeader == null) {
+        break missingId;
+      }
+
+      id = R.id.quickCategoryRecyclerView;
+      RecyclerView quickCategoryRecyclerView = ViewBindings.findChildViewById(rootView, id);
+      if (quickCategoryRecyclerView == null) {
+        break missingId;
+      }
+
       id = R.id.searchEditText;
       TextInputEditText searchEditText = ViewBindings.findChildViewById(rootView, id);
       if (searchEditText == null) {
@@ -133,15 +188,47 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.searchResultsContainer;
+      LinearLayout searchResultsContainer = ViewBindings.findChildViewById(rootView, id);
+      if (searchResultsContainer == null) {
+        break missingId;
+      }
+
+      id = R.id.searchResultsCount;
+      TextView searchResultsCount = ViewBindings.findChildViewById(rootView, id);
+      if (searchResultsCount == null) {
+        break missingId;
+      }
+
+      id = R.id.searchResultsEmpty;
+      TextView searchResultsEmpty = ViewBindings.findChildViewById(rootView, id);
+      if (searchResultsEmpty == null) {
+        break missingId;
+      }
+
+      id = R.id.searchResultsRecyclerView;
+      RecyclerView searchResultsRecyclerView = ViewBindings.findChildViewById(rootView, id);
+      if (searchResultsRecyclerView == null) {
+        break missingId;
+      }
+
+      id = R.id.searchResultsTitle;
+      TextView searchResultsTitle = ViewBindings.findChildViewById(rootView, id);
+      if (searchResultsTitle == null) {
+        break missingId;
+      }
+
       id = R.id.titleText;
       TextView titleText = ViewBindings.findChildViewById(rootView, id);
       if (titleText == null) {
         break missingId;
       }
 
-      return new FragmentHomeBinding((ConstraintLayout) rootView, categoryHeader,
-          categoryRecyclerView, fullMenuButton, heroCard, homeSubtitle, searchEditText,
-          searchInputLayout, titleText);
+      return new FragmentHomeBinding((NestedScrollView) rootView, categoriesContainer,
+          categoryHeader, categoryRecyclerView, fullMenuButton, heroCard, homeSubtitle,
+          quickCategoryHeader, quickCategoryRecyclerView, searchEditText, searchInputLayout,
+          searchResultsContainer, searchResultsCount, searchResultsEmpty, searchResultsRecyclerView,
+          searchResultsTitle, titleText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

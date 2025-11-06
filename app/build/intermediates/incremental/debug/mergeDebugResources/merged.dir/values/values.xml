@@ -638,7 +638,7 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
-    <color name="accent_success">#68D391</color>
+    <color name="accent_success">#4CAF50</color>
     <color name="androidx_core_ripple_material_light">#1f000000</color>
     <color name="androidx_core_secondary_text_default_material_light">#8a000000</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
@@ -646,16 +646,16 @@
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
     <color name="black">#000000</color>
-    <color name="brand_card">#2B1C45</color>
-    <color name="brand_chip">#FF9E6D</color>
-    <color name="brand_chip_text">#3D0C28</color>
-    <color name="brand_glass">#B3FFFFFF</color>
-    <color name="brand_primary">#6C2CF7</color>
+    <color name="brand_card">#FFFFFFFF</color>
+    <color name="brand_chip">#FFF2E5</color>
+    <color name="brand_chip_text">#4B1DB4</color>
+    <color name="brand_glass">#CCFFFFFF</color>
+    <color name="brand_primary">#5A2CE6</color>
     <color name="brand_primary_dark">#3D127F</color>
-    <color name="brand_secondary">#F6B93B</color>
-    <color name="brand_surface">#150F24</color>
-    <color name="brand_surface_variant">#221638</color>
-    <color name="brand_toolbar">#4B1DB4</color>
+    <color name="brand_secondary">#FF9E6D</color>
+    <color name="brand_surface">#FFF8F3</color>
+    <color name="brand_surface_variant">#FFEFE2</color>
+    <color name="brand_toolbar">#F0E7FF</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -717,7 +717,7 @@
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
-    <color name="divider_on_dark">#33FFFFFF</color>
+    <color name="divider_on_dark">#14000000</color>
     <color name="error_color_material_dark">#ff7043</color>
     <color name="error_color_material_light">#ff5722</color>
     <color name="foreground_material_dark">@android:color/white</color>
@@ -979,15 +979,15 @@
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
     <color name="secondary_text_disabled_material_light">#24000000</color>
-    <color name="shadow_color">#66150F24</color>
+    <color name="shadow_color">#33000000</color>
     <color name="switch_thumb_disabled_material_dark">#ff616161</color>
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
     <color name="teal_200">#F6B93B</color>
-    <color name="text_muted_on_dark">#C1B3E8</color>
-    <color name="text_primary_on_dark">#FFFFFFFF</color>
-    <color name="text_secondary_on_dark">#E2D7FF</color>
+    <color name="text_muted_on_dark">#807890</color>
+    <color name="text_primary_on_dark">#1E1B2A</color>
+    <color name="text_secondary_on_dark">#4F4A63</color>
     <color name="tooltip_background_dark">#e6616161</color>
     <color name="tooltip_background_light">#e6FFFFFF</color>
     <color name="white">#FFFFFF</color>
@@ -1956,10 +1956,22 @@
     <integer name="mtrl_view_visible">0</integer>
     <integer name="show_password_duration">200</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <plurals name="category_item_count">
+        <item quantity="one">%d پیشنهاد منتخب</item>
+        <item quantity="other">%d پیشنهاد منتخب</item>
+    </plurals>
+    <plurals name="full_menu_result_count">
+        <item quantity="one">%d آیتم در این دسته موجود است</item>
+        <item quantity="other">%d آیتم در این دسته موجود است</item>
+    </plurals>
     <plurals description="Plural form content description for number of new notifications [CHAR_LIMIT=NONE]" name="mtrl_badge_content_description">
     <item quantity="one"><ns2:g id="count">%d</ns2:g> new notification</item>
     <item quantity="other"><ns2:g id="count">%d</ns2:g> new notifications</item>
   </plurals>
+    <plurals name="search_result_count">
+        <item quantity="one">%d نتیجه یافت شد</item>
+        <item quantity="other">%d نتیجه یافت شد</item>
+    </plurals>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
     <string name="abc_action_menu_overflow_description">More options</string>
@@ -2039,14 +2051,27 @@
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="food_detail_actions_like">افزودن به علاقه‌مندی‌ها</string>
+    <string name="food_detail_actions_save">ذخیره در دفترچه طعم‌ها</string>
+    <string name="food_detail_actions_share">اشتراک‌گذاری</string>
     <string name="food_detail_footer">برای تجربه‌ای خاطره‌انگیز، می‌توانید این غذا را با نوشیدنی‌های ویژه ما همراه کنید.</string>
+    <string name="food_detail_like_feedback">%1$s به علاقه‌مندی‌های شما اضافه شد.</string>
+    <string name="food_detail_media_play">پخش ویدئو</string>
+    <string name="food_detail_save_feedback">%1$s در دفترچه طعم‌ها ذخیره شد.</string>
+    <string name="food_detail_share_text">طعم بی‌نظیر %1$s را در رستوران طعم تهران امتحان کنید!</string>
+    <string name="food_detail_subtitle_format">%1$s • %2$s</string>
     <string name="food_details_title">جزئیات کامل غذا</string>
     <string name="food_list_subtitle_category">انتخاب‌های ویژه برای دسته %1$s</string>
     <string name="food_list_subtitle_default">گزیده‌ای از محبوب‌ترین غذاهای ما</string>
     <string name="food_list_subtitle_subcategory">غذاهای منتخب زیر دسته %1$s</string>
+    <string name="full_menu_empty">برای این دسته فعلاً غذایی ثبت نشده است.</string>
+    <string name="full_menu_filter_all">همه دسته‌ها</string>
+    <string name="full_menu_subtitle">همه غذاهای ما در یک نگاه؛ از پیش‌غذا تا دسر</string>
+    <string name="full_menu_title">منوی کامل رستوران</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string name="home_categories_title">دسته‌بندی‌های محبوب</string>
     <string name="home_cta">مشاهده منوی کامل</string>
+    <string name="home_quick_categories_title">دسته‌های پرطرفدار</string>
     <string name="home_subtitle">سرآشپز ما هر روز با ترکیبی از مواد تازه و ذوق ایرانی، منویی متفاوت خلق می‌کند.</string>
     <string name="home_title">به دنیای طعم‌های خاص خوش آمدید</string>
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
@@ -2094,6 +2119,7 @@
     <string name="menu_about">درباره ما</string>
     <string name="menu_address">نقشه و مسیر</string>
     <string name="menu_call">رزرو تلفنی</string>
+    <string name="menu_theme">حالت شب</string>
     <string description="Content description for new notification (no number count) [CHAR_LIMIT=NONE]" name="mtrl_badge_numberless_content_description">New notification</string>
     <string name="mtrl_checkbox_button_icon_path_checked" translatable="false">M14,18.2 11.4,15.6 10,17 14,21 22,13 20.6,11.6z</string>
     <string name="mtrl_checkbox_button_icon_path_group_name" translatable="false">icon</string>
@@ -2174,6 +2200,8 @@
     <string name="reserve_snackbar_message">درخواست رزرو برای %1$s ثبت شد. همکاران ما با شما تماس می‌گیرند.</string>
     <string name="search_hint">نام غذا یا دسته‌بندی مورد نظر را جستجو کنید</string>
     <string name="search_menu_title">Search</string>
+    <string name="search_results_empty">موردی مطابق با جستجوی شما پیدا نشد. دسته‌های پیشنهادی را امتحان کنید.</string>
+    <string name="search_results_title">نتایج جستجو</string>
     <string name="searchbar_scrolling_view_behavior" translatable="false">
     com.google.android.material.search.SearchBar$ScrollingViewBehavior
   </string>
@@ -2183,6 +2211,8 @@
     <string name="side_sheet_behavior" translatable="false">com.google.android.material.sidesheet.SideSheetBehavior</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="subcategory_subtitle">با انتخاب این زیر دسته، پیشنهادات تازه را کشف کنید</string>
+    <string name="theme_toggle_dark">فعال‌سازی حالت تیره</string>
+    <string name="theme_toggle_light">فعال‌سازی حالت روشن</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
@@ -6564,7 +6594,7 @@
   </style>
     <style name="Theme.RestaurantApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightStatusBar">true</item>
         <item name="android:navigationBarColor">@color/brand_surface</item>
         <item name="android:windowBackground">@drawable/app_background</item>
         <item name="colorPrimary">@color/brand_primary</item>

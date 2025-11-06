@@ -44,7 +44,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         val themeItem = menu.findItem(R.id.action_theme)
-        val themeSwitch = themeItem.actionView.findViewById<SwitchMaterial>(R.id.themeSwitch)
+        val themeSwitch = themeItem.actionView?.findViewById<SwitchMaterial>(R.id.themeSwitch)
+            ?: return true
         val isDarkMode = preferences.getBoolean(KEY_DARK_MODE, true)
         themeSwitch.setOnCheckedChangeListener(null)
         themeSwitch.isChecked = isDarkMode
