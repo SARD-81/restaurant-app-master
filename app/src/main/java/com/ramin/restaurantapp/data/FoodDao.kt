@@ -46,7 +46,7 @@ interface FoodDao {
     fun countFoods(): Flow<Int>
 
     @Query("SELECT COUNT(*) FROM food")
-    suspend fun getFoodCount(): Int
+    fun getFoodCount(): Flow<Int>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertAll(items: List<FoodEntity>)

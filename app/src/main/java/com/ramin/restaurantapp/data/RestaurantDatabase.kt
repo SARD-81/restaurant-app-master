@@ -6,6 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 
 @Database(entities = [FoodEntity::class], version = 5, exportSchema = false)
@@ -35,7 +36,8 @@ abstract class RestaurantDatabase : RoomDatabase() {
         }
 
         private suspend fun seedDatabase(foodDao: FoodDao) {
-            if (foodDao.getFoodCount() == 0) {
+            val count = foodDao.getFoodCount().first()
+            if (count == 0) {
                 foodDao.insertAll(SampleDataProvider.foodItems())
             }
         }

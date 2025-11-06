@@ -1,214 +1,222 @@
 [
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/drawable_glass_background.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/drawable/glass_background.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\drawable_restaurant_background.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\drawable\\restaurant_background.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/xml_data_extraction_rules.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\drawable_toolbar_background.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\drawable\\toolbar_background.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/layout_item_category_chip.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/layout/item_category_chip.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\layout_fragment_favorites.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\fragment_favorites.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/layout_fragment_favorites.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_favorites.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\drawable_food_badge_background.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\drawable\\food_badge_background.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/layout_fragment_food_collection.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_food_collection.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\drawable_glass_background.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\drawable\\glass_background.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/drawable_ic_share.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/drawable/ic_share.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\font_vazirmatn_medium.ttf.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\font\\vazirmatn_medium.ttf"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/drawable_food_badge_background.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/drawable/food_badge_background.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/drawable_collection_saved_background.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/drawable/collection_saved_background.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\layout_item_category.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\item_category.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/font_vazirmatn_font_family.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/font/vazirmatn_font_family.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.ramin.restaurantapp-main-60:/mipmap-mdpi/ic_launcher.png"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\layout_fragment_food_detail.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\fragment_food_detail.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/menu_menu_main.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/menu/menu_main.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\drawable_collection_like_background.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\drawable\\collection_like_background.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/drawable_ic_theme_dark.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/drawable/ic_theme_dark.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\menu_main_menu.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\menu\\main_menu.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/drawable_ic_favorite_filled.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/drawable/ic_favorite_filled.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "com.ramin.restaurantapp-main-60:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/drawable_app_background.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/drawable/app_background.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\drawable_app_background.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\drawable\\app_background.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/layout_fragment_search.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_search.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\layout_fragment_main.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\fragment_main.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/layout_fragment_main.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_main.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\layout_fragment_category.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\fragment_category.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/drawable_hero_gradient.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/drawable/hero_gradient.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\drawable_ic_share.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\drawable\\ic_share.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/xml_backup_rules.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\layout_item_media_page.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\item_media_page.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/layout_fragment_about.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_about.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.ramin.restaurantapp-main-60:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\drawable_collection_saved_background.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\drawable\\collection_saved_background.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/drawable_toolbar_background.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/drawable/toolbar_background.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\drawable_ic_bookmark_border.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\drawable\\ic_bookmark_border.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "com.ramin.restaurantapp-main-60:/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/layout_fragment_map.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_map.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\font_vazirmatn_font_family.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\font\\vazirmatn_font_family.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/drawable_ic_bookmark_border.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/drawable/ic_bookmark_border.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\layout_item_category_chip.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\item_category_chip.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/layout_fragment_category.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_category.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\layout_fragment_about.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\fragment_about.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/font_vazirmatn_regular.ttf.flat",
-        "source": "com.ramin.restaurantapp-main-60:/font/vazirmatn_regular.ttf"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/layout_item_theme_toggle.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/layout/item_theme_toggle.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\drawable_search_background.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\drawable\\search_background.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.ramin.restaurantapp-main-60:/mipmap-hdpi/ic_launcher.png"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/drawable_card_overlay.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/drawable/card_overlay.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/drawable_ic_bookmark_filled.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/drawable/ic_bookmark_filled.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\drawable_ic_favorite_border.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\drawable\\ic_favorite_border.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.ramin.restaurantapp-main-60:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\menu_menu_main.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\menu\\menu_main.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/drawable_ic_favorite_border.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/drawable/ic_favorite_border.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/drawable_search_background.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/drawable/search_background.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\font_vazirmatn_semibold.ttf.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\font\\vazirmatn_semibold.ttf"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/drawable_collection_like_background.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/drawable/collection_like_background.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\layout_item_food.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\item_food.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/menu_main_menu.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/menu/main_menu.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/layout_fragment_home.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_home.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\layout_fragment_search.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\fragment_search.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/font_vazirmatn_semibold.ttf.flat",
-        "source": "com.ramin.restaurantapp-main-60:/font/vazirmatn_semibold.ttf"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\layout_item_theme_toggle.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\item_theme_toggle.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/layout_activity_main.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/layout/activity_main.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\layout_fragment_full_menu.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\fragment_full_menu.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/font_vazirmatn_medium.ttf.flat",
-        "source": "com.ramin.restaurantapp-main-60:/font/vazirmatn_medium.ttf"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\drawable_restaurant_image.jpg.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\drawable\\restaurant_image.jpg"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/layout_item_category.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/layout/item_category.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/drawable_ic_theme_light.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/drawable/ic_theme_light.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.ramin.restaurantapp-main-60:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\font_vazirmatn_regular.ttf.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\font\\vazirmatn_regular.ttf"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/layout_item_food.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/layout/item_food.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\drawable_ic_bookmark_filled.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\drawable\\ic_bookmark_filled.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "com.ramin.restaurantapp-main-60:/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\drawable_card_overlay.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\drawable\\card_overlay.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/layout_fragment_food_list.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_food_list.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\layout_fragment_map.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\fragment_map.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "com.ramin.restaurantapp-main-60:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\drawable_ic_favorite_filled.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\drawable\\ic_favorite_filled.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/layout_fragment_food_detail.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_food_detail.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\drawable_hero_gradient.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\drawable\\hero_gradient.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/layout_item_media_page.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/layout/item_media_page.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\layout_fragment_food_list.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\fragment_food_list.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/layout_fragment_full_menu.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_full_menu.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\layout_custom_toolbar.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\custom_toolbar.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/layout_custom_toolbar.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/layout/custom_toolbar.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\drawable_ic_theme_light.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\drawable\\ic_theme_light.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "com.ramin.restaurantapp-main-60:/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\layout_fragment_food_collection.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\fragment_food_collection.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-debug-58:/drawable_ic_play_circle.xml.flat",
-        "source": "com.ramin.restaurantapp-main-60:/drawable/ic_play_circle.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\drawable_ic_theme_dark.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\drawable\\ic_theme_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-debug-58:\\drawable_ic_play_circle.xml.flat",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\drawable\\ic_play_circle.xml"
     }
 ]

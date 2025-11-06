@@ -158,6 +158,7 @@ drawable ic_play_circle
 drawable ic_share
 drawable ic_theme_dark
 drawable ic_theme_light
+drawable restaurant_image
 drawable search_background
 drawable toolbar_background
 font vazirmatn_font_family
@@ -224,7 +225,6 @@ id foodListSubtitle
 id foodListTitle
 id foodRecyclerView
 id foodTitle
-id fullMenuButton
 id fullMenuCount
 id fullMenuEmptyView
 id fullMenuFragment

@@ -784,6 +784,40 @@ public final class FoodDao_Impl implements FoodDao {
     });
   }
 
+  @Override
+  public Flow<Integer> getFoodCount() {
+    final String _sql = "SELECT COUNT(*) FROM food";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    return CoroutinesRoom.createFlow(__db, false, new String[]{"food"}, new Callable<Integer>() {
+      @Override
+      public Integer call() throws Exception {
+        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+        try {
+          final Integer _result;
+          if(_cursor.moveToFirst()) {
+            final Integer _tmp;
+            if (_cursor.isNull(0)) {
+              _tmp = null;
+            } else {
+              _tmp = _cursor.getInt(0);
+            }
+            _result = _tmp;
+          } else {
+            _result = null;
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+        }
+      }
+
+      @Override
+      protected void finalize() {
+        _statement.release();
+      }
+    });
+  }
+
   public static List<Class<?>> getRequiredConverters() {
     return Collections.emptyList();
   }

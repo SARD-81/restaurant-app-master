@@ -12,7 +12,6 @@ import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.google.android.material.button.MaterialButton;
 import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
@@ -33,9 +32,6 @@ public final class FragmentHomeBinding implements ViewBinding {
 
   @NonNull
   public final RecyclerView categoryRecyclerView;
-
-  @NonNull
-  public final MaterialButton fullMenuButton;
 
   @NonNull
   public final MaterialCardView heroCard;
@@ -105,12 +101,12 @@ public final class FragmentHomeBinding implements ViewBinding {
 
   private FragmentHomeBinding(@NonNull NestedScrollView rootView,
       @NonNull LinearLayout categoriesContainer, @NonNull TextView categoryHeader,
-      @NonNull RecyclerView categoryRecyclerView, @NonNull MaterialButton fullMenuButton,
-      @NonNull MaterialCardView heroCard, @NonNull TextView homeCollectionsCaption,
-      @NonNull LinearLayout homeCollectionsRow, @NonNull TextView homeSubtitle,
-      @NonNull MaterialCardView likedCollectionCard, @NonNull TextView likedCollectionCount,
-      @NonNull TextView likedCollectionSubtitle, @NonNull TextView likedCollectionTitle,
-      @NonNull TextView quickCategoryHeader, @NonNull RecyclerView quickCategoryRecyclerView,
+      @NonNull RecyclerView categoryRecyclerView, @NonNull MaterialCardView heroCard,
+      @NonNull TextView homeCollectionsCaption, @NonNull LinearLayout homeCollectionsRow,
+      @NonNull TextView homeSubtitle, @NonNull MaterialCardView likedCollectionCard,
+      @NonNull TextView likedCollectionCount, @NonNull TextView likedCollectionSubtitle,
+      @NonNull TextView likedCollectionTitle, @NonNull TextView quickCategoryHeader,
+      @NonNull RecyclerView quickCategoryRecyclerView,
       @NonNull MaterialCardView savedCollectionCard, @NonNull TextView savedCollectionCount,
       @NonNull TextView savedCollectionSubtitle, @NonNull TextView savedCollectionTitle,
       @NonNull TextInputEditText searchEditText, @NonNull TextInputLayout searchInputLayout,
@@ -121,7 +117,6 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.categoriesContainer = categoriesContainer;
     this.categoryHeader = categoryHeader;
     this.categoryRecyclerView = categoryRecyclerView;
-    this.fullMenuButton = fullMenuButton;
     this.heroCard = heroCard;
     this.homeCollectionsCaption = homeCollectionsCaption;
     this.homeCollectionsRow = homeCollectionsRow;
@@ -188,12 +183,6 @@ public final class FragmentHomeBinding implements ViewBinding {
       id = R.id.categoryRecyclerView;
       RecyclerView categoryRecyclerView = ViewBindings.findChildViewById(rootView, id);
       if (categoryRecyclerView == null) {
-        break missingId;
-      }
-
-      id = R.id.fullMenuButton;
-      MaterialButton fullMenuButton = ViewBindings.findChildViewById(rootView, id);
-      if (fullMenuButton == null) {
         break missingId;
       }
 
@@ -330,7 +319,7 @@ public final class FragmentHomeBinding implements ViewBinding {
       }
 
       return new FragmentHomeBinding((NestedScrollView) rootView, categoriesContainer,
-          categoryHeader, categoryRecyclerView, fullMenuButton, heroCard, homeCollectionsCaption,
+          categoryHeader, categoryRecyclerView, heroCard, homeCollectionsCaption,
           homeCollectionsRow, homeSubtitle, likedCollectionCard, likedCollectionCount,
           likedCollectionSubtitle, likedCollectionTitle, quickCategoryHeader,
           quickCategoryRecyclerView, savedCollectionCard, savedCollectionCount,

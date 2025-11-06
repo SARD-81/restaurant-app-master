@@ -66,9 +66,9 @@ class HomeFragment : Fragment() {
             layoutManager = GridLayoutManager(requireContext(), 2)
             isNestedScrollingEnabled = false
         }
-        binding.fullMenuButton.setOnClickListener {
-            findNavController().navigate(R.id.action_home_to_full_menu)
-        }
+//        binding.fullMenuButton.setOnClickListener {
+//            findNavController().navigate(R.id.action_home_to_full_menu)
+//        }
     }
 
     private fun setupCollections() {

@@ -3270,6 +3270,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable restaurant_image
 drawable search_background
 drawable test_level_drawable
 drawable toolbar_background
@@ -3540,7 +3541,6 @@ id foodTitle
 id forever
 id fragment_container_view_tag
 id frost
-id fullMenuButton
 id fullMenuCount
 id fullMenuEmptyView
 id fullMenuFragment
