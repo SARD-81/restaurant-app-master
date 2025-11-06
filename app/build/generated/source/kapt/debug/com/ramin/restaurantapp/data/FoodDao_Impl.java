@@ -489,6 +489,176 @@ public final class FoodDao_Impl implements FoodDao {
     });
   }
 
+  @Override
+  public Flow<List<FoodEntity>> getFullMenu() {
+    final String _sql = "SELECT * FROM food ORDER BY category_1, name";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    return CoroutinesRoom.createFlow(__db, false, new String[]{"food"}, new Callable<List<FoodEntity>>() {
+      @Override
+      public List<FoodEntity> call() throws Exception {
+        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+        try {
+          final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+          final int _cursorIndexOfName = CursorUtil.getColumnIndexOrThrow(_cursor, "name");
+          final int _cursorIndexOfCategoryLevel1 = CursorUtil.getColumnIndexOrThrow(_cursor, "category_1");
+          final int _cursorIndexOfCategoryLevel2 = CursorUtil.getColumnIndexOrThrow(_cursor, "category_2");
+          final int _cursorIndexOfDescription = CursorUtil.getColumnIndexOrThrow(_cursor, "description");
+          final int _cursorIndexOfPhoto = CursorUtil.getColumnIndexOrThrow(_cursor, "photo");
+          final int _cursorIndexOfVideo = CursorUtil.getColumnIndexOrThrow(_cursor, "video");
+          final List<FoodEntity> _result = new ArrayList<FoodEntity>(_cursor.getCount());
+          while(_cursor.moveToNext()) {
+            final FoodEntity _item;
+            final int _tmpId;
+            _tmpId = _cursor.getInt(_cursorIndexOfId);
+            final String _tmpName;
+            if (_cursor.isNull(_cursorIndexOfName)) {
+              _tmpName = null;
+            } else {
+              _tmpName = _cursor.getString(_cursorIndexOfName);
+            }
+            final String _tmpCategoryLevel1;
+            if (_cursor.isNull(_cursorIndexOfCategoryLevel1)) {
+              _tmpCategoryLevel1 = null;
+            } else {
+              _tmpCategoryLevel1 = _cursor.getString(_cursorIndexOfCategoryLevel1);
+            }
+            final String _tmpCategoryLevel2;
+            if (_cursor.isNull(_cursorIndexOfCategoryLevel2)) {
+              _tmpCategoryLevel2 = null;
+            } else {
+              _tmpCategoryLevel2 = _cursor.getString(_cursorIndexOfCategoryLevel2);
+            }
+            final String _tmpDescription;
+            if (_cursor.isNull(_cursorIndexOfDescription)) {
+              _tmpDescription = null;
+            } else {
+              _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
+            }
+            final String _tmpPhoto;
+            if (_cursor.isNull(_cursorIndexOfPhoto)) {
+              _tmpPhoto = null;
+            } else {
+              _tmpPhoto = _cursor.getString(_cursorIndexOfPhoto);
+            }
+            final String _tmpVideo;
+            if (_cursor.isNull(_cursorIndexOfVideo)) {
+              _tmpVideo = null;
+            } else {
+              _tmpVideo = _cursor.getString(_cursorIndexOfVideo);
+            }
+            _item = new FoodEntity(_tmpId,_tmpName,_tmpCategoryLevel1,_tmpCategoryLevel2,_tmpDescription,_tmpPhoto,_tmpVideo);
+            _result.add(_item);
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+        }
+      }
+
+      @Override
+      protected void finalize() {
+        _statement.release();
+      }
+    });
+  }
+
+  @Override
+  public Flow<List<FoodEntity>> searchFoods(final String query) {
+    final String _sql = "SELECT * FROM food WHERE name LIKE '%' || ? || '%' OR description LIKE '%' || ? || '%' OR category_1 LIKE '%' || ? || '%' OR category_2 LIKE '%' || ? || '%' ORDER BY name";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 4);
+    int _argIndex = 1;
+    if (query == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindString(_argIndex, query);
+    }
+    _argIndex = 2;
+    if (query == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindString(_argIndex, query);
+    }
+    _argIndex = 3;
+    if (query == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindString(_argIndex, query);
+    }
+    _argIndex = 4;
+    if (query == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindString(_argIndex, query);
+    }
+    return CoroutinesRoom.createFlow(__db, false, new String[]{"food"}, new Callable<List<FoodEntity>>() {
+      @Override
+      public List<FoodEntity> call() throws Exception {
+        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+        try {
+          final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+          final int _cursorIndexOfName = CursorUtil.getColumnIndexOrThrow(_cursor, "name");
+          final int _cursorIndexOfCategoryLevel1 = CursorUtil.getColumnIndexOrThrow(_cursor, "category_1");
+          final int _cursorIndexOfCategoryLevel2 = CursorUtil.getColumnIndexOrThrow(_cursor, "category_2");
+          final int _cursorIndexOfDescription = CursorUtil.getColumnIndexOrThrow(_cursor, "description");
+          final int _cursorIndexOfPhoto = CursorUtil.getColumnIndexOrThrow(_cursor, "photo");
+          final int _cursorIndexOfVideo = CursorUtil.getColumnIndexOrThrow(_cursor, "video");
+          final List<FoodEntity> _result = new ArrayList<FoodEntity>(_cursor.getCount());
+          while(_cursor.moveToNext()) {
+            final FoodEntity _item;
+            final int _tmpId;
+            _tmpId = _cursor.getInt(_cursorIndexOfId);
+            final String _tmpName;
+            if (_cursor.isNull(_cursorIndexOfName)) {
+              _tmpName = null;
+            } else {
+              _tmpName = _cursor.getString(_cursorIndexOfName);
+            }
+            final String _tmpCategoryLevel1;
+            if (_cursor.isNull(_cursorIndexOfCategoryLevel1)) {
+              _tmpCategoryLevel1 = null;
+            } else {
+              _tmpCategoryLevel1 = _cursor.getString(_cursorIndexOfCategoryLevel1);
+            }
+            final String _tmpCategoryLevel2;
+            if (_cursor.isNull(_cursorIndexOfCategoryLevel2)) {
+              _tmpCategoryLevel2 = null;
+            } else {
+              _tmpCategoryLevel2 = _cursor.getString(_cursorIndexOfCategoryLevel2);
+            }
+            final String _tmpDescription;
+            if (_cursor.isNull(_cursorIndexOfDescription)) {
+              _tmpDescription = null;
+            } else {
+              _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
+            }
+            final String _tmpPhoto;
+            if (_cursor.isNull(_cursorIndexOfPhoto)) {
+              _tmpPhoto = null;
+            } else {
+              _tmpPhoto = _cursor.getString(_cursorIndexOfPhoto);
+            }
+            final String _tmpVideo;
+            if (_cursor.isNull(_cursorIndexOfVideo)) {
+              _tmpVideo = null;
+            } else {
+              _tmpVideo = _cursor.getString(_cursorIndexOfVideo);
+            }
+            _item = new FoodEntity(_tmpId,_tmpName,_tmpCategoryLevel1,_tmpCategoryLevel2,_tmpDescription,_tmpPhoto,_tmpVideo);
+            _result.add(_item);
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+        }
+      }
+
+      @Override
+      protected void finalize() {
+        _statement.release();
+      }
+    });
+  }
+
   public static List<Class<?>> getRequiredConverters() {
     return Collections.emptyList();
   }

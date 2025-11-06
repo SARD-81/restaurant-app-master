@@ -4,28 +4,16 @@
         "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-mergeDebugResources-57:/layout/fragment_food_list.xml",
-        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_food_list.xml"
-    },
-    {
-        "merged": "com.ramin.restaurantapp-mergeDebugResources-57:/layout/item_food.xml",
-        "source": "com.ramin.restaurantapp-main-60:/layout/item_food.xml"
-    },
-    {
         "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-mergeDebugResources-57:\\layout\\item_category.xml",
         "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\item_category.xml"
-    },
-    {
-        "merged": "com.ramin.restaurantapp-mergeDebugResources-57:/layout/fragment_main.xml",
-        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_main.xml"
     },
     {
         "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-mergeDebugResources-57:\\layout\\fragment_food_detail.xml",
         "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\fragment_food_detail.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-mergeDebugResources-57:/layout/fragment_map.xml",
-        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_map.xml"
+        "merged": "com.ramin.restaurantapp-mergeDebugResources-57:/layout/fragment_home.xml",
+        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_home.xml"
     },
     {
         "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-mergeDebugResources-57:\\layout\\fragment_food_list.xml",
@@ -36,8 +24,12 @@
         "source": "com.ramin.restaurantapp-main-60:/layout/item_media_page.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-mergeDebugResources-57:/layout/fragment_favorites.xml",
-        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_favorites.xml"
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-mergeDebugResources-57:\\layout\\fragment_category.xml",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\fragment_category.xml"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-mergeDebugResources-57:/layout/item_theme_toggle.xml",
+        "source": "com.ramin.restaurantapp-main-60:/layout/item_theme_toggle.xml"
     },
     {
         "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-mergeDebugResources-57:\\layout\\fragment_main.xml",
@@ -48,38 +40,6 @@
         "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\item_media_page.xml"
     },
     {
-        "merged": "com.ramin.restaurantapp-mergeDebugResources-57:/layout/item_category.xml",
-        "source": "com.ramin.restaurantapp-main-60:/layout/item_category.xml"
-    },
-    {
-        "merged": "com.ramin.restaurantapp-mergeDebugResources-57:/layout/activity_main.xml",
-        "source": "com.ramin.restaurantapp-main-60:/layout/activity_main.xml"
-    },
-    {
-        "merged": "com.ramin.restaurantapp-mergeDebugResources-57:/layout/fragment_search.xml",
-        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_search.xml"
-    },
-    {
-        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-mergeDebugResources-57:\\layout\\fragment_home.xml",
-        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\fragment_home.xml"
-    },
-    {
-        "merged": "com.ramin.restaurantapp-mergeDebugResources-57:/layout/fragment_category.xml",
-        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_category.xml"
-    },
-    {
-        "merged": "com.ramin.restaurantapp-mergeDebugResources-57:/layout/fragment_home.xml",
-        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_home.xml"
-    },
-    {
-        "merged": "com.ramin.restaurantapp-mergeDebugResources-57:/layout/fragment_about.xml",
-        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_about.xml"
-    },
-    {
-        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-mergeDebugResources-57:\\layout\\fragment_category.xml",
-        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\fragment_category.xml"
-    },
-    {
         "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-mergeDebugResources-57:\\layout\\fragment_about.xml",
         "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\fragment_about.xml"
     },
@@ -88,12 +48,32 @@
         "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\fragment_favorites.xml"
     },
     {
+        "merged": "com.ramin.restaurantapp-mergeDebugResources-57:/layout/item_category_chip.xml",
+        "source": "com.ramin.restaurantapp-main-60:/layout/item_category_chip.xml"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-mergeDebugResources-57:/layout/item_category.xml",
+        "source": "com.ramin.restaurantapp-main-60:/layout/item_category.xml"
+    },
+    {
+        "merged": "com.ramin.restaurantapp-mergeDebugResources-57:/layout/activity_main.xml",
+        "source": "com.ramin.restaurantapp-main-60:/layout/activity_main.xml"
+    },
+    {
         "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-mergeDebugResources-57:\\layout\\item_food.xml",
         "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\item_food.xml"
     },
     {
+        "merged": "com.ramin.restaurantapp-mergeDebugResources-57:/layout/fragment_full_menu.xml",
+        "source": "com.ramin.restaurantapp-main-60:/layout/fragment_full_menu.xml"
+    },
+    {
         "merged": "com.ramin.restaurantapp-mergeDebugResources-57:/layout/fragment_food_detail.xml",
         "source": "com.ramin.restaurantapp-main-60:/layout/fragment_food_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-mergeDebugResources-57:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-main-60:\\layout\\fragment_home.xml"
     },
     {
         "merged": "C:\\Users\\SarayeTel\\.gradle\\daemon\\8.13\\com.ramin.restaurantapp-mergeDebugResources-57:\\layout\\fragment_map.xml",

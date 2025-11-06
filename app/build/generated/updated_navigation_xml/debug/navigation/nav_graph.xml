@@ -14,6 +14,12 @@ app:startDestination="@id/homeFragment" >
     <action
         android:id="@+id/action_home_to_food_list"
         app:destination="@id/foodListFragment" />
+    <action
+        android:id="@+id/action_home_to_full_menu"
+        app:destination="@id/fullMenuFragment" />
+    <action
+        android:id="@+id/action_home_to_food_detail"
+        app:destination="@id/foodDetailFragment" />
 
 </fragment>
 <fragment
@@ -62,6 +68,16 @@ app:startDestination="@id/homeFragment" >
     <argument
         android:name="foodId"
         app:argType="integer" />
+
+</fragment>
+<fragment
+    android:id="@+id/fullMenuFragment"
+    android:name="com.ramin.restaurantapp.ui.food.FullMenuFragment"
+    android:label="@string/full_menu_title" >
+
+    <action
+        android:id="@+id/action_full_menu_to_food_detail"
+        app:destination="@id/foodDetailFragment" />
 
 </fragment>
 <fragment

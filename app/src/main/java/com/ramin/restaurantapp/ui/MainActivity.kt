@@ -44,13 +44,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         val themeItem = menu.findItem(R.id.action_theme)
-        val themeToggleButton = themeItem.actionView.findViewById<AppCompatImageButton>(R.id.themeToggleButton)
-        var isDarkMode = preferences.getBoolean(KEY_DARK_MODE, true)
-        updateThemeToggle(themeToggleButton, isDarkMode)
-        themeToggleButton.setOnClickListener {
-            isDarkMode = !isDarkMode
-            updateThemeToggle(themeToggleButton, isDarkMode)
-            preferences.edit().putBoolean(KEY_DARK_MODE, isDarkMode).apply()
+        val themeSwitch = themeItem.actionView?.findViewById<SwitchMaterial>(R.id.themeSwitch)
+            ?: return true
+        val isDarkMode = preferences.getBoolean(KEY_DARK_MODE, true)
+        themeSwitch.setOnCheckedChangeListener(null)
+        themeSwitch.isChecked = isDarkMode
+        updateThemeSwitchText(themeSwitch, isDarkMode)
+        themeSwitch.setOnCheckedChangeListener { _, isChecked ->
+            updateThemeSwitchText(themeSwitch, isChecked)
+            preferences.edit().putBoolean(KEY_DARK_MODE, isChecked).apply()
             AppCompatDelegate.setDefaultNightMode(
                 if (isDarkMode) AppCompatDelegate.MODE_NIGHT_YES else AppCompatDelegate.MODE_NIGHT_NO
             )

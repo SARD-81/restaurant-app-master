@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.google.android.material.card.MaterialCardView;
+import com.google.android.material.chip.Chip;
 import com.ramin.restaurantapp.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -21,6 +22,9 @@ public final class ItemCategoryBinding implements ViewBinding {
   private final MaterialCardView rootView;
 
   @NonNull
+  public final Chip categoryCountChip;
+
+  @NonNull
   public final ImageView categoryImage;
 
   @NonNull
@@ -29,9 +33,11 @@ public final class ItemCategoryBinding implements ViewBinding {
   @NonNull
   public final TextView categoryTitle;
 
-  private ItemCategoryBinding(@NonNull MaterialCardView rootView, @NonNull ImageView categoryImage,
-      @NonNull TextView categorySubtitle, @NonNull TextView categoryTitle) {
+  private ItemCategoryBinding(@NonNull MaterialCardView rootView, @NonNull Chip categoryCountChip,
+      @NonNull ImageView categoryImage, @NonNull TextView categorySubtitle,
+      @NonNull TextView categoryTitle) {
     this.rootView = rootView;
+    this.categoryCountChip = categoryCountChip;
     this.categoryImage = categoryImage;
     this.categorySubtitle = categorySubtitle;
     this.categoryTitle = categoryTitle;
@@ -64,6 +70,12 @@ public final class ItemCategoryBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.categoryCountChip;
+      Chip categoryCountChip = ViewBindings.findChildViewById(rootView, id);
+      if (categoryCountChip == null) {
+        break missingId;
+      }
+
       id = R.id.categoryImage;
       ImageView categoryImage = ViewBindings.findChildViewById(rootView, id);
       if (categoryImage == null) {
@@ -82,8 +94,8 @@ public final class ItemCategoryBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemCategoryBinding((MaterialCardView) rootView, categoryImage, categorySubtitle,
-          categoryTitle);
+      return new ItemCategoryBinding((MaterialCardView) rootView, categoryCountChip, categoryImage,
+          categorySubtitle, categoryTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

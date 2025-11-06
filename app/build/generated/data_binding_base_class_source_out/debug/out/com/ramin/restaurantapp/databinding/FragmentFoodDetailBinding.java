@@ -4,9 +4,12 @@ package com.ramin.restaurantapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.core.widget.NestedScrollView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -15,7 +18,10 @@ import com.google.android.material.button.MaterialButton;
 import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
+import com.google.android.material.imageview.ShapeableImageView;
+import com.google.android.material.tabs.TabLayout;
 import com.ramin.restaurantapp.R;
+import com.ramin.restaurantapp.ui.common.SquareFrameLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -31,6 +37,9 @@ public final class FragmentFoodDetailBinding implements ViewBinding {
   public final ChipGroup detailChipGroup;
 
   @NonNull
+  public final MaterialCardView detailPostCard;
+
+  @NonNull
   public final Chip detailSubcategoryChip;
 
   @NonNull
@@ -43,30 +52,76 @@ public final class FragmentFoodDetailBinding implements ViewBinding {
   public final TextView foodTitle;
 
   @NonNull
-  public final MaterialCardView mediaCard;
+  public final AppCompatImageButton likeButton;
+
+  @NonNull
+  public final SquareFrameLayout mediaContainer;
+
+  @NonNull
+  public final TabLayout mediaIndicator;
 
   @NonNull
   public final ViewPager2 mediaPager;
 
   @NonNull
+  public final LinearLayout postActions;
+
+  @NonNull
+  public final ShapeableImageView postAvatar;
+
+  @NonNull
+  public final ImageView postBadge;
+
+  @NonNull
+  public final LinearLayout postHeader;
+
+  @NonNull
+  public final TextView postSubtitle;
+
+  @NonNull
+  public final TextView postTitle;
+
+  @NonNull
   public final MaterialButton reserveButton;
+
+  @NonNull
+  public final AppCompatImageButton saveButton;
+
+  @NonNull
+  public final AppCompatImageButton shareButton;
 
   private FragmentFoodDetailBinding(@NonNull NestedScrollView rootView,
       @NonNull Chip detailCategoryChip, @NonNull ChipGroup detailChipGroup,
-      @NonNull Chip detailSubcategoryChip, @NonNull TextView foodDescription,
-      @NonNull TextView foodDetailFooter, @NonNull TextView foodTitle,
-      @NonNull MaterialCardView mediaCard, @NonNull ViewPager2 mediaPager,
-      @NonNull MaterialButton reserveButton) {
+      @NonNull MaterialCardView detailPostCard, @NonNull Chip detailSubcategoryChip,
+      @NonNull TextView foodDescription, @NonNull TextView foodDetailFooter,
+      @NonNull TextView foodTitle, @NonNull AppCompatImageButton likeButton,
+      @NonNull SquareFrameLayout mediaContainer, @NonNull TabLayout mediaIndicator,
+      @NonNull ViewPager2 mediaPager, @NonNull LinearLayout postActions,
+      @NonNull ShapeableImageView postAvatar, @NonNull ImageView postBadge,
+      @NonNull LinearLayout postHeader, @NonNull TextView postSubtitle, @NonNull TextView postTitle,
+      @NonNull MaterialButton reserveButton, @NonNull AppCompatImageButton saveButton,
+      @NonNull AppCompatImageButton shareButton) {
     this.rootView = rootView;
     this.detailCategoryChip = detailCategoryChip;
     this.detailChipGroup = detailChipGroup;
+    this.detailPostCard = detailPostCard;
     this.detailSubcategoryChip = detailSubcategoryChip;
     this.foodDescription = foodDescription;
     this.foodDetailFooter = foodDetailFooter;
     this.foodTitle = foodTitle;
-    this.mediaCard = mediaCard;
+    this.likeButton = likeButton;
+    this.mediaContainer = mediaContainer;
+    this.mediaIndicator = mediaIndicator;
     this.mediaPager = mediaPager;
+    this.postActions = postActions;
+    this.postAvatar = postAvatar;
+    this.postBadge = postBadge;
+    this.postHeader = postHeader;
+    this.postSubtitle = postSubtitle;
+    this.postTitle = postTitle;
     this.reserveButton = reserveButton;
+    this.saveButton = saveButton;
+    this.shareButton = shareButton;
   }
 
   @Override
@@ -108,6 +163,12 @@ public final class FragmentFoodDetailBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.detailPostCard;
+      MaterialCardView detailPostCard = ViewBindings.findChildViewById(rootView, id);
+      if (detailPostCard == null) {
+        break missingId;
+      }
+
       id = R.id.detailSubcategoryChip;
       Chip detailSubcategoryChip = ViewBindings.findChildViewById(rootView, id);
       if (detailSubcategoryChip == null) {
@@ -132,9 +193,21 @@ public final class FragmentFoodDetailBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.mediaCard;
-      MaterialCardView mediaCard = ViewBindings.findChildViewById(rootView, id);
-      if (mediaCard == null) {
+      id = R.id.likeButton;
+      AppCompatImageButton likeButton = ViewBindings.findChildViewById(rootView, id);
+      if (likeButton == null) {
+        break missingId;
+      }
+
+      id = R.id.mediaContainer;
+      SquareFrameLayout mediaContainer = ViewBindings.findChildViewById(rootView, id);
+      if (mediaContainer == null) {
+        break missingId;
+      }
+
+      id = R.id.mediaIndicator;
+      TabLayout mediaIndicator = ViewBindings.findChildViewById(rootView, id);
+      if (mediaIndicator == null) {
         break missingId;
       }
 
@@ -144,15 +217,65 @@ public final class FragmentFoodDetailBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.postActions;
+      LinearLayout postActions = ViewBindings.findChildViewById(rootView, id);
+      if (postActions == null) {
+        break missingId;
+      }
+
+      id = R.id.postAvatar;
+      ShapeableImageView postAvatar = ViewBindings.findChildViewById(rootView, id);
+      if (postAvatar == null) {
+        break missingId;
+      }
+
+      id = R.id.postBadge;
+      ImageView postBadge = ViewBindings.findChildViewById(rootView, id);
+      if (postBadge == null) {
+        break missingId;
+      }
+
+      id = R.id.postHeader;
+      LinearLayout postHeader = ViewBindings.findChildViewById(rootView, id);
+      if (postHeader == null) {
+        break missingId;
+      }
+
+      id = R.id.postSubtitle;
+      TextView postSubtitle = ViewBindings.findChildViewById(rootView, id);
+      if (postSubtitle == null) {
+        break missingId;
+      }
+
+      id = R.id.postTitle;
+      TextView postTitle = ViewBindings.findChildViewById(rootView, id);
+      if (postTitle == null) {
+        break missingId;
+      }
+
       id = R.id.reserveButton;
       MaterialButton reserveButton = ViewBindings.findChildViewById(rootView, id);
       if (reserveButton == null) {
         break missingId;
       }
 
+      id = R.id.saveButton;
+      AppCompatImageButton saveButton = ViewBindings.findChildViewById(rootView, id);
+      if (saveButton == null) {
+        break missingId;
+      }
+
+      id = R.id.shareButton;
+      AppCompatImageButton shareButton = ViewBindings.findChildViewById(rootView, id);
+      if (shareButton == null) {
+        break missingId;
+      }
+
       return new FragmentFoodDetailBinding((NestedScrollView) rootView, detailCategoryChip,
-          detailChipGroup, detailSubcategoryChip, foodDescription, foodDetailFooter, foodTitle,
-          mediaCard, mediaPager, reserveButton);
+          detailChipGroup, detailPostCard, detailSubcategoryChip, foodDescription, foodDetailFooter,
+          foodTitle, likeButton, mediaContainer, mediaIndicator, mediaPager, postActions,
+          postAvatar, postBadge, postHeader, postSubtitle, postTitle, reserveButton, saveButton,
+          shareButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

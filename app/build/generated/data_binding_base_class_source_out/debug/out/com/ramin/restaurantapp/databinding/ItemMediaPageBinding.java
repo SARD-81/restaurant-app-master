@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.VideoView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,12 +25,17 @@ public final class ItemMediaPageBinding implements ViewBinding {
   public final ShapeableImageView mediaImage;
 
   @NonNull
+  public final ImageView mediaPlayIcon;
+
+  @NonNull
   public final VideoView mediaVideo;
 
   private ItemMediaPageBinding(@NonNull FrameLayout rootView,
-      @NonNull ShapeableImageView mediaImage, @NonNull VideoView mediaVideo) {
+      @NonNull ShapeableImageView mediaImage, @NonNull ImageView mediaPlayIcon,
+      @NonNull VideoView mediaVideo) {
     this.rootView = rootView;
     this.mediaImage = mediaImage;
+    this.mediaPlayIcon = mediaPlayIcon;
     this.mediaVideo = mediaVideo;
   }
 
@@ -66,13 +72,20 @@ public final class ItemMediaPageBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.mediaPlayIcon;
+      ImageView mediaPlayIcon = ViewBindings.findChildViewById(rootView, id);
+      if (mediaPlayIcon == null) {
+        break missingId;
+      }
+
       id = R.id.mediaVideo;
       VideoView mediaVideo = ViewBindings.findChildViewById(rootView, id);
       if (mediaVideo == null) {
         break missingId;
       }
 
-      return new ItemMediaPageBinding((FrameLayout) rootView, mediaImage, mediaVideo);
+      return new ItemMediaPageBinding((FrameLayout) rootView, mediaImage, mediaPlayIcon,
+          mediaVideo);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
