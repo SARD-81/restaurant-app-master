@@ -57,6 +57,136 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
+        <TextView
+            android:id="@+id/homeCollectionsCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="@string/home_collections_caption"
+            android:textAppearance="@style/TextAppearance.Restaurant.Subtitle" />
+
+        <LinearLayout
+            android:id="@+id/homeCollectionsRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/likedCollectionCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="0dp"
+                app:shapeAppearance="@style/ShapeAppearance.Restaurant.Large">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/collection_like_background"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="@string/home_liked_title"
+                        android:src="@drawable/ic_favorite_filled"
+                        android:tint="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/likedCollectionTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/home_liked_title"
+                        android:textAppearance="@style/TextAppearance.Restaurant.Toolbar"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/likedCollectionSubtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/home_liked_subtitle"
+                        android:textAppearance="@style/TextAppearance.Restaurant.Body"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/likedCollectionCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:textAppearance="@style/TextAppearance.Restaurant.Body"
+                        android:textColor="@android:color/white"
+                        tools:text="۳ انتخاب" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/savedCollectionCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="0dp"
+                app:shapeAppearance="@style/ShapeAppearance.Restaurant.Large">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/collection_saved_background"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="@string/home_saved_title"
+                        android:src="@drawable/ic_bookmark_filled"
+                        android:tint="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/savedCollectionTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/home_saved_title"
+                        android:textAppearance="@style/TextAppearance.Restaurant.Toolbar"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/savedCollectionSubtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/home_saved_subtitle"
+                        android:textAppearance="@style/TextAppearance.Restaurant.Body"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/savedCollectionCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:textAppearance="@style/TextAppearance.Restaurant.Body"
+                        android:textColor="@android:color/white"
+                        tools:text="۱ انتخاب" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/searchInputLayout"
             style="@style/Widget.Restaurant.TextInputLayout"

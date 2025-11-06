@@ -46,10 +46,27 @@ abstract class RestaurantDatabase : RoomDatabase() {
             }
         }
 
+        override fun onOpen(db: SupportSQLiteDatabase) {
+            super.onOpen(db)
+            INSTANCE?.let { database ->
+                scope.launch(Dispatchers.IO) {
+                    ensureSeedData(database.foodDao())
+                }
+            }
+        }
+
         private suspend fun populateDatabase(foodDao: FoodDao) {
             withContext(Dispatchers.IO) {
                 foodDao.clear()
                 foodDao.insertAll(SampleDataProvider.foodItems())
+            }
+        }
+
+        private suspend fun ensureSeedData(foodDao: FoodDao) {
+            withContext(Dispatchers.IO) {
+                if (foodDao.countFoods() == 0) {
+                    foodDao.insertAll(SampleDataProvider.foodItems())
+                }
             }
         }
     }

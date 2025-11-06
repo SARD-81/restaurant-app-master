@@ -26,7 +26,8 @@ class FullMenuFragment : Fragment() {
     private val binding get() = _binding!!
 
     private val viewModel: RestaurantViewModel by activityViewModels {
-        RestaurantViewModel.Factory((requireActivity().application as RestaurantApplication).repository)
+        val application = requireActivity().application as RestaurantApplication
+        RestaurantViewModel.Factory(application.repository, application.preferences)
     }
 
     private lateinit var adapter: FoodAdapter
@@ -50,14 +51,16 @@ class FullMenuFragment : Fragment() {
     }
 
     private fun setupRecycler() {
-        adapter = FoodAdapter { foodItem ->
+        adapter = FoodAdapter(onItemSelected = { foodItem ->
             val args = bundleOf("foodId" to foodItem.id)
             findNavController().navigate(R.id.action_full_menu_to_food_detail, args)
-        }
+        }, badgeProvider = { badgeForFood(it) })
         binding.fullMenuRecyclerView.apply {
             adapter = this@FullMenuFragment.adapter
             layoutManager = LinearLayoutManager(requireContext())
         }
+        viewModel.likedIdsLiveData.observe(viewLifecycleOwner) { refreshVisibleBadges() }
+        viewModel.savedIdsLiveData.observe(viewLifecycleOwner) { refreshVisibleBadges() }
     }
 
     private fun observeCategories() {
@@ -124,6 +127,30 @@ class FullMenuFragment : Fragment() {
             filteredList.size,
             filteredList.size
         )
+    }
+
+    private fun badgeForFood(item: FoodItem): FoodAdapter.FoodBadge? {
+        return when {
+            viewModel.isLiked(item.id) -> FoodAdapter.FoodBadge(
+                iconRes = R.drawable.ic_favorite_filled,
+                backgroundTint = R.color.brand_secondary,
+                iconTint = R.color.white,
+                contentDescription = getString(R.string.favorite_badge_content_description)
+            )
+
+            viewModel.isSaved(item.id) -> FoodAdapter.FoodBadge(
+                iconRes = R.drawable.ic_bookmark_filled,
+                backgroundTint = R.color.brand_primary,
+                iconTint = R.color.white,
+                contentDescription = getString(R.string.saved_badge_content_description)
+            )
+
+            else -> null
+        }
+    }
+
+    private fun refreshVisibleBadges() {
+        adapter.notifyDataSetChanged()
     }
 
     override fun onDestroyView() {

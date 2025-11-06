@@ -1,7 +1,10 @@
 package com.ramin.restaurantapp.ui.common
 
+import android.content.res.ColorStateList
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -10,7 +13,8 @@ import com.ramin.restaurantapp.databinding.ItemFoodBinding
 import com.ramin.restaurantapp.model.FoodItem
 
 class FoodAdapter(
-    private val onItemSelected: (FoodItem) -> Unit
+    private val onItemSelected: (FoodItem) -> Unit,
+    private val badgeProvider: ((FoodItem) -> FoodBadge)? = null,
 ) : ListAdapter<FoodItem, FoodAdapter.FoodViewHolder>(DiffCallback) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FoodViewHolder {
@@ -33,9 +37,30 @@ class FoodAdapter(
                     .centerCrop()
                     .into(binding.foodImage)
             }
+            val badge = badgeProvider?.invoke(item)
+            if (badge != null) {
+                binding.foodBadge.isVisible = true
+                binding.foodBadge.setImageResource(badge.iconRes)
+                binding.foodBadge.contentDescription = badge.contentDescription
+                binding.foodBadge.imageTintList = ColorStateList.valueOf(
+                    ContextCompat.getColor(binding.root.context, badge.iconTint)
+                )
+                binding.foodBadge.backgroundTintList = ColorStateList.valueOf(
+                    ContextCompat.getColor(binding.root.context, badge.backgroundTint)
+                )
+            } else {
+                binding.foodBadge.isVisible = false
+            }
             binding.root.setOnClickListener { onItemSelected(item) }
         }
     }
+
+    data class FoodBadge(
+        val iconRes: Int,
+        val backgroundTint: Int,
+        val iconTint: Int,
+        val contentDescription: String,
+    )
 
     private object DiffCallback : DiffUtil.ItemCallback<FoodItem>() {
         override fun areItemsTheSame(oldItem: FoodItem, newItem: FoodItem): Boolean =

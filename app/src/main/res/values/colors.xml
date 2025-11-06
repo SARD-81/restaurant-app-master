@@ -5,6 +5,7 @@
     <color name="brand_secondary">#FF9E6D</color>
     <color name="brand_surface">#FFF8F3</color>
     <color name="brand_surface_variant">#FFEFE2</color>
+    <color name="brand_surface_deep">#E5DBFF</color>
     <color name="brand_card">#FFFFFFFF</color>
     <color name="brand_toolbar">#F0E7FF</color>
     <color name="brand_chip">#FFF2E5</color>

@@ -29,6 +29,9 @@ interface FoodDao {
     @Query("SELECT * FROM food ORDER BY category_1, name")
     fun getFullMenu(): Flow<List<FoodEntity>>
 
+    @Query("SELECT * FROM food WHERE id IN (:ids) ORDER BY name")
+    fun getFoodsByIds(ids: List<Int>): Flow<List<FoodEntity>>
+
     @Query(
         "SELECT * FROM food WHERE " +
             "name LIKE '%' || :query || '%' OR " +
@@ -38,6 +41,9 @@ interface FoodDao {
             "ORDER BY name"
     )
     fun searchFoods(query: String): Flow<List<FoodEntity>>
+
+    @Query("SELECT COUNT(*) FROM food")
+    suspend fun countFoods(): Int
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertAll(items: List<FoodEntity>)

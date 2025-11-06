@@ -4,5 +4,5 @@
         android:angle="135"
         android:startColor="@color/brand_surface"
         android:centerColor="@color/brand_surface_variant"
-        android:endColor="#0F091B" />
+        android:endColor="@color/brand_surface_deep" />
 </shape>

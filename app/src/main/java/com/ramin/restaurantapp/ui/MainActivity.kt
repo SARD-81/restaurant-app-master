@@ -8,11 +8,11 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.appcompat.widget.AppCompatImageButton
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
-import com.google.android.material.switchmaterial.SwitchMaterial
 import com.ramin.restaurantapp.R
 import com.ramin.restaurantapp.databinding.ActivityMainBinding
 
@@ -44,16 +44,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         val themeItem = menu.findItem(R.id.action_theme)
-        val themeSwitch = themeItem.actionView.findViewById<SwitchMaterial>(R.id.themeSwitch)
-        val isDarkMode = preferences.getBoolean(KEY_DARK_MODE, true)
-        themeSwitch.setOnCheckedChangeListener(null)
-        themeSwitch.isChecked = isDarkMode
-        updateThemeSwitchText(themeSwitch, isDarkMode)
-        themeSwitch.setOnCheckedChangeListener { _, isChecked ->
-            updateThemeSwitchText(themeSwitch, isChecked)
-            preferences.edit().putBoolean(KEY_DARK_MODE, isChecked).apply()
+        val themeToggleButton = themeItem.actionView.findViewById<AppCompatImageButton>(R.id.themeToggleButton)
+        var isDarkMode = preferences.getBoolean(KEY_DARK_MODE, true)
+        updateThemeToggle(themeToggleButton, isDarkMode)
+        themeToggleButton.setOnClickListener {
+            isDarkMode = !isDarkMode
+            updateThemeToggle(themeToggleButton, isDarkMode)
+            preferences.edit().putBoolean(KEY_DARK_MODE, isDarkMode).apply()
             AppCompatDelegate.setDefaultNightMode(
-                if (isChecked) AppCompatDelegate.MODE_NIGHT_YES else AppCompatDelegate.MODE_NIGHT_NO
+                if (isDarkMode) AppCompatDelegate.MODE_NIGHT_YES else AppCompatDelegate.MODE_NIGHT_NO
             )
         }
         return true
@@ -61,6 +60,14 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
+            R.id.action_liked -> {
+                navController.navigate(R.id.likedFoodsFragment)
+                true
+            }
+            R.id.action_saved -> {
+                navController.navigate(R.id.savedFoodsFragment)
+                true
+            }
             R.id.action_about -> {
                 navController.navigate(R.id.aboutFragment)
                 true
@@ -78,15 +85,19 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun updateThemeSwitchText(switch: SwitchMaterial, isDarkMode: Boolean) {
-        val textRes = if (isDarkMode) {
+    private fun updateThemeToggle(button: AppCompatImageButton, isDarkMode: Boolean) {
+        val labelRes = if (isDarkMode) {
             R.string.theme_toggle_light
         } else {
             R.string.theme_toggle_dark
         }
-        val label = getString(textRes)
-        switch.text = label
-        switch.contentDescription = label
+        val iconRes = if (isDarkMode) {
+            R.drawable.ic_theme_light
+        } else {
+            R.drawable.ic_theme_dark
+        }
+        button.setImageResource(iconRes)
+        button.contentDescription = getString(labelRes)
     }
 
     override fun onSupportNavigateUp(): Boolean {

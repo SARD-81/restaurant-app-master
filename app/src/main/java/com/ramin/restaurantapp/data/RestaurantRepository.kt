@@ -8,6 +8,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.flowOf
 
 class RestaurantRepository(private val foodDao: FoodDao) {
 
@@ -62,6 +63,15 @@ class RestaurantRepository(private val foodDao: FoodDao) {
 
     fun observeAllFoods(): Flow<List<FoodItem>> {
         return foodDao.getFullMenu().map { entities ->
+            entities.map { entity -> entity.toFoodItem() }
+        }
+    }
+
+    fun observeFoodsByIds(ids: Set<Int>): Flow<List<FoodItem>> {
+        if (ids.isEmpty()) {
+            return flowOf(emptyList())
+        }
+        return foodDao.getFoodsByIds(ids.toList()).map { entities ->
             entities.map { entity -> entity.toFoodItem() }
         }
     }
