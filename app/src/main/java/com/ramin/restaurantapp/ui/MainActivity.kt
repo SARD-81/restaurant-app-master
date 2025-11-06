@@ -126,7 +126,10 @@ class MainActivity : AppCompatActivity() {
     
     override fun setTitle(title: CharSequence?) {
         super.setTitle(title)
-        // Update the custom toolbar title
+        if (!this::binding.isInitialized) {
+            return
+        }
+        // Update the custom toolbar title once the binding is ready
         val toolbarTitle = binding.toolbar.root.findViewById<TextView>(R.id.toolbarTitle)
         toolbarTitle.text = title
     }
