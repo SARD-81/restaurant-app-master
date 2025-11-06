@@ -25,8 +25,8 @@
             android:layoutDirection="rtl"
             app:title="@string/app_name"
             app:titleCentered="true"
-            app:titleTextColor="@color/text_primary_on_dark"
-            app:subtitleTextColor="@color/text_secondary_on_dark" />
+            app:titleTextColor="?attr/colorOnPrimary"
+            app:subtitleTextColor="?attr/colorOnPrimary" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.fragment.app.FragmentContainerView

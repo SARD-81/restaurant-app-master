@@ -29,12 +29,18 @@ class CategoryAdapter(
 
         fun bind(item: CategorySummary) {
             binding.categoryTitle.text = item.name
+            val context = binding.root.context
             val subtitleRes = if (item.hasSubcategories) {
                 R.string.category_subtitle_has_children
             } else {
                 R.string.category_subtitle_no_children
             }
-            binding.categorySubtitle.text = binding.root.context.getString(subtitleRes)
+            binding.categorySubtitle.text = context.getString(subtitleRes)
+            binding.categoryCountChip.text = context.resources.getQuantityString(
+                R.plurals.category_item_count,
+                item.itemCount,
+                item.itemCount
+            )
             if (item.imageUrl.isNotBlank()) {
                 Glide.with(binding.categoryImage.context)
                     .load(item.imageUrl)

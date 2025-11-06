@@ -41,6 +41,7 @@ class MediaPagerAdapter(
         private fun showImage(url: String) {
             binding.mediaVideo.visibility = View.GONE
             binding.mediaImage.visibility = View.VISIBLE
+            binding.mediaPlayIcon.visibility = View.GONE
             Glide.with(binding.mediaImage.context)
                 .load(url)
                 .centerCrop()
@@ -50,6 +51,7 @@ class MediaPagerAdapter(
         private fun showVideo(url: String) {
             binding.mediaImage.visibility = View.GONE
             binding.mediaVideo.visibility = View.VISIBLE
+            binding.mediaPlayIcon.visibility = View.VISIBLE
             val controller = MediaController(binding.mediaVideo.context)
             controller.setAnchorView(binding.mediaVideo)
             binding.mediaVideo.apply {
@@ -57,13 +59,27 @@ class MediaPagerAdapter(
                 setVideoURI(Uri.parse(url))
                 setOnPreparedListener { mp ->
                     mp.isLooping = true
+                    binding.mediaPlayIcon.visibility = View.GONE
                     start()
+                }
+                setOnCompletionListener {
+                    binding.mediaPlayIcon.visibility = View.VISIBLE
+                }
+                setOnClickListener {
+                    if (isPlaying) {
+                        pause()
+                        binding.mediaPlayIcon.visibility = View.VISIBLE
+                    } else {
+                        start()
+                        binding.mediaPlayIcon.visibility = View.GONE
+                    }
                 }
             }
         }
 
         fun cleanup() {
             binding.mediaVideo.stopPlayback()
+            binding.mediaPlayIcon.visibility = View.VISIBLE
         }
     }
 }

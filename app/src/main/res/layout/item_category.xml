@@ -29,6 +29,17 @@
             android:layout_height="match_parent"
             android:background="@drawable/card_overlay" />
 
+        <com.google.android.material.chip.Chip
+            android:id="@+id/categoryCountChip"
+            style="@style/Widget.Restaurant.Chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_margin="16dp"
+            android:alpha="0.92"
+            android:textAppearance="@style/TextAppearance.Restaurant.Body"
+            app:chipIconVisible="false" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -4,11 +4,17 @@
     <string name="menu_about">درباره ما</string>
     <string name="menu_address">نقشه و مسیر</string>
     <string name="menu_call">رزرو تلفنی</string>
+    <string name="menu_theme">حالت شب</string>
+    <string name="theme_toggle_dark">فعال‌سازی حالت تیره</string>
+    <string name="theme_toggle_light">فعال‌سازی حالت روشن</string>
     <string name="home_title">به دنیای طعم‌های خاص خوش آمدید</string>
     <string name="home_subtitle">سرآشپز ما هر روز با ترکیبی از مواد تازه و ذوق ایرانی، منویی متفاوت خلق می‌کند.</string>
     <string name="home_cta">مشاهده منوی کامل</string>
+    <string name="home_quick_categories_title">دسته‌های پرطرفدار</string>
     <string name="home_categories_title">دسته‌بندی‌های محبوب</string>
     <string name="search_hint">نام غذا یا دسته‌بندی مورد نظر را جستجو کنید</string>
+    <string name="search_results_title">نتایج جستجو</string>
+    <string name="search_results_empty">موردی مطابق با جستجوی شما پیدا نشد. دسته‌های پیشنهادی را امتحان کنید.</string>
     <string name="category_subtitle">گزینه‌های دست‌چین‌شده با الهام از فصل</string>
     <string name="category_subtitle_detail">زیرمجموعه مورد نظر را انتخاب کنید تا پیشنهادات جذاب را ببینید.</string>
     <string name="category_subtitle_has_children">زیر دسته‌های متنوع برای هر سلیقه</string>
@@ -21,10 +27,34 @@
     <string name="food_detail_footer">برای تجربه‌ای خاطره‌انگیز، می‌توانید این غذا را با نوشیدنی‌های ویژه ما همراه کنید.</string>
     <string name="reserve_button">رزرو میز برای همین غذا</string>
     <string name="reserve_snackbar_message">درخواست رزرو برای %1$s ثبت شد. همکاران ما با شما تماس می‌گیرند.</string>
+    <string name="food_detail_actions_like">افزودن به علاقه‌مندی‌ها</string>
+    <string name="food_detail_actions_share">اشتراک‌گذاری</string>
+    <string name="food_detail_actions_save">ذخیره در دفترچه طعم‌ها</string>
+    <string name="food_detail_media_play">پخش ویدئو</string>
+    <string name="food_detail_subtitle_format">%1$s • %2$s</string>
+    <string name="food_detail_like_feedback">%1$s به علاقه‌مندی‌های شما اضافه شد.</string>
+    <string name="food_detail_save_feedback">%1$s در دفترچه طعم‌ها ذخیره شد.</string>
+    <string name="food_detail_share_text">طعم بی‌نظیر %1$s را در رستوران طعم تهران امتحان کنید!</string>
     <string name="map_title">نقشه و مسیر شعبه‌ها</string>
     <string name="map_description">تمام شعبه‌های ما را روی نقشه پیدا کنید و مسیر دقیق را ببینید.</string>
     <string name="about_title">درباره رستوران طعم تهران</string>
     <string name="loading">در حال بارگذاری… لطفاً صبر کنید</string>
     <string name="no_items_available">آیتمی برای نمایش وجود ندارد.</string>
     <string name="address_text">تهران، خیابان ولیعصر، کوچه ۱۲، پلاک ۷</string>
+    <string name="full_menu_title">منوی کامل رستوران</string>
+    <string name="full_menu_subtitle">همه غذاهای ما در یک نگاه؛ از پیش‌غذا تا دسر</string>
+    <string name="full_menu_empty">برای این دسته فعلاً غذایی ثبت نشده است.</string>
+    <string name="full_menu_filter_all">همه دسته‌ها</string>
+    <plurals name="category_item_count">
+        <item quantity="one">%d پیشنهاد منتخب</item>
+        <item quantity="other">%d پیشنهاد منتخب</item>
+    </plurals>
+    <plurals name="search_result_count">
+        <item quantity="one">%d نتیجه یافت شد</item>
+        <item quantity="other">%d نتیجه یافت شد</item>
+    </plurals>
+    <plurals name="full_menu_result_count">
+        <item quantity="one">%d آیتم در این دسته موجود است</item>
+        <item quantity="other">%d آیتم در این دسته موجود است</item>
+    </plurals>
 </resources>
