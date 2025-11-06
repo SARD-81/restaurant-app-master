@@ -1,15 +1,18 @@
 package com.ramin.restaurantapp.ui
 
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.google.android.material.switchmaterial.SwitchMaterial
 import com.ramin.restaurantapp.R
 import com.ramin.restaurantapp.databinding.ActivityMainBinding
 
@@ -18,7 +21,15 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
 
+    private val preferences by lazy {
+        getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
+        val isDarkMode = preferences.getBoolean(KEY_DARK_MODE, true)
+        AppCompatDelegate.setDefaultNightMode(
+            if (isDarkMode) AppCompatDelegate.MODE_NIGHT_YES else AppCompatDelegate.MODE_NIGHT_NO
+        )
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -32,6 +43,19 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
+        val themeItem = menu.findItem(R.id.action_theme)
+        val themeSwitch = themeItem.actionView.findViewById<SwitchMaterial>(R.id.themeSwitch)
+        val isDarkMode = preferences.getBoolean(KEY_DARK_MODE, true)
+        themeSwitch.setOnCheckedChangeListener(null)
+        themeSwitch.isChecked = isDarkMode
+        updateThemeSwitchText(themeSwitch, isDarkMode)
+        themeSwitch.setOnCheckedChangeListener { _, isChecked ->
+            updateThemeSwitchText(themeSwitch, isChecked)
+            preferences.edit().putBoolean(KEY_DARK_MODE, isChecked).apply()
+            AppCompatDelegate.setDefaultNightMode(
+                if (isChecked) AppCompatDelegate.MODE_NIGHT_YES else AppCompatDelegate.MODE_NIGHT_NO
+            )
+        }
         return true
     }
 
@@ -54,7 +78,23 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun updateThemeSwitchText(switch: SwitchMaterial, isDarkMode: Boolean) {
+        val textRes = if (isDarkMode) {
+            R.string.theme_toggle_light
+        } else {
+            R.string.theme_toggle_dark
+        }
+        val label = getString(textRes)
+        switch.text = label
+        switch.contentDescription = label
+    }
+
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp() || super.onSupportNavigateUp()
+    }
+
+    companion object {
+        private const val PREFS_NAME = "restaurant_preferences"
+        private const val KEY_DARK_MODE = "dark_mode_enabled"
     }
 }

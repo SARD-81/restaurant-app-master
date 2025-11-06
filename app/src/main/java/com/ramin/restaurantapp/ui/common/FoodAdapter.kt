@@ -26,7 +26,7 @@ class FoodAdapter(
         fun bind(item: FoodItem) {
             binding.foodTitle.text = item.name
             binding.foodDescription.text = item.description
-            binding.foodCategoryChip.text = item.subcategory ?: item.category
+            binding.foodCategoryChip.text = item.subcategory?.takeIf { it.isNotBlank() } ?: item.category
             if (item.imageUrl.isNotBlank()) {
                 Glide.with(binding.foodImage.context)
                     .load(item.imageUrl)

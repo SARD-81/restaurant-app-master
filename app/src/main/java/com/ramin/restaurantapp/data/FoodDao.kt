@@ -26,6 +26,19 @@ interface FoodDao {
     @Query("SELECT * FROM food WHERE id = :id")
     fun getFoodById(id: Int): Flow<FoodEntity>
 
+    @Query("SELECT * FROM food ORDER BY category_1, name")
+    fun getFullMenu(): Flow<List<FoodEntity>>
+
+    @Query(
+        "SELECT * FROM food WHERE " +
+            "name LIKE '%' || :query || '%' OR " +
+            "description LIKE '%' || :query || '%' OR " +
+            "category_1 LIKE '%' || :query || '%' OR " +
+            "category_2 LIKE '%' || :query || '%' " +
+            "ORDER BY name"
+    )
+    fun searchFoods(query: String): Flow<List<FoodEntity>>
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertAll(items: List<FoodEntity>)
 

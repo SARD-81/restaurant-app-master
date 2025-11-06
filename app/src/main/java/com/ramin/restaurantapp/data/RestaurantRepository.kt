@@ -22,7 +22,8 @@ class RestaurantRepository(private val foodDao: FoodDao) {
                 CategorySummary(
                     name = category,
                     imageUrl = firstItem?.imageList()?.firstOrNull() ?: "",
-                    hasSubcategories = items.any { !it.categoryLevel2.isNullOrBlank() }
+                    hasSubcategories = items.any { !it.categoryLevel2.isNullOrBlank() },
+                    itemCount = items.size
                 )
             }
         }.distinctUntilChanged()
@@ -49,31 +50,38 @@ class RestaurantRepository(private val foodDao: FoodDao) {
             foodDao.getFoodsForSubcategory(category, subcategory)
         }
         return baseFlow.map { entities ->
-            entities.map { entity ->
-                FoodItem(
-                    id = entity.id,
-                    name = entity.name,
-                    description = entity.description,
-                    imageUrl = entity.imageList().firstOrNull().orEmpty(),
-                    category = entity.categoryLevel1,
-                    subcategory = entity.categoryLevel2
-                )
-            }
+            entities.map { entity -> entity.toFoodItem() }
         }
     }
 
     fun observeFoodDetail(id: Int): Flow<FoodItem> {
         return foodDao.getFoodById(id).map { entity ->
-            FoodItem(
-                id = entity.id,
-                name = entity.name,
-                description = entity.description,
-                imageUrl = entity.imageList().firstOrNull().orEmpty(),
-                category = entity.categoryLevel1,
-                subcategory = entity.categoryLevel2,
-                media = buildMedia(entity)
-            )
+            entity.toFoodItem(includeMedia = true)
         }
+    }
+
+    fun observeAllFoods(): Flow<List<FoodItem>> {
+        return foodDao.getFullMenu().map { entities ->
+            entities.map { entity -> entity.toFoodItem() }
+        }
+    }
+
+    fun searchFoods(query: String): Flow<List<FoodItem>> {
+        return foodDao.searchFoods(query).map { entities ->
+            entities.map { entity -> entity.toFoodItem() }
+        }
+    }
+
+    private fun FoodEntity.toFoodItem(includeMedia: Boolean = false): FoodItem {
+        return FoodItem(
+            id = id,
+            name = name,
+            description = description,
+            imageUrl = imageList().firstOrNull().orEmpty(),
+            category = categoryLevel1,
+            subcategory = categoryLevel2,
+            media = if (includeMedia) buildMedia(this) else emptyList()
+        )
     }
 
     private fun buildMedia(entity: FoodEntity): List<FoodMedia> {

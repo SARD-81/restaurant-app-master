@@ -20,4 +20,14 @@
         android:layout_height="match_parent"
         android:visibility="gone" />
 
+    <ImageView
+        android:id="@+id/mediaPlayIcon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:background="@drawable/glass_background"
+        android:padding="12dp"
+        android:src="@drawable/ic_play_circle"
+        android:visibility="gone" />
+
 </FrameLayout>
